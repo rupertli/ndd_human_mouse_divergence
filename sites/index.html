@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Human–mouse developmental gene trajectories</title>
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="scripts/explorer.mjs"></script>
+</head>
+<body>
+  <svg class="icon-definitions" aria-hidden="true" focusable="false" width="0" height="0">
+    <defs>
+      <symbol id="icon-dna" viewBox="0 0 24 24">
+        <path d="M6 3c0 9 12 9 12 18M18 3C18 12 6 12 6 21M6 3h12M8 7h8M8 17h8M6 21h12M10 11l4 2"/>
+      </symbol>
+      <symbol id="icon-brain" viewBox="0 0 24 24">
+        <path d="M12 5a3 3 0 0 0-5-2 4 4 0 0 0-4 5 4 4 0 0 0-1 7 4 4 0 0 0 5 5 3 3 0 0 0 5-1V5Zm0 0a3 3 0 0 1 5-2 4 4 0 0 1 4 5 4 4 0 0 1 1 7 4 4 0 0 1-5 5 3 3 0 0 1-5-1M7 7c-2 1-2 4 0 5M17 7c2 1 2 4 0 5M6 16c2-1 4 0 4 2M18 16c-2-1-4 0-4 2"/>
+      </symbol>
+      <symbol id="icon-analysis" viewBox="0 0 24 24">
+        <path d="M3 3v18h18M6 16l5-6 4 3 6-8"/>
+        <circle cx="6" cy="16" r="1"/>
+        <circle cx="11" cy="10" r="1"/>
+        <circle cx="15" cy="13" r="1"/>
+        <circle cx="21" cy="5" r="1"/>
+      </symbol>
+    </defs>
+  </svg>
+  <main>
+    <header class="report-header">
+      <div class="report-mark" aria-hidden="true">
+        <svg class="icon" focusable="false"><use href="#icon-dna"/></svg>
+      </div>
+      <div>
+      <p class="eyebrow">NDD GENE EXPRESSION · FOUR-PHASE EXPLORER</p>
+      <h1>Human–mouse developmental trajectories</h1>
+      <p class="intro">Explore gene-expression divergence in cerebral cortex and cerebellum, from early prenatal development to the neonatal period.</p>
+      </div>
+    </header>
+    <section class="toolbar" aria-label="Ranking controls">
+      <label>Genes per region <input id="top-n" type="number" min="1" value="20" step="1" required disabled></label>
+      <label>Show <select id="direction" disabled><option value="divergent">Most divergent</option><option value="similar">Least divergent (most similar)</option></select></label>
+      <span id="overlap" role="status" aria-live="polite">Loading rankings…</span>
+    </section>
+    <p class="hint">Highlighted genes appear in both displayed lists. Scores are descriptive, not p-values. Ties are ordered alphabetically.</p>
+    <p id="error" class="error" role="alert" hidden></p>
+    <div id="regions" class="regions"></div>
+    <details class="methods">
+      <summary>How to interpret these rankings</summary>
+      <p>For each gene and cell type, divergence D = (1 − Spearman rho)/2 + z-RMSE + (1 − direction agreement) + peak-phase distance/3. Higher scores (0–5) indicate greater trajectory divergence, not statistical significance or expression fold change.</p>
+      <p><strong>Maximum across cell types:</strong> genes are ranked by their highest eligible cell-type score. Least divergent reverses this same ranking: it selects genes whose worst-case score is lowest, not genes with just one similar cell type. Summary medians and means cover all eligible cell types. <strong>Selected cell type:</strong> ranking and summaries use only that cell type.</p>
+      <p>Constant trajectories can have undefined correlation and divergence scores. Undefined values are omitted from summary medians/means and never treated as zero divergence. Genes without a finite score in the selected scope are excluded from ranking. Details show the number of scored versus tested cell types; finite maxima cannot establish similarity in unscored cell types.</p>
+      <p>The cerebral dataset represents cortex, not the entire cerebrum. Retained cortical comparisons cover two populations; cerebellum covers five different populations. Maximum scores are sensitive to unequal cell-type coverage and outliers. Human donors and pooled mouse cortical libraries differ in replication; mouse cerebellar samples are individual mice. Cross-region overlap is descriptive and is not a matched-cell-type regional test.</p>
+      <p>Charts connect log1p of phase-level median pseudobulk CPM, optionally z-standardized separately within each species. Only pseudobulks with at least 20 cells contribute. Lines are visual guides between coarse aligned developmental phases, not fitted continuous trajectories. Replicate counts are shown below each chart; no confidence intervals are implied.</p>
+      <p><a href="data/NDD_human_mouse_cortical_trajectory/METHODS.md">Cortical methods</a> · <a href="data/NDD_cerebellum_four_phase_descriptive/METHODS.md">Cerebellar methods</a></p>
+    </details>
+    <noscript>This explorer requires JavaScript to load the local data and render rankings.</noscript>
+  </main>
+</body>
+</html>
