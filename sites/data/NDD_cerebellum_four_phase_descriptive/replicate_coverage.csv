@@ -1,0 +1,90 @@
+brain_region,species,phase,resolution,cell_label,n_replicates,n_cells,analysis_scope,phase_set,integration_schema_version
+cerebellum,human,early_prenatal,cell_type,GABAergic neuron,5,9269306,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,early_prenatal,cell_type,Purkinje cell,5,92001218,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,early_prenatal,cell_type,cerebellar granule cell,2,1459408,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,early_prenatal,cell_type,cerebellar granule cell precursor,1,154890,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,early_prenatal,cell_type,glutamatergic neuron,2,5789444,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,early_prenatal,cell_type,interneuron,1,939666,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,early_prenatal,cell_type,macroglial cell,5,34241016,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,early_prenatal,cell_type,microglial cell,1,464670,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,early_prenatal,cell_type,neuroblast (sensu Vertebrata),5,20486784,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,early_prenatal,cell_type,unipolar brush cell,1,175542,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,GABAergic neuron,3,413040,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,Purkinje cell,1,79166,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,cerebellar granule cell,4,16741888,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,cerebellar granule cell precursor,4,1569552,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,glioblast,4,1810492,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,glutamatergic neuron,3,746914,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,interneuron,4,8697934,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,macroglial cell,4,19085890,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,microglial cell,2,416482,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,neuroblast (sensu Vertebrata),3,963760,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,oligodendrocyte precursor cell,4,1101440,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,progenitor cell,2,230614,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,late_prenatal,cell_type,unipolar brush cell,4,8136888,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,GABAergic neuron,5,3493630,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,Purkinje cell,6,53130712,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,cerebellar granule cell,6,4182030,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,cerebellar granule cell precursor,6,2388748,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,glutamatergic neuron,5,2860302,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,interneuron,6,6994144,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,macroglial cell,6,8914780,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,microglial cell,1,82608,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,neuroblast (sensu Vertebrata),6,3269900,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,oligodendrocyte precursor cell,2,182426,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,mid_prenatal,cell_type,unipolar brush cell,6,4729308,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,neonatal,cell_type,Bergmann glial cell,2,499090,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,neonatal,cell_type,cerebellar granule cell,3,40247306,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,neonatal,cell_type,cerebellar granule cell precursor,3,5121696,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,neonatal,cell_type,immature astrocyte,2,1139302,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,neonatal,cell_type,interneuron,3,3201060,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,neonatal,cell_type,macroglial cell,2,2247626,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,neonatal,cell_type,microglial cell,2,220288,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,neonatal,cell_type,neuroblast (sensu Vertebrata),1,120470,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,neonatal,cell_type,oligodendrocyte precursor cell,3,664306,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,human,neonatal,cell_type,unipolar brush cell,1,103260,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,early_prenatal,cell_type,GABAergic neuron,3,2901606,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,early_prenatal,cell_type,Purkinje cell,4,8529276,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,early_prenatal,cell_type,brain vascular cell,2,206520,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,early_prenatal,cell_type,cerebellar granule cell,1,96376,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,early_prenatal,cell_type,cerebellar granule cell precursor,2,474996,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,early_prenatal,cell_type,glutamatergic neuron,2,2905048,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,early_prenatal,cell_type,interneuron,3,898362,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,early_prenatal,cell_type,macroglial cell,7,54903342,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,early_prenatal,cell_type,neuroblast (sensu Vertebrata),7,34031054,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,GABAergic neuron,4,1896542,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,Purkinje cell,4,14707666,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,cerebellar granule cell,4,7303924,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,cerebellar granule cell precursor,4,5341984,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,glioblast,4,743472,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,glutamatergic neuron,4,2158134,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,immature astrocyte,2,275360,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,interneuron,4,4302500,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,macroglial cell,4,8549928,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,neuroblast (sensu Vertebrata),4,2722622,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,oligodendrocyte,2,309780,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,late_prenatal,cell_type,unipolar brush cell,4,1421546,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,GABAergic neuron,6,5273144,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,Purkinje cell,6,34199712,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,cerebellar granule cell,6,1944730,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,cerebellar granule cell precursor,6,3066822,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,glioblast,1,165216,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,glutamatergic neuron,6,6367700,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,immature astrocyte,1,75724,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,interneuron,6,3937648,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,macroglial cell,6,14418538,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,neuroblast (sensu Vertebrata),5,9090322,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,mid_prenatal,cell_type,unipolar brush cell,1,92934,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,GABAergic neuron,2,450902,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,Purkinje cell,5,4619164,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,cerebellar granule cell,5,18931000,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,cerebellar granule cell precursor,5,9885424,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,ependymal cell,1,75724,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,glioblast,5,1418104,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,glutamatergic neuron,2,526626,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,immature astrocyte,5,1545458,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,interneuron,5,4539998,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,macroglial cell,5,7889064,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,neuroblast (sensu Vertebrata),5,2526428,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,oligodendrocyte,5,1077346,region_specific,shared_prenatal_neonatal,1.0
+cerebellum,mouse,neonatal,cell_type,unipolar brush cell,4,2175344,region_specific,shared_prenatal_neonatal,1.0
