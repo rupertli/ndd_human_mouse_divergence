@@ -1,0 +1,69 @@
+[
+  {
+    "species": "human",
+    "file": "C:\\repos\\genom\\scRNASeq\\snRNA-seq data for human cerebella from 9-12 developmental stages.h5ad",
+    "cells": 180956,
+    "features": 27010,
+    "replicate_column": "donor_id",
+    "replicates": 27,
+    "stages": [
+      "11 wpc",
+      "17 wpc",
+      "20 wpc",
+      "9 wpc",
+      "CS18",
+      "CS19",
+      "CS22",
+      "adult (42 years)",
+      "adult (44 years)",
+      "adult (46 years)",
+      "adult (52 years)",
+      "infant (6 months)",
+      "infant (7 months)",
+      "infant (9 months)",
+      "newborn",
+      "newborn (5 days)",
+      "toddler (2.8 years)",
+      "toddler (3.5 years)"
+    ],
+    "tissues": [
+      "cerebellar cortex",
+      "cerebellum",
+      "cerebellum vermis lobule",
+      "dentate nucleus",
+      "hemisphere part of cerebellar posterior lobe"
+    ],
+    "genes_found": 3740,
+    "genes_missing": 181,
+    "library_size_median": 2758.0
+  },
+  {
+    "species": "mouse",
+    "file": "C:\\repos\\genom\\scRNASeq\\snRNA-seq data for mouse cerebella from 9-12 developmental stages.h5ad",
+    "cells": 115282,
+    "features": 20287,
+    "replicate_column": "individual_id",
+    "replicates": 28,
+    "stages": [
+      "E10.5",
+      "E11.5",
+      "E12.5",
+      "E13.5",
+      "E14.5",
+      "E15.5",
+      "E17.5",
+      "P0",
+      "P14",
+      "P4",
+      "P7",
+      "adult (9 weeks)"
+    ],
+    "tissues": [
+      "cerebellar hemisphere",
+      "cerebellum"
+    ],
+    "genes_found": 3501,
+    "genes_missing": 420,
+    "library_size_median": 1211.0
+  }
+]
