@@ -60,7 +60,7 @@ function createRegion(config, metrics) {
   const label = el("label", "Rank genes within");
   const select = el("select", undefined, "cell-select");
   select.id = `${config.id}-cell-type`;
-  select.append(option("all", "Maximum across cell types"));
+  select.append(option("all", "Maximum across cell classes"));
   const cells = [...new Set(metrics.map(row => row.cell_label))].sort();
   for (const cell of cells) select.append(option(cell, cell));
   label.append(select);
@@ -105,8 +105,8 @@ function refresh() {
   controls.overlap.textContent = `${shared.size} shared ${shared.size === 1 ? "gene" : "genes"} · ${regions[0].visible.length} cortex / ${regions[1].visible.length} cerebellum shown`;
   for (const state of regions) {
     state.scope.textContent = state.cellType === "all"
-      ? "Ranking by maximum divergence across eligible cell types. Least divergent = lowest maximum."
-      : `Ranking within ${state.cellType}. Summary values below refer only to this cell type.`;
+      ? "Ranking by maximum divergence across eligible cell classes. Least divergent = lowest maximum."
+      : `Ranking within ${state.cellType}. Summary values below refer only to this cell class.`;
     if (!state.visible.some(row => row.gene === state.selected)) {
       state.selected = state.visible[0]?.gene ?? null;
       state.chartCell = null;
@@ -151,10 +151,10 @@ function renderDetail(state) {
   const title = el("div", undefined, "detail-title");
   const geneHeading = el("h3", undefined, "gene-name icon-heading");
   geneHeading.append(icon("dna"), el("span", item.gene));
-  title.append(geneHeading, el("span", `${item.n_scored_cell_labels}/${item.n_tested_cell_labels} cell types scored`, "muted"));
+  title.append(geneHeading, el("span", `${item.n_scored_cell_labels}/${item.n_tested_cell_labels} cell classes scored`, "muted"));
   const context = state.cellType === "all"
-    ? "Summary across all eligible cell types; the chart shows one cell type at a time."
-    : "Single-cell-type summary: medians and mean equal this cell type's values.";
+    ? "Summary across all eligible cell classes; the chart shows one cell class at a time."
+    : "Single-cell-class summary: medians and mean equal this cell class's values.";
   const metrics = el("dl", undefined, "metrics");
   for (const key of ["median_spearman_rho", "median_z_rmse", "median_direction_agreement", "mean_descriptive_divergence_score"]) {
     const metric = el("div", undefined, "metric");
@@ -162,7 +162,7 @@ function renderDetail(state) {
     metrics.append(metric);
   }
   const chartControls = el("div", undefined, "chart-controls");
-  const cellLabel = el("label", "Trajectory cell type");
+  const cellLabel = el("label", "Trajectory cell class");
   const cellSelect = el("select");
   cellSelect.id = `${state.id}-chart-cell`;
   for (const row of [...item.rows].sort((a, b) => a.cell_label.localeCompare(b.cell_label))) {
@@ -261,7 +261,7 @@ async function renderChart(state, item, container) {
     const row = item.rows.find(entry => entry.cell_label === cell);
     const legend = el("div", undefined, "legend");
     legend.append(el("span", "Human — solid", "human"), el("span", "Mouse – – dashed", "mouse"));
-    const note = el("p", `Plotted cell type: ${cell}. Spearman rho ${format(row.spearman_rho)} · normalized z-RMSE ${format(row.z_rmse)} (raw ${format(row.z_rmse_raw)}) · direction agreement ${format(row.direction_agreement)} · divergence ${format(row.descriptive_divergence_score)}.`, "chart-note");
+    const note = el("p", `Plotted cell class: ${cell}. Spearman rho ${format(row.spearman_rho)} · normalized z-RMSE ${format(row.z_rmse)} (raw ${format(row.z_rmse_raw)}) · direction agreement ${format(row.direction_agreement)} · divergence ${format(row.descriptive_divergence_score)}.`, "chart-note");
     const wrapper = el("div", undefined, "replicates");
     const table = el("table");
     const caption = el("caption", `Biological replicates per phase: human donors / ${state.replicate}`);
@@ -302,7 +302,7 @@ try {
   const loaded = await Promise.all(configs.map(async config => {
     const text = await load(`${config.folder}/trajectory_similarity.csv`);
     const metrics = prepareMetrics(parseCSV(text));
-    if (!metrics.length) throw new Error(`No eligible cell-type comparisons in ${config.title}.`);
+    if (!metrics.length) throw new Error(`No eligible cell-class comparisons in ${config.title}.`);
     return { config, metrics };
   }));
   for (const { config, metrics } of loaded) regions.push(createRegion(config, metrics));

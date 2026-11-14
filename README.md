@@ -3,22 +3,24 @@ Human and mouse NDD genes divergence analysis
 
 ## Static explorer
 
-The entry point is [sites/index.html](sites/index.html). It uses plain
+The entry point is [docs/index.html](docs/index.html). It uses plain
 HTML, CSS, JavaScript modules, and local data; there are no CDN dependencies
 or application build steps. Serve it over HTTP rather than opening a file URL.
 For example, from the repository root:
 
 ```powershell
-python -m http.server 8000 --bind 127.0.0.1 --directory sites
+python -m http.server 8000 --bind 127.0.0.1 --directory docs
 ```
 
-Open `http://127.0.0.1:8000`. With GitHub Pages publishing the repository root,
-the explorer is available at `<Pages URL>/sites/`. Alternatively, deploy the
-contents of `sites` as the Pages artifact to make it the site root.
+Open `http://127.0.0.1:8000`. To publish with GitHub Pages from a branch,
+select the `docs` folder as the publishing source; the explorer is then
+available at `<Pages URL>/`. If publishing the repository root instead,
+use `<Pages URL>/docs/`. Alternatively, deploy the contents of `docs` as the
+Pages artifact to make it the site root.
 
-All application and data-preparation scripts live in `sites/scripts`.
+All application and data-preparation scripts live in `docs/scripts`.
 All required datasets, including both phase-summary source CSVs and generated
-trajectory JSON files, live in `sites/data`. Browser data requests resolve
+trajectory JSON files, live in `docs/data`. Browser data requests resolve
 relative to that data directory, including when hosted under a Pages subpath.
 Data requests revalidate cached responses with the server so updated CSV schemas
 are loaded after data regeneration. If an already-open preview reports a missing
@@ -33,11 +35,14 @@ trajectories use dashed neutral lines, preserving a non-color distinction.
 
 - Both regions use the full NDD four-phase descriptive datasets, not the
   CHD6/CHD9-only or six-phase cerebellar analyses.
-- Choose top N and most/least divergent globally, with independent cell-type
+- The interface calls harmonized annotation groups "cell classes"; these may
+  contain multiple cell types and developmental states. Existing data fields
+  and internal identifiers remain unchanged for compatibility.
+- Choose top N and most/least divergent globally, with independent cell-class
   filters for cortex and cerebellum. Highlighting indicates membership in both
   displayed lists, not statistical significance.
-- Maximum mode ranks by the largest cell-type divergence score. Least divergent
-  sorts that maximum ascending, not the minimum score across cell types.
+- Maximum mode ranks by the largest cell-class divergence score. Least divergent
+  sorts that maximum ascending, not the minimum score across cell classes.
   Exact ties are ordered alphabetically.
 - Undefined correlations and divergence scores (for example, constant
   trajectories) remain missing, never zero. Summary statistics omit missing
@@ -46,13 +51,13 @@ trajectories use dashed neutral lines, preserving a non-color distinction.
 - The raw standardized trajectory RMSE is retained as `z_rmse_raw` (0–2);
   `z_rmse` is normalized as `z_rmse_raw / 2` (0–1) before computing the
   composite divergence score, whose range is 0–4.
-- Detail medians and means cover eligible cell types in maximum mode, or just
-  the selected cell type in cell-type mode. The trajectory selector shows one
-  cell type at a time and defaults to the maximum-scoring cell type.
+- Detail medians and means cover eligible cell classes in maximum mode, or just
+  the selected cell class in cell-class mode. The trajectory selector shows one
+  cell class at a time and defaults to the maximum-scoring cell class.
 - Charts use `log1p(median_cpm)` for each phase, or its species-specific
   z-standardization. Replicate counts are provided; no confidence intervals
   are inferred. Cortical mouse replicates are pools, not individual mice.
-- Unequal cell-type coverage limits cross-region comparisons. These rankings
+- Unequal cell-class coverage limits cross-region comparisons. These rankings
   are descriptive, not differential-expression significance tests.
 
 ### Data preparation and validation
@@ -65,12 +70,12 @@ They are fetched on first opening a region's detail panel and cached for
 subsequent selections. To regenerate them (Node.js 18+):
 
 ```powershell
-node sites\scripts\build-trajectories.mjs
+node docs\scripts\build-trajectories.mjs
 node --test tests\explorer.test.mjs
 ```
 
 The generator reads both regions' phase-summary CSVs and similarity CSVs
-exclusively from `sites/data`, then writes the generated JSON files beside
+exclusively from `docs/data`, then writes the generated JSON files beside
 them. No external source folders are needed to regenerate or serve the site.
 
 Tests compare every gene summary with published rankings and verify that
@@ -81,5 +86,5 @@ To rescale the stored descriptive metrics and regenerate dependent rankings
 and regional comparisons (Node.js 18+):
 
 ```powershell
-node sites\scripts\rescale-divergence.mjs
+node docs\scripts\rescale-divergence.mjs
 ```
