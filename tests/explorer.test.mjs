@@ -84,14 +84,17 @@ for (const [i, folder] of folders.entries()) {
       const rmse = Math.sqrt(hz.reduce((sum, value, j) => sum + (value - mz[j]) ** 2, 0) / 4);
       const agreement = h.slice(1).filter((value, j) => Math.sign(value - h[j]) === Math.sign(m[j + 1] - m[j])).length / 3;
       const peak = Math.abs(h.indexOf(Math.max(...h)) - m.indexOf(Math.max(...m)));
-      close(rmse, row.z_rmse);
+      close(rmse, row.z_rmse_raw);
+      close(rmse / 2, row.z_rmse);
+      assert.ok(row.z_rmse >= 0 && row.z_rmse <= 1);
       close(agreement, row.direction_agreement);
       close(peak, row.peak_phase_distance);
       if (row.spearman_rho === null) {
         assert.equal(row.descriptive_divergence_score, null);
         assert.ok(new Set(h).size === 1 || new Set(m).size === 1);
       } else {
-        close((1 - row.spearman_rho) / 2 + rmse + (1 - agreement) + peak / 3, row.descriptive_divergence_score);
+        close((1 - row.spearman_rho) / 2 + rmse / 2 + (1 - agreement) + peak / 3, row.descriptive_divergence_score);
+        assert.ok(row.descriptive_divergence_score >= 0 && row.descriptive_divergence_score <= 4);
       }
     }
   });
@@ -101,4 +104,30 @@ test("four-phase default and top-50 overlap reproduce the regional comparison", 
   const ranked = metrics.map(rows => rankGenes(rows));
   assert.equal(commonGenes(...ranked.map(rows => rows.slice(0, 20))).size, 0);
   assert.deepEqual([...commonGenes(...ranked.map(rows => rows.slice(0, 50)))].sort(), ["PIGH", "PLCH1", "TMTC3"]);
+
+  const comparisonFolder = "NDD_cerebrum_cerebellum_four_phase_comparison";
+  const comparison = parseCSV(await read(comparisonFolder, "gene_region_rank_comparison.csv"))
+    .filter(row => row.available_in_both === "true");
+  const summary = JSON.parse(await read(comparisonFolder, "rank_overlap_summary.json"));
+  const rankWithinShared = field => new Map(
+    [...comparison]
+      .sort((left, right) => Number(left[field]) - Number(right[field]))
+      .map((row, index) => [row.gene, index + 1]),
+  );
+  const sharedRanks = {
+    cerebrum: rankWithinShared("cerebrum_rank"),
+    cerebellum: rankWithinShared("cerebellum_rank"),
+  };
+  const sharedCerebrumRanks = comparison.map(row => sharedRanks.cerebrum.get(row.gene));
+  const sharedCerebellumRanks = comparison.map(row => sharedRanks.cerebellum.get(row.gene));
+  const mean = values => values.reduce((sum, value) => sum + value, 0) / values.length;
+  const meanCerebrumRank = mean(sharedCerebrumRanks);
+  const meanCerebellumRank = mean(sharedCerebellumRanks);
+  const covariance = sharedCerebrumRanks.reduce((sum, value, index) =>
+    sum + (value - meanCerebrumRank) * (sharedCerebellumRanks[index] - meanCerebellumRank), 0);
+  const varianceCerebrum = sharedCerebrumRanks.reduce((sum, value) =>
+    sum + (value - meanCerebrumRank) ** 2, 0);
+  const varianceCerebellum = sharedCerebellumRanks.reduce((sum, value) =>
+    sum + (value - meanCerebellumRank) ** 2, 0);
+  close(summary.rank_spearman_rho, covariance / Math.sqrt(varianceCerebrum * varianceCerebellum));
 });

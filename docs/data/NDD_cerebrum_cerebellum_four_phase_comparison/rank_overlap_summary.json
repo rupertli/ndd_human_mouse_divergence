@@ -2,22 +2,22 @@
   "cerebrum_ranked_genes": 3110,
   "cerebellum_ranked_genes": 3317,
   "common_ranked_genes": 2891,
-  "rank_spearman_rho": 0.020026094774112654,
-  "rank_spearman_p_descriptive_only": 0.28174583336324976,
+  "rank_spearman_rho": 0.021630899642904287,
+  "rank_spearman_p_descriptive_only": 0.24495785722861474,
   "top_overlap": {
     "5": {
       "count": 0,
-      "jaccard": 0.0,
+      "jaccard": 0,
       "genes": []
     },
     "10": {
       "count": 0,
-      "jaccard": 0.0,
+      "jaccard": 0,
       "genes": []
     },
     "20": {
       "count": 0,
-      "jaccard": 0.0,
+      "jaccard": 0,
       "genes": []
     },
     "50": {
@@ -44,17 +44,17 @@
     }
   },
   "cerebrum_top5_in_cerebellum": {
-    "PISD": 2396,
-    "STT3A": 2037,
-    "PNPLA8": 1149,
-    "LMNA": 362,
-    "XRRA1": 1700
+    "PISD": 2435,
+    "STT3A": 2008,
+    "PNPLA8": 1162,
+    "LMNA": 426,
+    "XRRA1": 1708
   },
   "cerebellum_top5_in_cerebrum": {
     "PHB1": null,
-    "ELOVL2": 2492,
+    "ELOVL2": 2527,
     "ZFTRAF1": null,
-    "LRRC24": 2377,
+    "LRRC24": 2290,
     "DPP10": 3035
   }
 }

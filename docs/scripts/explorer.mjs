@@ -35,14 +35,17 @@ function icon(name) {
 }
 
 async function load(url, json = false) {
-  const response = await fetch(new URL(url, dataRoot));
+  const response = await fetch(new URL(url, dataRoot), { cache: "no-cache" });
   if (!response.ok) throw new Error(`Could not load ${url} (HTTP ${response.status}).`);
   return json ? response.json() : response.text();
 }
 
 function showError(error) {
   controls.error.hidden = false;
-  controls.error.textContent = `${error.message} Serve the sites folder over HTTP or GitHub Pages; opening index.html directly cannot load data.`;
+  controls.error.textContent = error.message;
+  if (location.protocol === "file:") {
+    controls.error.textContent += " Serve the sites folder over HTTP or GitHub Pages; opening index.html directly cannot load data.";
+  }
 }
 
 function createRegion(config, metrics) {
@@ -258,7 +261,7 @@ async function renderChart(state, item, container) {
     const row = item.rows.find(entry => entry.cell_label === cell);
     const legend = el("div", undefined, "legend");
     legend.append(el("span", "Human — solid", "human"), el("span", "Mouse – – dashed", "mouse"));
-    const note = el("p", `Plotted cell type: ${cell}. Spearman rho ${format(row.spearman_rho)} · z-RMSE ${format(row.z_rmse)} · direction agreement ${format(row.direction_agreement)} · divergence ${format(row.descriptive_divergence_score)}.`, "chart-note");
+    const note = el("p", `Plotted cell type: ${cell}. Spearman rho ${format(row.spearman_rho)} · normalized z-RMSE ${format(row.z_rmse)} (raw ${format(row.z_rmse_raw)}) · direction agreement ${format(row.direction_agreement)} · divergence ${format(row.descriptive_divergence_score)}.`, "chart-note");
     const wrapper = el("div", undefined, "replicates");
     const table = el("table");
     const caption = el("caption", `Biological replicates per phase: human donors / ${state.replicate}`);

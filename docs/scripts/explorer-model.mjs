@@ -48,7 +48,7 @@ export function numeric(value, name) {
 
 export function prepareMetrics(records) {
   const seen = new Set();
-  const columns = ["spearman_rho", "z_rmse", "direction_agreement", "peak_phase_distance", "descriptive_divergence_score"];
+  const columns = ["spearman_rho", "z_rmse", "z_rmse_raw", "direction_agreement", "peak_phase_distance", "descriptive_divergence_score"];
   return records.filter(row => row.resolution === "cell_type").map(row => {
     const key = JSON.stringify([row.cell_label, row.gene]);
     if (!row.cell_label || !row.gene || seen.has(key)) throw new Error(`Missing or duplicate gene/cell-type entry: ${key}.`);

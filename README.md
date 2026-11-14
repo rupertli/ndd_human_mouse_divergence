@@ -20,6 +20,9 @@ All application and data-preparation scripts live in `sites/scripts`.
 All required datasets, including both phase-summary source CSVs and generated
 trajectory JSON files, live in `sites/data`. Browser data requests resolve
 relative to that data directory, including when hosted under a Pages subpath.
+Data requests revalidate cached responses with the server so updated CSV schemas
+are loaded after data regeneration. If an already-open preview reports a missing
+`z_rmse_raw` column, hard-refresh it (Ctrl+F5) to reload the updated application.
 The interface uses an 18px base font and high-contrast text in both themes.
 Charts scroll horizontally on narrow screens to keep their labels readable.
 Blue accents and local inline SVG DNA, brain, and analysis icons distinguish
@@ -40,6 +43,9 @@ trajectories use dashed neutral lines, preserving a non-color distinction.
   trajectories) remain missing, never zero. Summary statistics omit missing
   values as in the source analysis. Genes without a finite score in the
   selected scope are excluded from both ranking directions.
+- The raw standardized trajectory RMSE is retained as `z_rmse_raw` (0–2);
+  `z_rmse` is normalized as `z_rmse_raw / 2` (0–1) before computing the
+  composite divergence score, whose range is 0–4.
 - Detail medians and means cover eligible cell types in maximum mode, or just
   the selected cell type in cell-type mode. The trajectory selector shows one
   cell type at a time and defaults to the maximum-scoring cell type.
@@ -68,5 +74,12 @@ exclusively from `sites/data`, then writes the generated JSON files beside
 them. No external source folders are needed to regenerate or serve the site.
 
 Tests compare every gene summary with published rankings and verify that
-every chart's phase data reproduce the reported z-RMSE, direction agreement,
-peak-phase distance, and composite divergence score.
+every chart's phase data reproduce raw and normalized z-RMSE, direction
+agreement, peak-phase distance, and composite divergence score.
+
+To rescale the stored descriptive metrics and regenerate dependent rankings
+and regional comparisons (Node.js 18+):
+
+```powershell
+node sites\scripts\rescale-divergence.mjs
+```
