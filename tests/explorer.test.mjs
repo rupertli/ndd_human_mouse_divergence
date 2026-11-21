@@ -1,10 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { PHASES, parseCSV, prepareMetrics, rankGenes, commonGenes, transformTrajectory } from "../sites/scripts/explorer-model.mjs";
+import { PHASES, EVENT_PHASES, parseCSV, prepareMetrics, rankGenes, commonGenes, transformTrajectory } from "../docs/scripts/explorer-model.mjs";
 
-const dataRoot = new URL("../sites/data/", import.meta.url);
-const folders = ["NDD_human_mouse_cortical_trajectory", "NDD_cerebellum_four_phase_descriptive"];
+const dataRoot = new URL("../docs/data/", import.meta.url);
+const folders = ["NDD_human_mouse_cortical_trajectory", "NDD_cerebellum_four_phase_descriptive", "NDD_human_mouse_cortical_enriched", "NDD_human_mouse_cortical_enriched_legacy"];
+const phaseOrder = folder => folder === "NDD_human_mouse_cortical_enriched" ? EVENT_PHASES : PHASES;
 const read = (folder, file) => readFile(new URL(`${folder}/${file}`, dataRoot), "utf8");
 const close = (actual, expected) => assert.ok(Math.abs(actual - expected) < 1e-10, `${actual} != ${expected}`);
 
@@ -51,7 +52,27 @@ test("undefined scores are not misrepresented as similarity and missing correlat
   assert.equal(rankGenes(rows, "one", "similar").length, 0);
 });
 
-const metrics = await Promise.all(folders.map(async folder => prepareMetrics(parseCSV(await read(folder, "trajectory_similarity.csv")))));
+const metrics = await Promise.all(folders.map(async folder => prepareMetrics(parseCSV(await read(folder, "trajectory_similarity.csv")), phaseOrder(folder))));
+
+test("five-bin metrics accept ordered four-bin subsets but reject missing, duplicate, unordered, and foreign phases", () => {
+  const row = metrics[2][0];
+  const prepare = phases => prepareMetrics([{ ...row, common_phases: phases.join("|") }], EVENT_PHASES);
+  assert.equal(prepare(EVENT_PHASES.slice(1)).length, 1);
+  assert.equal(prepare(EVENT_PHASES.filter((_, i) => i !== 2)).length, 1);
+  assert.throws(() => prepare(EVENT_PHASES.slice(2)), /shared phases/);
+  assert.throws(() => prepare([...EVENT_PHASES, EVENT_PHASES[0]]), /shared phases/);
+  assert.throws(() => prepare([...EVENT_PHASES].reverse()), /shared phases/);
+  assert.throws(() => prepare([...EVENT_PHASES.slice(0, 3), "neonatal"]), /shared phases/);
+  assert.throws(() => prepareMetrics([row]), /shared phases/);
+});
+
+test("enriched cortex covers six classes with four or five shared bins", () => {
+  assert.equal(metrics[2].length, 19170);
+  assert.equal(new Set(metrics[2].map(row => row.gene)).size, 3303);
+  assert.equal(new Set(metrics[2].map(row => row.cell_label)).size, 6);
+  assert.deepEqual([...new Set(metrics[2].map(row => row.common_phases.split("|").length))].sort(), [4, 5]);
+  assert.equal(metrics[3].length, 12205);
+});
 
 for (const [i, folder] of folders.entries()) {
   test(`${folder}: all generated rankings reproduce published gene summaries`, async () => {
@@ -70,20 +91,26 @@ for (const [i, folder] of folders.entries()) {
 
   test(`${folder}: all chart trajectories reproduce source z-RMSE, directions, peak distances, and scores`, async () => {
     const data = JSON.parse(await read(folder, "trajectories.json"));
-    assert.deepEqual(data.phases, PHASES);
+    assert.deepEqual(data.phases, phaseOrder(folder));
     for (const row of metrics[i]) {
       const series = data.trajectories[row.cell_label][row.gene];
       const h = series.human.median_cpm;
       const m = series.mouse.median_cpm;
+      const shared = row.common_phases.split("|");
+      assert.deepEqual(series.phases ?? data.phases, shared);
+      assert.equal(Number(row.n_common_phases), shared.length);
       for (const species of ["human", "mouse"]) {
-        assert.equal(series[species].median_cpm.length, 4);
+        assert.equal(series[species].median_cpm.length, shared.length);
+        assert.equal(series[species].n_replicates.length, shared.length);
         assert.ok(series[species].n_replicates.every(n => Number.isInteger(n) && n > 0));
       }
       const hz = transformTrajectory(h, "z");
       const mz = transformTrajectory(m, "z");
-      const rmse = Math.sqrt(hz.reduce((sum, value, j) => sum + (value - mz[j]) ** 2, 0) / 4);
-      const agreement = h.slice(1).filter((value, j) => Math.sign(value - h[j]) === Math.sign(m[j + 1] - m[j])).length / 3;
-      const peak = Math.abs(h.indexOf(Math.max(...h)) - m.indexOf(Math.max(...m)));
+      const rmse = Math.sqrt(hz.reduce((sum, value, j) => sum + (value - mz[j]) ** 2, 0) / shared.length);
+      const agreement = h.slice(1).filter((value, j) => Math.sign(value - h[j]) === Math.sign(m[j + 1] - m[j])).length / (shared.length - 1);
+      const humanPeak = shared[h.indexOf(Math.max(...h))];
+      const mousePeak = shared[m.indexOf(Math.max(...m))];
+      const peak = Math.abs(data.phases.indexOf(humanPeak) - data.phases.indexOf(mousePeak));
       close(rmse, row.z_rmse_raw);
       close(rmse / 2, row.z_rmse);
       assert.ok(row.z_rmse >= 0 && row.z_rmse <= 1);
@@ -93,7 +120,7 @@ for (const [i, folder] of folders.entries()) {
         assert.equal(row.descriptive_divergence_score, null);
         assert.ok(new Set(h).size === 1 || new Set(m).size === 1);
       } else {
-        close((1 - row.spearman_rho) / 2 + rmse / 2 + (1 - agreement) + peak / 3, row.descriptive_divergence_score);
+        close((1 - row.spearman_rho) / 2 + rmse / 2 + (1 - agreement) + peak / (data.phases.length - 1), row.descriptive_divergence_score);
         assert.ok(row.descriptive_divergence_score >= 0 && row.descriptive_divergence_score <= 4);
       }
     }
@@ -101,7 +128,7 @@ for (const [i, folder] of folders.entries()) {
 }
 
 test("four-phase default and top-50 overlap reproduce the regional comparison", async () => {
-  const ranked = metrics.map(rows => rankGenes(rows));
+  const ranked = metrics.slice(0, 2).map(rows => rankGenes(rows));
   assert.equal(commonGenes(...ranked.map(rows => rows.slice(0, 20))).size, 0);
   assert.deepEqual([...commonGenes(...ranked.map(rows => rows.slice(0, 50)))].sort(), ["PIGH", "PLCH1", "TMTC3"]);
 

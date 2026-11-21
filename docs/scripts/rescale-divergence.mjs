@@ -4,7 +4,11 @@ import path from "node:path";
 import { parseCSV } from "./explorer-model.mjs";
 
 const root = fileURLToPath(new URL("../data/", import.meta.url));
-const regions = {
+const enriched = process.argv.includes("--enriched");
+const regions = enriched ? {
+  cerebrum: "NDD_human_mouse_cortical_enriched",
+  sensitivity: "NDD_human_mouse_cortical_enriched_legacy",
+} : {
   cerebrum: "NDD_human_mouse_cortical_trajectory",
   cerebellum: "NDD_cerebellum_four_phase_descriptive",
 };
@@ -43,7 +47,7 @@ async function writeCSV(file, rows, columns = Object.keys(rows[0] ?? {})) {
   await writeFile(file, serializeCSV(rows, columns), "utf8");
 }
 
-function rescaleRows(rows) {
+function rescaleRows(rows, peakSpan = 3) {
   return rows.map(row => {
     const raw = row.z_rmse_raw === undefined || row.z_rmse_raw === ""
       ? number(row.z_rmse, "z_rmse")
@@ -58,7 +62,7 @@ function rescaleRows(rows) {
       : (1 - Math.max(-1, Math.min(1, rho))) / 2
         + normalized
         + (1 - number(row.direction_agreement, "direction_agreement"))
-        + number(row.peak_phase_distance, "peak_phase_distance") / 3;
+        + number(row.peak_phase_distance, "peak_phase_distance") / peakSpan;
     row.z_rmse_raw = format(raw);
     row.z_rmse = format(normalized);
     row.descriptive_divergence_score = format(score);
@@ -339,7 +343,8 @@ const rankings = {};
 for (const [region, folder] of Object.entries(regions)) {
   const directory = path.join(root, folder);
   const similarityPath = path.join(directory, "trajectory_similarity.csv");
-  const similarity = rescaleRows(await readCSV(similarityPath));
+  const peakSpan = enriched && region === "cerebrum" ? 4 : 3;
+  const similarity = rescaleRows(await readCSV(similarityPath), peakSpan);
   const similarityColumns = Object.keys(similarity[0]);
   if (!similarityColumns.includes("z_rmse_raw")) {
     similarityColumns.splice(similarityColumns.indexOf("z_rmse") + 1, 0, "z_rmse_raw");
@@ -348,7 +353,7 @@ for (const [region, folder] of Object.entries(regions)) {
   similarityByRegion[region] = similarity;
 
   const integrationPath = path.join(directory, "region_integration_trajectory_metrics.csv");
-  const integration = rescaleRows(await readCSV(integrationPath));
+  const integration = rescaleRows(await readCSV(integrationPath), peakSpan);
   const integrationColumns = Object.keys(integration[0]);
   if (!integrationColumns.includes("z_rmse_raw")) {
     integrationColumns.splice(integrationColumns.indexOf("z_rmse") + 1, 0, "z_rmse_raw");
@@ -362,44 +367,46 @@ for (const [region, folder] of Object.entries(regions)) {
   await writeCSV(rankingPath, ranking, Object.keys(oldRanking[0]));
 }
 
-const comparison = buildRegionalComparison(rankings);
-const comparisonDirectory = path.join(root, comparisonFolder);
-const comparisonPath = path.join(comparisonDirectory, "gene_region_rank_comparison.csv");
-const previousComparison = await readCSV(comparisonPath);
-await writeCSV(comparisonPath, comparison.rows, Object.keys(previousComparison[0]));
-await writeFile(
-  path.join(comparisonDirectory, "rank_overlap_summary.json"),
-  `${JSON.stringify(comparison.summary, null, 2)}\n`,
-  "utf8",
-);
+if (!enriched) {
+  const comparison = buildRegionalComparison(rankings);
+  const comparisonDirectory = path.join(root, comparisonFolder);
+  const comparisonPath = path.join(comparisonDirectory, "gene_region_rank_comparison.csv");
+  const previousComparison = await readCSV(comparisonPath);
+  await writeCSV(comparisonPath, comparison.rows, Object.keys(previousComparison[0]));
+  await writeFile(
+    path.join(comparisonDirectory, "rank_overlap_summary.json"),
+    `${JSON.stringify(comparison.summary, null, 2)}\n`,
+    "utf8",
+  );
 
-const corticalDirectory = path.join(root, regions.cerebrum);
-const topGenesPath = path.join(corticalDirectory, "top5_most_different_ndd_genes.csv");
-const topGenes = await readCSV(topGenesPath);
-const calculatedTop = rankings.cerebrum
-  .filter(row => row.resolution === "cell_type" && row.max_descriptive_divergence_score !== "")
-  .slice(0, 5);
-const existingTop = new Set(topGenes.map(row => row.gene));
-if (calculatedTop.some(row => !existingTop.has(row.gene))) {
-  throw new Error("The new top five differs from the curated table; refresh its provenance annotations before writing.");
-}
-const topMap = new Map(calculatedTop.map((row, index) => [row.gene, { ...row, rank: index + 1 }]));
-const updatedTopGenes = topGenes.map(row => ({ ...row, ...topMap.get(row.gene) }));
-await writeCSV(topGenesPath, updatedTopGenes, Object.keys(topGenes[0]));
+  const corticalDirectory = path.join(root, regions.cerebrum);
+  const topGenesPath = path.join(corticalDirectory, "top5_most_different_ndd_genes.csv");
+  const topGenes = await readCSV(topGenesPath);
+  const calculatedTop = rankings.cerebrum
+    .filter(row => row.resolution === "cell_type" && row.max_descriptive_divergence_score !== "")
+    .slice(0, 5);
+  const existingTop = new Set(topGenes.map(row => row.gene));
+  if (calculatedTop.some(row => !existingTop.has(row.gene))) {
+    throw new Error("The new top five differs from the curated table; refresh its provenance annotations before writing.");
+  }
+  const topMap = new Map(calculatedTop.map((row, index) => [row.gene, { ...row, rank: index + 1 }]));
+  const updatedTopGenes = topGenes.map(row => ({ ...row, ...topMap.get(row.gene) }));
+  await writeCSV(topGenesPath, updatedTopGenes, Object.keys(topGenes[0]));
 
-const evidencePath = path.join(corticalDirectory, "top5_lineage_trajectory_evidence.csv");
-const evidence = rescaleRows(await readCSV(evidencePath));
-const topRanks = new Map(calculatedTop.map((row, index) => [row.gene, String(index + 1)]));
-for (const row of evidence) row.rank = topRanks.get(row.gene) ?? "";
-evidence.sort((a, b) =>
-  Number(a.rank || Infinity) - Number(b.rank || Infinity)
-  || Number(b.descriptive_divergence_score || -Infinity) - Number(a.descriptive_divergence_score || -Infinity)
-  || a.cell_label.localeCompare(b.cell_label));
-const evidenceColumns = Object.keys(evidence[0]);
-if (!evidenceColumns.includes("z_rmse_raw")) {
-  evidenceColumns.splice(evidenceColumns.indexOf("z_rmse") + 1, 0, "z_rmse_raw");
+  const evidencePath = path.join(corticalDirectory, "top5_lineage_trajectory_evidence.csv");
+  const evidence = rescaleRows(await readCSV(evidencePath));
+  const topRanks = new Map(calculatedTop.map((row, index) => [row.gene, String(index + 1)]));
+  for (const row of evidence) row.rank = topRanks.get(row.gene) ?? "";
+  evidence.sort((a, b) =>
+    Number(a.rank || Infinity) - Number(b.rank || Infinity)
+    || Number(b.descriptive_divergence_score || -Infinity) - Number(a.descriptive_divergence_score || -Infinity)
+    || a.cell_label.localeCompare(b.cell_label));
+  const evidenceColumns = Object.keys(evidence[0]);
+  if (!evidenceColumns.includes("z_rmse_raw")) {
+    evidenceColumns.splice(evidenceColumns.indexOf("z_rmse") + 1, 0, "z_rmse_raw");
+  }
+  await writeCSV(evidencePath, evidence, evidenceColumns);
 }
-await writeCSV(evidencePath, evidence, evidenceColumns);
 
 console.log("Rescaled z-RMSE to [0, 1] as raw z-RMSE / 2.");
 for (const [region, rows] of Object.entries(rankings)) {

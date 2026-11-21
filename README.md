@@ -19,7 +19,7 @@ use `<Pages URL>/docs/`. Alternatively, deploy the contents of `docs` as the
 Pages artifact to make it the site root.
 
 All application and data-preparation scripts live in `docs/scripts`.
-All required datasets, including both phase-summary source CSVs and generated
+All required datasets, including phase-summary source CSVs and generated
 trajectory JSON files, live in `docs/data`. Browser data requests resolve
 relative to that data directory, including when hosted under a Pages subpath.
 Data requests revalidate cached responses with the server so updated CSV schemas
@@ -33,8 +33,16 @@ trajectories use dashed neutral lines, preserving a non-color distinction.
 
 ### Ranking and details
 
-- Both regions use the full NDD four-phase descriptive datasets, not the
-  CHD6/CHD9-only or six-phase cerebellar analyses.
+- Cortex defaults to `NDD_human_mouse_cortical_enriched`: 19,170 gene/class
+  comparisons, 3,303 genes, and six lineage-based classes from Velmeshev,
+  Di Bella, Wang, and Gao. Cerebellum retains its four-phase full-NDD dataset.
+  Original cortical data and enriched legacy-alignment sensitivity outputs
+  are preserved alongside the primary results.
+- Cortex uses five analyst-selected Workman 2013 baseline event-score bins
+  (edges 0.20, 0.35, 0.50, 0.65, 0.80, 1.00), not published biological phases
+  or a cortical-neurogenesis-corrected alignment. Astroglial and oligodendrocyte
+  lineage comparisons use four shared bins; other classes use five.
+  The cerebellar age framework remains different.
 - The interface calls harmonized annotation groups "cell classes"; these may
   contain multiple cell types and developmental states. Existing data fields
   and internal identifiers remain unchanged for compatibility.
@@ -50,31 +58,42 @@ trajectories use dashed neutral lines, preserving a non-color distinction.
   selected scope are excluded from both ranking directions.
 - The raw standardized trajectory RMSE is retained as `z_rmse_raw` (0–2);
   `z_rmse` is normalized as `z_rmse_raw / 2` (0–1) before computing the
-  composite divergence score, whose range is 0–4.
+  composite divergence score, whose range is 0–4. Peak distance is divided
+  by the full phase-order span: 4 for enriched cortex and 3 for four-phase
+  data, even when a cortical trajectory uses only four shared bins.
+  Website scores and rankings therefore differ from raw scientific outputs;
+  source analysis files outside this repository are not modified.
 - Detail medians and means cover eligible cell classes in maximum mode, or just
   the selected cell class in cell-class mode. The trajectory selector shows one
   cell class at a time and defaults to the maximum-scoring cell class.
 - Charts use `log1p(median_cpm)` for each phase, or its species-specific
   z-standardization. Replicate counts are provided; no confidence intervals
-  are inferred. Cortical mouse replicates are pools, not individual mice.
-- Unequal cell-class coverage limits cross-region comparisons. These rankings
-  are descriptive, not differential-expression significance tests.
+  are inferred. Each chart uses only the scored shared phases; absent phases
+  are not imputed. Cortical mouse replicates mix Gao donors and Di Bella pools.
+- Mixed cortical regions, studies, assays, potential unidentified donor overlap,
+  and symbol-based rather than validated one-to-one orthology limit inference.
+  Known overlapping Wang donors and ambiguous new progenitors were excluded.
+  Unequal cell-class coverage and different age frameworks limit cross-region
+  comparisons. These rankings are descriptive, not significance or disease-effect tests.
 
 ### Data preparation and validation
 
 Rankings are computed in the browser from each region's
 `trajectory_similarity.csv`. Compact `trajectories.json` assets contain only
-eligible gene/cell-type combinations, preserving the four phase-level median
+eligible gene/cell-type combinations, preserving the shared phase-level median
 CPM values and biological replicate counts from `aligned_phase_summary.csv`.
 They are fetched on first opening a region's detail panel and cached for
 subsequent selections. To regenerate them (Node.js 18+):
 
 ```powershell
 node docs\scripts\build-trajectories.mjs
+node docs\scripts\build-trajectories.mjs --enriched
 node --test tests\explorer.test.mjs
 ```
 
-The generator reads both regions' phase-summary CSVs and similarity CSVs
+The generator reads the original cortex/cerebellum datasets by default;
+`--enriched` generates the five-bin cortex and four-phase sensitivity assets.
+It reads phase-summary CSVs and similarity CSVs
 exclusively from `docs/data`, then writes the generated JSON files beside
 them. No external source folders are needed to regenerate or serve the site.
 
@@ -88,3 +107,16 @@ and regional comparisons (Node.js 18+):
 ```powershell
 node docs\scripts\rescale-divergence.mjs
 ```
+
+For newly copied enriched results, normalize only those copies and regenerate
+their rankings without touching original datasets or old regional comparisons:
+
+```powershell
+node docs\scripts\rescale-divergence.mjs --enriched
+node docs\scripts\build-trajectories.mjs --enriched
+node --test tests\explorer.test.mjs
+```
+
+Only web-sized summaries, metrics, rankings, coverage, QC, methods, and generated
+trajectories are copied. H5AD files, caches, donor-level pseudobulk matrices, and
+large exact-stage tables are intentionally excluded.

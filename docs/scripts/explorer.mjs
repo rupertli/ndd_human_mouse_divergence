@@ -1,11 +1,14 @@
-import { PHASES, parseCSV, prepareMetrics, rankGenes, commonGenes, transformTrajectory } from "./explorer-model.mjs";
+import { PHASES, EVENT_PHASES, parseCSV, prepareMetrics, rankGenes, commonGenes, transformTrajectory } from "./explorer-model.mjs";
 
 const dataRoot = new URL("../data/", import.meta.url);
 const configs = [
-  { id: "cerebrum", title: "Cerebrum · cerebral cortex", folder: "NDD_human_mouse_cortical_trajectory", replicate: "mouse pools" },
-  { id: "cerebellum", title: "Cerebellum", folder: "NDD_cerebellum_four_phase_descriptive", replicate: "individual mice" },
+  { id: "cerebrum", title: "Cerebrum · cerebral cortex", folder: "NDD_human_mouse_cortical_enriched", replicate: "mouse donors and pools", phases: EVENT_PHASES },
+  { id: "cerebellum", title: "Cerebellum", folder: "NDD_cerebellum_four_phase_descriptive", replicate: "individual mice", phases: PHASES },
 ];
-const phaseLabels = ["Early prenatal", "Mid prenatal", "Late prenatal", "Neonatal"];
+const phaseLabels = Object.fromEntries([
+  ...PHASES.map((phase, i) => [phase, ["Early prenatal", "Mid prenatal", "Late prenatal", "Neonatal"][i]]),
+  ...EVENT_PHASES.map((phase, i) => [phase, `Event bin ${i + 1}`]),
+]);
 const controls = {
   n: document.querySelector("#top-n"),
   direction: document.querySelector("#direction"),
@@ -44,7 +47,7 @@ function showError(error) {
   controls.error.hidden = false;
   controls.error.textContent = error.message;
   if (location.protocol === "file:") {
-    controls.error.textContent += " Serve the sites folder over HTTP or GitHub Pages; opening index.html directly cannot load data.";
+    controls.error.textContent += " Serve the docs folder over HTTP or GitHub Pages; opening index.html directly cannot load data.";
   }
 }
 
@@ -210,7 +213,8 @@ function drawChart(series, state, gene) {
   const padding = (high - low || 1) * .12;
   high += padding;
   if (state.scale === "z") low -= padding;
-  const x = i => 64 + i * 160;
+  const x = i => 64 + i * 480 / (state.phases.length - 1);
+  const seriesX = i => x(state.phases.indexOf(series.phases[i]));
   const y = value => 256 - (value - low) / (high - low) * 208;
   for (let i = 0; i <= 4; i++) {
     const value = low + (high - low) * i / 4;
@@ -218,18 +222,19 @@ function drawChart(series, state, gene) {
     svg.append(svgElement("text", { x: 54, y: y(value) + 4, "text-anchor": "end" }, value.toFixed(1)));
   }
   svg.append(svgElement("text", { x: 64, y: 22 }, state.scale === "z" ? "Z-standardized log1p(median CPM)" : "log1p(median CPM)"));
-  phaseLabels.forEach((label, index) => {
+  state.phases.forEach((phase, index) => {
+    const label = phaseLabels[phase];
     const text = svgElement("text", { x: x(index), y: 281, "text-anchor": "middle" });
     const words = label.split(" ");
     text.append(svgElement("tspan", { x: x(index) }, words[0]));
-    if (words[1]) text.append(svgElement("tspan", { x: x(index), dy: 16 }, words[1]));
+    if (words[1]) text.append(svgElement("tspan", { x: x(index), dy: 16 }, words.slice(1).join(" ")));
     svg.append(text);
   });
   for (const species of ["human", "mouse"]) {
-    svg.append(svgElement("polyline", { points: transformed[species].map((value, i) => `${x(i)},${y(value)}`).join(" "), class: species }));
+    svg.append(svgElement("polyline", { points: transformed[species].map((value, i) => `${seriesX(i)},${y(value)}`).join(" "), class: species }));
     transformed[species].forEach((value, i) => {
-      const point = svgElement("circle", { cx: x(i), cy: y(value), r: 4, class: species });
-      point.append(svgElement("title", {}, `${species}, ${phaseLabels[i]}: ${value.toFixed(4)}; median CPM ${series[species].median_cpm[i].toFixed(4)}; ${series[species].n_replicates[i]} replicates`));
+      const point = svgElement("circle", { cx: seriesX(i), cy: y(value), r: 4, class: species });
+      point.append(svgElement("title", {}, `${species}, ${phaseLabels[series.phases[i]]}: ${value.toFixed(4)}; median CPM ${series[species].median_cpm[i].toFixed(4)}; ${series[species].n_replicates[i]} replicates`));
       svg.append(point);
     });
   }
@@ -248,26 +253,28 @@ async function renderChart(state, item, container) {
     });
     const data = await state.trajectoriesPromise;
     if (!container.isConnected || container.renderToken !== token) return;
-    if (data.phases.join("|") !== PHASES.join("|")) throw new Error("Trajectory data use unexpected developmental phases.");
+    if (data.phases.join("|") !== state.phases.join("|")) throw new Error("Trajectory data use unexpected developmental phases.");
     const series = data.trajectories[cell]?.[item.gene];
+    const row = item.rows.find(entry => entry.cell_label === cell);
+    const sharedPhases = series?.phases ?? data.phases;
+    if (sharedPhases.join("|") !== row.common_phases) throw new Error("Trajectory data do not match the scored shared phases.");
     for (const species of ["human", "mouse"]) {
       const values = series?.[species];
-      if (!values || values.median_cpm.length !== 4 || values.n_replicates.length !== 4 ||
+      if (!values || values.median_cpm.length !== sharedPhases.length || values.n_replicates.length !== sharedPhases.length ||
           !values.median_cpm.every(value => Number.isFinite(value) && value >= 0) ||
           !values.n_replicates.every(value => Number.isInteger(value) && value >= 1)) {
         throw new Error(`Incomplete phase-level data for ${item.gene} / ${cell} / ${species}.`);
       }
     }
-    const row = item.rows.find(entry => entry.cell_label === cell);
     const legend = el("div", undefined, "legend");
     legend.append(el("span", "Human — solid", "human"), el("span", "Mouse – – dashed", "mouse"));
-    const note = el("p", `Plotted cell class: ${cell}. Spearman rho ${format(row.spearman_rho)} · normalized z-RMSE ${format(row.z_rmse)} (raw ${format(row.z_rmse_raw)}) · direction agreement ${format(row.direction_agreement)} · divergence ${format(row.descriptive_divergence_score)}.`, "chart-note");
+    const note = el("p", `Plotted cell class: ${cell}; ${sharedPhases.length} shared bins/phases. Spearman rho ${format(row.spearman_rho)} · normalized z-RMSE ${format(row.z_rmse)} (raw ${format(row.z_rmse_raw)}) · direction agreement ${format(row.direction_agreement)} · divergence ${format(row.descriptive_divergence_score)}.`, "chart-note");
     const wrapper = el("div", undefined, "replicates");
     const table = el("table");
     const caption = el("caption", `Biological replicates per phase: human donors / ${state.replicate}`);
     const head = el("thead");
     const labels = el("tr");
-    for (const label of ["Species", ...phaseLabels]) {
+    for (const label of ["Species", ...sharedPhases.map(phase => phaseLabels[phase])]) {
       const th = el("th", label);
       th.scope = "col";
       labels.append(th);
@@ -287,7 +294,7 @@ async function renderChart(state, item, container) {
     chartScroll.tabIndex = 0;
     chartScroll.setAttribute("role", "region");
     chartScroll.setAttribute("aria-label", "Developmental trajectory chart; scroll horizontally on narrow screens");
-    chartScroll.append(drawChart(series, state, item.gene));
+    chartScroll.append(drawChart({ ...series, phases: sharedPhases }, state, item.gene));
     container.replaceChildren(chartScroll, legend, note, wrapper);
   } catch (error) {
     if (!container.isConnected || container.renderToken !== token) return;
@@ -301,7 +308,7 @@ async function renderChart(state, item, container) {
 try {
   const loaded = await Promise.all(configs.map(async config => {
     const text = await load(`${config.folder}/trajectory_similarity.csv`);
-    const metrics = prepareMetrics(parseCSV(text));
+    const metrics = prepareMetrics(parseCSV(text), config.phases);
     if (!metrics.length) throw new Error(`No eligible cell-class comparisons in ${config.title}.`);
     return { config, metrics };
   }));

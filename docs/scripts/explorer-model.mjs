@@ -1,4 +1,5 @@
 export const PHASES = ["early_prenatal", "mid_prenatal", "late_prenatal", "neonatal"];
+export const EVENT_PHASES = ["event_bin_1", "event_bin_2", "event_bin_3", "event_bin_4", "event_bin_5"];
 
 export function parseCSV(text) {
   const rows = [];
@@ -46,14 +47,17 @@ export function numeric(value, name) {
   return Number(value);
 }
 
-export function prepareMetrics(records) {
+export function prepareMetrics(records, phaseOrder = PHASES) {
   const seen = new Set();
   const columns = ["spearman_rho", "z_rmse", "z_rmse_raw", "direction_agreement", "peak_phase_distance", "descriptive_divergence_score"];
   return records.filter(row => row.resolution === "cell_type").map(row => {
     const key = JSON.stringify([row.cell_label, row.gene]);
     if (!row.cell_label || !row.gene || seen.has(key)) throw new Error(`Missing or duplicate gene/cell-type entry: ${key}.`);
     seen.add(key);
-    if (row.common_phases !== PHASES.join("|")) throw new Error(`Expected four shared phases for ${row.gene}.`);
+    const phases = row.common_phases.split("|");
+    if (phases.length < 4 || phases.join("|") !== phaseOrder.filter(phase => phases.includes(phase)).join("|")) {
+      throw new Error(`Expected at least four ordered shared phases for ${row.gene}.`);
+    }
     return {
       ...row,
       ...Object.fromEntries(columns.map(column => [
