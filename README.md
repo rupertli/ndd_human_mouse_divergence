@@ -66,6 +66,17 @@ trajectories use dashed neutral lines, preserving a non-color distinction.
 - Detail medians and means cover eligible cell classes in maximum mode, or just
   the selected cell class in cell-class mode. The trajectory selector shows one
   cell class at a time and defaults to the maximum-scoring cell class.
+- Clicking a gene in either table selects that same gene for both detail panels,
+  including when it is outside the other region's displayed top N. Selection
+  persists when rankings or filters change. Each panel respects its region's
+  cell-class filter and explicitly reports unavailable data rather than showing
+  a different gene. If all scores are undefined, the chart defaults to the first
+  eligible cell class and summary scores remain not estimable.
+- The shared gene-entry field sits between the ranking tables and detail panels.
+  Enter a gene symbol from either dataset to inspect it outside the displayed
+  top N, or click a table gene to fill the same field. Lookup trims whitespace
+  and ignores case while preserving the dataset's canonical spelling. Unknown
+  symbols are reported explicitly without replacing the current details.
 - Charts use `log1p(median_cpm)` for each phase, or its species-specific
   z-standardization. Replicate counts are provided; no confidence intervals
   are inferred. Each chart uses only the scored shared phases; absent phases
@@ -75,6 +86,110 @@ trajectories use dashed neutral lines, preserving a non-color distinction.
   Known overlapping Wang donors and ambiguous new progenitors were excluded.
   Unequal cell-class coverage and different age frameworks limit cross-region
   comparisons. These rankings are descriptive, not significance or disease-effect tests.
+
+### ASD bulk-analysis data
+
+`docs/data/ASD_Bulk_analysis` contains the expression/K-means v2 results
+copied from `BulkRNASeq`, preserving `cluster_result` and
+`enrichment/GO`, `enrichment/HPO`, and `enrichment/KEGG`.
+The 101 files include cluster assignments, expression profiles, sample metadata,
+coefficients, timepoint trends, per-cluster gene lists, the R clustering object,
+enrichment tables, HPO community tables, and available v2 PDF plots.
+GO and KEGG tables cover all 12 clusters. HPO has no source files for cluster 10;
+header-only HPO tables for other clusters are preserved as supplied.
+The separate [bulk-analysis page](docs/bulk-analysis.html), linked from the
+developmental explorer, shows cluster peers first, then HPO, KEGG, and GO rows
+whose overlap list contains the selected gene in that cluster. Peer buttons
+select another gene; `?gene=ACTB` supports direct links. Empty exports and the
+missing cluster-10 HPO export are distinguished from loading errors.
+The page shares the developmental explorer's typography, blue accents, cards,
+and theme variables, with local SVG DNA/analysis icons and section navigation.
+No p-values, enrichment thresholds, or cluster assignments are recalculated.
+Selecting a gene in either developmental ranking also shows a gene-specific
+bulk-analysis link above "How to interpret these rankings" when it has a
+copied bulk cluster assignment. The link preserves the selected gene and theme.
+Genes outside the bulk cluster dataset do not receive this link; lookup loading
+errors are reported separately without disabling developmental rankings.
+The same selected-gene navigation card, above "How to interpret these rankings",
+is labeled "BulkRNASeq analysis for selected gene" and displays links vertically
+with extra spacing. It
+also links to BrainSpan profiles and networks with the selected gene, theme, and
+batched-page version preserved. This link remains available for genes without
+bulk cluster data and when bulk lookup fails. BrainSpan reports unavailable
+genes or profiles explicitly.
+
+GO/KEGG membership uses the bundled `gene-entrez-map.json`, generated locally
+from `org.Hs.eg.db` without uploading gene lists. Serving the page needs no R
+runtime or external annotation service. To regenerate the mapping, install
+`AnnotationDbi`, `org.Hs.eg.db`, and `jsonlite`, then run:
+
+```powershell
+Rscript docs\scripts\build-bulk-gene-map.R
+node --test tests\bulk.test.mjs
+```
+
+### BrainSpan NDD page
+
+[docs/brainspan.html](docs/brainspan.html) migrates the BrainSpan Shiny interface
+to a separate static page, linked from the home page. It shares `styles.css`,
+theme detection, typography, cards, and accents. No R process, CDN, build step,
+or dynamic API is needed when serving it on GitHub Pages.
+
+`docs/data/BrainSpan_NDD` contains a 3,921-gene SysNDD/SFARI/DBD catalog and
+provenance, 524 samples, driver mappings, and 72 batched profile/network CSVs
+under `genes`, with up to 100 available genes per batch. The initial
+export includes 3,597 expression profiles, 5,328 activity profiles, and 56,740
+network edges. Expression and activity values are copied without normalization
+and joined to metadata by sample ID. Missing values are blank, not zero.
+Both network endpoint symbols must be in the NDD/ASD union; non-NDD targets
+from the original Shiny app are intentionally excluded.
+
+The browser loads the catalog and metadata once, then fetches the selected
+gene's profile/network batch and caches it for the session. Selecting another
+gene in the same batch requires no additional fetch. Only the selected gene's
+rows are rendered. Batching replaces thousands of per-gene files without
+removing brain-structure filters or aggregating any sample values. Gene lookup ignores
+case; `brainspan.html?gene=GRIN2A&scoutTheme=dark` supports direct links.
+After replacing per-gene exports with batches, hard-refresh an already-open page
+(Ctrl+F5) to load the new HTML and versioned JavaScript modules.
+If the preview retains an old page and reports `Invalid BrainSpan gene catalog`,
+open `brainspan.html?dataVersion=2`. The home-page link uses this versioned URL
+to avoid reusing the cached pre-batching HTML.
+Press Draw after changing gene, driver, or profile. Region, age, smoothing,
+confidence-band, and developmental-label controls redraw the loaded data.
+Networks support node dragging, background panning, zoom, node selection,
+keyboard focus, and an accessible edge table. Downloads provide SVG and
+filtered-sample/network CSV, rather than server-generated PDF/HTML. Use browser
+print to save PDF. Empty profiles and NDD-only networks are reported explicitly.
+The original experiment/control comparison widgets had no implemented analysis
+and are intentionally omitted.
+
+Browser smoothing uses local quadratic tricube regression on log10(age), with
+lower-degree fits for singular neighborhoods and approximate normal 95% bands.
+These are not exact ggplot2 LOESS intervals or donor-adjusted statistical tests.
+Sparse groups have no smooth; non-estimable confidence bands are omitted.
+
+To regenerate, install `DBI` and `RSQLite` in R, then run from the repository root:
+
+```powershell
+Rscript docs\scripts\build-brainspan-data.R
+node --test tests\brainspan.test.mjs
+```
+
+Default inputs are the sibling workspace's
+`brainspan-dev\brainspan-dev\extdata\brainspan.db` and
+`scRNASeq\NDD_human_mouse_trajectory_cerebellum_6_Phases\ndd_gene_provenance.csv`.
+For another checkout, pass explicit source paths:
+
+```powershell
+Rscript docs\scripts\build-brainspan-data.R 'C:\data\brainspan.db' 'C:\data\ndd_gene_provenance.csv'
+```
+
+The exporter removes obsolete generated per-gene/batch CSVs after writing the
+new batches and catalog. The database is opened read-only. The source files are only needed for regeneration,
+not deployment; commit the generated CSVs along with the page and scripts.
+Tests check every shard's NDD membership, driver mapping, sample IDs, availability
+counts, missing-value handling, filtering, smoothing, and download CSV escaping.
 
 ### Data preparation and validation
 

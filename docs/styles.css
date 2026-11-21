@@ -96,6 +96,14 @@ th, td { padding: 10px 12px; border-bottom: 1px solid var(--cp-border); }
 .badge { display: inline-block; font-size: .85rem; padding: 2px 8px; margin-left: 8px; border-radius: 6px; color: var(--cp-accent-fg); background: var(--cp-link); font-weight: 700; }
 tr.selected { box-shadow: inset 5px 0 var(--cp-link); background: var(--cp-surface-soft); }
 .detail { margin-top: 20px; }
+.selected-gene-links { display: grid; gap: 16px; margin: 16px 0 0; padding-left: 24px; }
+#gene-details .detail { margin-top: 0; min-width: 0; }
+#gene-detail-form label { flex: 1 1 280px; }
+#gene-detail-input { width: 100%; }
+#show-gene-details { padding: 10px 16px; min-height: 48px; border: 2px solid var(--cp-border-strong); border-radius: .625rem; background: var(--cp-surface); color: var(--cp-text); font-weight: 600; }
+#show-gene-details:hover { background: var(--cp-surface-soft); border-color: var(--cp-link); }
+#show-gene-details:disabled { opacity: .6; cursor: wait; }
+#gene-input-help { flex-basis: 100%; margin: 0; font-size: .95rem; }
 .detail-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .gene-name { font-family: Consolas, "Courier New", Courier, monospace; color: var(--cp-link); }
 .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }

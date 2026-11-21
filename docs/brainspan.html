@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrainSpan NDD developmental profiles</title>
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="brainspan.css">
+  <script type="module" src="scripts/brainspan-explorer.mjs?v=2"></script>
+</head>
+<body>
+  <main>
+    <header class="report-header">
+      <div class="report-mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18M6 16l5-6 4 3 6-8"/></svg></div>
+      <div>
+        <p class="eyebrow">NDD GENE EXPRESSION · BRAINSPAN</p>
+        <h1>BrainSpan developmental profiles</h1>
+        <p class="intro">Explore human brain expression, inferred driver activity, and NDD-only regulatory networks. Data load from local CSV batches of up to 100 genes; no R server is required.</p>
+      </div>
+    </header>
+    <nav aria-label="Analysis pages"><p><a href="index.html">Human–mouse trajectories</a> · <a href="bulk-analysis.html">ASD bulk analysis</a></p></nav>
+    <p id="status" role="status" aria-live="polite">Loading NDD gene catalog…</p>
+    <p id="error" class="error" role="alert" hidden></p>
+    <form id="selection" class="toolbar" aria-label="Gene and profile selection">
+      <label>Gene symbol<input id="gene" type="search" list="genes" value="GRIN2A" autocomplete="off" required disabled></label>
+      <datalist id="genes"></datalist>
+      <label>Driver<select id="driver" disabled></select></label>
+      <label>Profile<select id="profile" disabled><option>Expression</option><option>Activity</option></select></label>
+      <button type="submit" id="draw" disabled>Draw</button>
+    </form>
+    <p class="hint">Enter any gene in the existing SysNDD/SFARI/DBD NDD/ASD union. Missing expression or driver data are reported explicitly. Selecting a new gene updates its drivers; press Draw to load its CSVs.</p>
+    <div class="brainspan-layout">
+      <aside class="card" aria-label="Pattern plot options">
+        <h2>Plot options</h2>
+        <fieldset id="filters" disabled>
+          <label>Brain structure<select id="structure_acronym" multiple size="5" aria-describedby="filter-help"></select></label>
+          <label>Brain structure group 1<select id="structure_group1" multiple size="5"></select></label>
+          <label>Brain structure group 2<select id="structure_group2" multiple size="5"></select></label>
+          <p id="filter-help" class="hint">Use Ctrl/Cmd to select multiple regions. “All” overrides other selections; no selection shows no samples. All three region filters apply together.</p>
+          <div class="chart-controls">
+            <label>Start age (days)<input id="start" type="number" min="1" step="any" required></label>
+            <label>End age (days)<input id="end" type="number" min="1" step="any" required></label>
+          </div>
+          <label>Color / symbol by region<select id="group"><option value="none">None</option><option value="structure_acronym">Brain structure</option><option value="structure_group1">Structure group 1</option><option value="structure_group2">Structure group 2</option></select></label>
+          <label>Developmental labels<select id="style"><option value="Classic">Classic</option><option value="Trimester">Three trimester</option></select></label>
+          <label>Smooth span<input id="span" type="range" min=".05" max="1" step=".05" value=".6"><output id="span-value">0.60</output></label>
+          <label class="check"><input id="confidence" type="checkbox" checked>Approximate 95% confidence band</label>
+        </fieldset>
+      </aside>
+      <section class="card brainspan-results" aria-label="BrainSpan results">
+        <div class="tabs" role="tablist" aria-label="Plots">
+          <button id="pattern-tab" role="tab" aria-selected="true" aria-controls="pattern-panel" type="button">Pattern plot</button>
+          <button id="network-tab" role="tab" aria-selected="false" aria-controls="network-panel" tabindex="-1" type="button">Network plot</button>
+        </div>
+        <section id="pattern-panel" role="tabpanel" aria-labelledby="pattern-tab">
+          <h2 id="pattern-title">Choose a gene</h2>
+          <p id="pattern-note" class="hint" aria-live="polite"></p>
+          <div id="pattern" class="chart-scroll"></div>
+          <div id="legend" class="legend"></div>
+          <div class="downloads"><button id="pattern-svg" disabled>Download SVG</button><button id="pattern-csv" disabled>Download plotted samples CSV</button></div>
+        </section>
+        <section id="network-panel" role="tabpanel" aria-labelledby="network-tab" hidden>
+          <h2 id="network-title">Choose a driver</h2>
+          <p id="network-note" class="hint" aria-live="polite"></p>
+          <label>Highlight node<select id="node" disabled></select></label>
+          <div class="downloads"><button id="zoom-in" disabled aria-label="Zoom in">+</button><button id="zoom-out" disabled aria-label="Zoom out">−</button><button id="reset-network" disabled>Reset view</button></div>
+          <p class="hint">Drag nodes to rearrange, drag the background to pan, or use the zoom controls. Hover or focus a node to highlight its adjacent edges. Arrowheads indicate source → target; line width reflects MI.</p>
+          <div id="network" class="chart-scroll"></div>
+          <div class="downloads"><button id="network-svg" disabled>Download SVG</button><button id="network-csv" disabled>Download network CSV</button></div>
+          <details><summary>Network edge details</summary><div id="edges" class="list-wrap"></div></details>
+        </section>
+      </section>
+    </div>
+    <details class="methods">
+      <summary>Data and migration notes</summary>
+      <p>This page uses the expression, activity, phenotype, driver mappings, and network values from the original BrainSpan SQLite database. Values are not renormalized. Sample IDs, rather than row order, join profiles to metadata. Ages are the source Days values; the logarithmic axis and birth marker at day 266 follow the Shiny app.</p>
+      <p>The gene catalog is the existing SysNDD/SFARI/DBD NDD/ASD union, not a new disease-gene classification. Both source and target genes must belong to this union for a network edge to be exported. Non-NDD targets shown by the original app are intentionally excluded; an empty network does not imply no regulation.</p>
+      <p>Lines use browser-side local quadratic tricube regression on log10(age). Singular local fits reduce polynomial degree. Approximate 95% normal bands use local weighted residual variance and are omitted where variance is not estimable. They are not exact ggplot2 LOESS intervals, significance tests, or donor-adjusted inference. Fewer than four observations or three distinct ages receive no smooth. Samples can repeat donors; apparent precision should not be interpreted as biological replication.</p>
+      <p>Filters redraw the loaded profile immediately. Gene, driver, and profile changes require Draw. Downloads contain the filtered samples or selected driver's NDD-only edges; SVG replaces the server-generated PDF (browser print can save PDF). The Shiny group-comparison controls had no implemented analysis and are not reproduced.</p>
+      <p><a href="data/BrainSpan_NDD/manifest.csv">Gene availability catalog</a> · <a href="data/BrainSpan_NDD/ndd_gene_provenance.csv">NDD provenance</a> · <a href="data/BrainSpan_NDD/samples.csv">Sample metadata</a> · <a href="data/BrainSpan_NDD/drivers.csv">Driver mappings</a></p>
+    </details>
+    <noscript>This page requires JavaScript and HTTP hosting to load CSV data and render plots.</noscript>
+  </main>
+</body>
+</html>

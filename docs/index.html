@@ -13,7 +13,7 @@
     })();
   </script>
   <link rel="stylesheet" href="styles.css">
-  <script type="module" src="scripts/explorer.mjs"></script>
+  <script type="module" src="scripts/explorer.mjs?v=2"></script>
 </head>
 <body>
   <svg class="icon-definitions" aria-hidden="true" focusable="false" width="0" height="0">
@@ -44,15 +44,31 @@
       <p class="intro">Explore enriched cerebral-cortex trajectories across five exploratory developmental bins and cerebellar trajectories across four prenatal-to-neonatal phases.</p>
       </div>
     </header>
+    <nav aria-label="Analysis pages"><p><a href="bulk-analysis.html">Explore ASD bulk expression clusters and HPO, KEGG, GO enrichment</a> · <a id="brainspan-navigation" href="brainspan.html?dataVersion=2">Explore BrainSpan NDD profiles and networks</a></p></nav>
+    <script>
+      document.getElementById("brainspan-navigation").href = "brainspan.html?dataVersion=2&scoutTheme=" + encodeURIComponent(document.documentElement.dataset.theme);
+    </script>
     <section class="toolbar" aria-label="Ranking controls">
       <label>Genes per region <input id="top-n" type="number" min="1" value="20" step="1" required disabled></label>
       <label>Show <select id="direction" disabled><option value="divergent">Most divergent</option><option value="similar">Least divergent (most similar)</option></select></label>
       <span id="overlap" role="status" aria-live="polite">Loading rankings…</span>
     </section>
     <p class="hint">Highlighted genes appear in both displayed lists. Scores are descriptive, not p-values. Ties are ordered alphabetically.</p>
+    <p class="hint">Click a gene in either table to show that same gene's details in both regions below, even if it is outside the other displayed list. Each region retains its own cell-class filter; unavailable data are indicated explicitly.</p>
     <p class="hint">Cortex combines Velmeshev, Di Bella, Wang, and Gao data across mixed cortical regions and studies. Its five-bin alignment is exploratory; cortex and cerebellum do not share the same developmental framework.</p>
     <p id="error" class="error" role="alert" hidden></p>
     <div id="regions" class="regions"></div>
+    <form id="gene-detail-form" class="toolbar" role="search" aria-label="Look up gene details">
+      <label for="gene-detail-input">Gene symbol / ID
+        <input id="gene-detail-input" type="search" list="detail-gene-options" placeholder="For example, KDM5C" aria-describedby="gene-input-help gene-input-error" required disabled autocomplete="off">
+      </label>
+      <datalist id="detail-gene-options"></datalist>
+      <button id="show-gene-details" type="submit" disabled>Show gene details</button>
+      <p id="gene-input-help">Enter a gene symbol from either dataset, including genes outside the displayed top N. Table selections fill this field automatically.</p>
+    </form>
+    <p id="gene-input-error" class="error" role="alert" hidden></p>
+    <div id="gene-details" class="regions"></div>
+    <nav id="bulk-gene-navigation" class="card detail" aria-label="BulkRNASeq analysis for selected gene" aria-live="polite" hidden></nav>
     <details class="methods">
       <summary>How to interpret these rankings</summary>
       <p>For each gene and cell class, divergence D = (1 − Spearman rho)/2 + normalized z-RMSE + (1 − direction agreement) + normalized peak distance. Peak distance uses positions in the full phase order, divided by 4 for five-bin cortex or 3 for four-phase cerebellum. Normalized z-RMSE is the raw z-RMSE divided by 2, placing it on a 0–1 scale; the raw value is retained in the data. Higher scores (0–4) indicate greater trajectory divergence, not statistical significance or expression fold change. Website normalization changes composite scores and rankings relative to the raw analysis outputs.</p>

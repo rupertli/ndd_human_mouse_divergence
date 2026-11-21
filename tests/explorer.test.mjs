@@ -1,13 +1,33 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { PHASES, EVENT_PHASES, parseCSV, prepareMetrics, rankGenes, commonGenes, transformTrajectory } from "../docs/scripts/explorer-model.mjs";
+import { PHASES, EVENT_PHASES, parseCSV, prepareMetrics, rankGenes, commonGenes, resolveGene, brainspanGeneUrl, transformTrajectory } from "../docs/scripts/explorer-model.mjs";
 
 const dataRoot = new URL("../docs/data/", import.meta.url);
 const folders = ["NDD_human_mouse_cortical_trajectory", "NDD_cerebellum_four_phase_descriptive", "NDD_human_mouse_cortical_enriched", "NDD_human_mouse_cortical_enriched_legacy"];
 const phaseOrder = folder => folder === "NDD_human_mouse_cortical_enriched" ? EVENT_PHASES : PHASES;
 const read = (folder, file) => readFile(new URL(`${folder}/${file}`, dataRoot), "utf8");
 const close = (actual, expected) => assert.ok(Math.abs(actual - expected) < 1e-10, `${actual} != ${expected}`);
+
+test("selected-gene BrainSpan links retain Pages subpaths, encoded symbols, theme and batched page version", () => {
+  const url = new URL(brainspanGeneUrl("GENE+1", "https://example.org/report/docs/index.html?scoutTheme=dark"));
+  assert.equal(url.pathname, "/report/docs/brainspan.html");
+  assert.equal(url.searchParams.get("gene"), "GENE+1");
+  assert.equal(url.searchParams.get("scoutTheme"), "dark");
+  assert.equal(url.searchParams.get("dataVersion"), "2");
+  assert.equal(brainspanGeneUrl(null, "https://example.org/index.html"), null);
+  assert.equal(new URL(brainspanGeneUrl("KDM5C", "https://example.org/index.html")).searchParams.has("scoutTheme"), false);
+});
+
+test("gene lookup trims input, ignores case, preserves canonical symbols, and rejects partial or unknown IDs", () => {
+  const genes = new Set(["KDM5C", "C12orf57"]);
+  assert.equal(resolveGene(genes, " kdm5c "), "KDM5C");
+  assert.equal(resolveGene(genes, "C12ORF57"), "C12orf57");
+  assert.equal(resolveGene(genes, "C12orf57"), "C12orf57");
+  assert.equal(resolveGene(genes, "KDM5"), null);
+  assert.equal(resolveGene(genes, "UNKNOWN"), null);
+  assert.equal(resolveGene(genes, " "), null);
+});
 
 test("CSV handles quoted commas, escaped quotes, CRLF, and malformed input", () => {
   assert.deepEqual(parseCSV('gene,label\r\nA,"a, b"\r\nB,"a ""quote"""\r\n'), [

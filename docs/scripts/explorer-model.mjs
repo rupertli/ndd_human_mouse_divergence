@@ -113,6 +113,23 @@ export function commonGenes(left, right) {
   return new Set(left.filter(row => rightGenes.has(row.gene)).map(row => row.gene));
 }
 
+export function resolveGene(genes, query) {
+  const entered = query.trim();
+  if (genes.has(entered)) return entered;
+  return [...genes].find(gene => gene.toUpperCase() === entered.toUpperCase()) ?? null;
+}
+
+export function brainspanGeneUrl(gene, pageUrl) {
+  if (!gene) return null;
+  const current = new URL(pageUrl);
+  const url = new URL("brainspan.html", current);
+  url.searchParams.set("dataVersion", "2");
+  url.searchParams.set("gene", gene);
+  const theme = current.searchParams.get("scoutTheme");
+  if (theme) url.searchParams.set("scoutTheme", theme);
+  return url.href;
+}
+
 export function transformTrajectory(cpm, scale) {
   const log = cpm.map(value => Math.log1p(value));
   if (scale !== "z") return log;

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASD bulk expression cluster explorer</title>
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bulk-analysis.css">
+  <script type="module" src="scripts/bulk-explorer.mjs"></script>
+</head>
+<body>
+  <svg class="icon-definitions" aria-hidden="true" focusable="false" width="0" height="0">
+    <defs>
+      <symbol id="icon-dna" viewBox="0 0 24 24">
+        <path d="M6 3c0 9 12 9 12 18M18 3C18 12 6 12 6 21M6 3h12M8 7h8M8 17h8M6 21h12M10 11l4 2"/>
+      </symbol>
+      <symbol id="icon-cluster" viewBox="0 0 24 24">
+        <path d="m10 10-4-4m8 4 4-4m-4 8 4 4m-8-4-4 4"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="4" cy="4" r="2"/>
+        <circle cx="20" cy="4" r="2"/>
+        <circle cx="4" cy="20" r="2"/>
+        <circle cx="20" cy="20" r="2"/>
+      </symbol>
+      <symbol id="icon-brain" viewBox="0 0 24 24">
+        <path d="M12 5a3 3 0 0 0-5-2 4 4 0 0 0-4 5 4 4 0 0 0-1 7 4 4 0 0 0 5 5 3 3 0 0 0 5-1V5Zm0 0a3 3 0 0 1 5-2 4 4 0 0 1 4 5 4 4 0 0 1 1 7 4 4 0 0 1-5 5 3 3 0 0 1-5-1M7 7c-2 1-2 4 0 5M17 7c2 1 2 4 0 5M6 16c2-1 4 0 4 2M18 16c-2-1-4 0-4 2"/>
+      </symbol>
+      <symbol id="icon-pathway" viewBox="0 0 24 24">
+        <path d="M7 5h10m-3-3 3 3-3 3M19 7v10m3-3-3 3-3-3M17 19H7m3 3-3-3 3-3M5 17V7m-3 3 3-3 3 3"/>
+      </symbol>
+      <symbol id="icon-ontology" viewBox="0 0 24 24">
+        <path d="M12 7v5M4 17v-5h16v5"/>
+        <rect x="9" y="2" width="6" height="5" rx="1"/>
+        <rect x="1" y="17" width="6" height="5" rx="1"/>
+        <rect x="17" y="17" width="6" height="5" rx="1"/>
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="10" cy="10" r="6"/>
+        <path d="m15 15 6 6"/>
+      </symbol>
+    </defs>
+  </svg>
+  <main class="bulk-report">
+    <header class="report-header">
+      <div class="report-mark" aria-hidden="true">
+        <svg class="icon" focusable="false"><use href="#icon-dna"/></svg>
+      </div>
+      <div>
+        <p class="eyebrow">ASD BULK RNA-SEQ · EXPRESSION / K-MEANS · V2</p>
+        <h1>ASD bulk expression cluster explorer</h1>
+        <p class="intro">Select a gene to explore its cluster peers and the exported HPO, KEGG, and GO enrichment results involving it.</p>
+      </div>
+    </header>
+    <nav aria-label="Analysis pages"><p><a href="index.html">Human-mouse developmental explorer</a></p></nav>
+    <form id="gene-form" class="toolbar" role="search">
+      <label for="gene-search">Gene symbol
+        <input id="gene-search" type="search" list="gene-options" placeholder="For example, ACTB" required disabled autocomplete="off">
+      </label>
+      <datalist id="gene-options"></datalist>
+      <button id="show-gene" type="submit" disabled>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-search"/></svg>
+        <span>Show gene</span>
+      </button>
+      <span id="bulk-status" role="status" aria-live="polite">Loading cluster assignments...</span>
+    </form>
+    <p class="hint">Results are scoped to the selected gene's cluster and use exact gene membership, not text similarity. Exported p-values and thresholds are unchanged. A gene's presence in an enriched term does not establish an ASD-specific or causal effect.</p>
+    <nav class="analysis-guide" aria-label="Bulk analysis sections">
+      <ol>
+        <li><a href="#peers-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-cluster"/></svg><span><strong>1. Cluster peers</strong><small>Co-clustered genes</small></span></a></li>
+        <li><a href="#hpo-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-brain"/></svg><span><strong>2. HPO</strong><small>Phenotype associations</small></span></a></li>
+        <li><a href="#kegg-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pathway"/></svg><span><strong>3. KEGG</strong><small>Pathway membership</small></span></a></li>
+        <li><a href="#go-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-ontology"/></svg><span><strong>4. GO</strong><small>Biological functions</small></span></a></li>
+      </ol>
+    </nav>
+    <p id="bulk-error" class="error" role="alert" hidden></p>
+    <div id="bulk-results" aria-live="polite">
+      <section class="card bulk-section" aria-labelledby="peers-heading">
+        <h2 id="peers-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-cluster"/></svg><span>1. Other genes in the same cluster</span></h2>
+        <div id="cluster-peers"><p>Select a gene to see its cluster peers.</p></div>
+      </section>
+      <section class="card bulk-section" aria-labelledby="hpo-heading">
+        <h2 id="hpo-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-brain"/></svg><span>2. HPO terms containing the gene</span></h2>
+        <div id="hpo-results"><p>Select a gene to see HPO terms.</p></div>
+      </section>
+      <section class="card bulk-section" aria-labelledby="kegg-heading">
+        <h2 id="kegg-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pathway"/></svg><span>3. KEGG pathways containing the gene</span></h2>
+        <div id="kegg-results"><p>Select a gene to see KEGG pathways.</p></div>
+      </section>
+      <section class="card bulk-section" aria-labelledby="go-heading">
+        <h2 id="go-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-ontology"/></svg><span>4. GO terms containing the gene</span></h2>
+        <div id="go-results"><p>Select a gene to see GO terms.</p></div>
+      </section>
+    </div>
+    <details class="methods">
+      <summary>Data and interpretation</summary>
+      <p>This page uses the copied expression/K-means v2 cluster assignments and enrichment CSVs. It shows exported cluster enrichment rows whose overlap gene list includes the selected gene; it does not calculate new gene-level enrichment tests.</p>
+      <p>GO and KEGG overlap lists use Entrez IDs, matched to gene symbols through a bundled mapping generated locally from org.Hs.eg.db. HPO uses gene symbols and includes the exported semantic community labels. GO ontology labels are BP (biological process), CC (cellular component), and MF (molecular function).</p>
+      <p>Header-only HPO files are empty results, not load errors. Cluster 10 has no exported HPO file. Neither condition is treated as evidence that a gene has no HPO annotations. GO and KEGG may use different backgrounds from HPO; their adjusted p-values should not be compared as if they were the same analysis. Disease pathways are annotation categories, not diagnoses.</p>
+      <p><a href="data/ASD_Bulk_analysis/cluster_result/expression_kmeans_all_clusters_genesv2.csv">Download cluster assignments</a></p>
+    </details>
+    <noscript>This explorer requires JavaScript. Serve the docs folder over HTTP to load its local data.</noscript>
+  </main>
+</body>
+</html>

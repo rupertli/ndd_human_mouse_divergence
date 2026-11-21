@@ -1,4 +1,5 @@
-import { PHASES, EVENT_PHASES, parseCSV, prepareMetrics, rankGenes, commonGenes, transformTrajectory } from "./explorer-model.mjs";
+import { PHASES, EVENT_PHASES, parseCSV, prepareMetrics, rankGenes, summarizeGene, commonGenes, resolveGene, brainspanGeneUrl, transformTrajectory } from "./explorer-model.mjs?v=2";
+import { prepareClusters, bulkGeneUrl } from "./bulk-model.mjs";
 
 const dataRoot = new URL("../data/", import.meta.url);
 const configs = [
@@ -14,8 +15,14 @@ const controls = {
   direction: document.querySelector("#direction"),
   overlap: document.querySelector("#overlap"),
   error: document.querySelector("#error"),
+  gene: document.querySelector("#gene-detail-input"),
+  geneError: document.querySelector("#gene-input-error"),
 };
 const regions = [];
+let selectedGene = null;
+let bulkClusters = null;
+let bulkNavigationError = null;
+const bulkNavigation = document.querySelector("#bulk-gene-navigation");
 const format = value => Number.isFinite(value) ? value.toFixed(3) : "Not estimable";
 
 function el(tag, text, className) {
@@ -51,8 +58,58 @@ function showError(error) {
   }
 }
 
+function updateBulkNavigation() {
+  bulkNavigation.replaceChildren();
+  bulkNavigation.hidden = true;
+  if (selectedGene) {
+    const heading = el("h2", undefined, "icon-heading");
+    heading.append(icon("dna"), el("span", "BulkRNASeq analysis for selected gene"));
+    const current = new URL(location.href);
+    current.searchParams.set("scoutTheme", document.documentElement.dataset.theme);
+    const links = el("ul", undefined, "selected-gene-links");
+    if (bulkClusters) {
+      const url = bulkGeneUrl(bulkClusters, selectedGene, current.href);
+      if (url) {
+        const link = el("a", `Show ASD bulk analysis for ${selectedGene}`);
+        link.href = url;
+        const item = el("li");
+        item.append(link);
+        links.append(item);
+        bulkNavigation.append(el("p", `${selectedGene} also has expression/K-means v2 bulk data in cluster ${bulkClusters.byGene.get(selectedGene)}. Explore its cluster peers and HPO, KEGG, and GO enrichment.`));
+      }
+    }
+    const link = el("a", `Show BrainSpan profiles and networks for ${selectedGene}`);
+    link.href = brainspanGeneUrl(selectedGene, current.href);
+    bulkNavigation.prepend(heading);
+    const item = el("li");
+    item.append(link);
+    links.append(item);
+    bulkNavigation.append(links);
+    bulkNavigation.hidden = false;
+  }
+  if (bulkNavigationError) {
+    const retry = el("button", "Retry ASD bulk gene lookup");
+    retry.type = "button";
+    retry.addEventListener("click", loadBulkNavigation);
+    bulkNavigation.append(el("p", bulkNavigationError.message, "error"), retry);
+    bulkNavigation.hidden = false;
+  }
+}
+
+async function loadBulkNavigation() {
+  bulkNavigationError = null;
+  updateBulkNavigation();
+  try {
+    const text = await load("ASD_Bulk_analysis/cluster_result/expression_kmeans_all_clusters_genesv2.csv");
+    bulkClusters = prepareClusters(parseCSV(text));
+  } catch (error) {
+    bulkNavigationError = new Error(`ASD bulk gene lookup could not be loaded: ${error.message}`);
+  }
+  updateBulkNavigation();
+}
+
 function createRegion(config, metrics) {
-  const state = { ...config, metrics, cellType: "all", selected: null, chartCell: null, scale: "log", trajectoriesPromise: null };
+  const state = { ...config, metrics, cellType: "all", chartCell: null, scale: "log", trajectoriesPromise: null };
   const section = el("section", undefined, "region");
   section.id = config.id;
   const card = el("div", undefined, "card");
@@ -87,14 +144,33 @@ function createRegion(config, metrics) {
   state.detail = el("section", undefined, "card detail");
   state.detail.setAttribute("aria-label", `${config.title} selected gene details`);
   card.append(header, label, state.scope, wrapper);
-  section.append(card, state.detail);
+  section.append(card);
   document.querySelector("#regions").append(section);
+  document.querySelector("#gene-details").append(state.detail);
   select.addEventListener("change", () => {
     state.cellType = select.value;
     state.chartCell = null;
     refresh();
   });
   return state;
+}
+
+function selectGene(gene) {
+  selectedGene = gene;
+  controls.gene.value = gene;
+  controls.gene.removeAttribute("aria-invalid");
+  controls.geneError.hidden = true;
+  for (const region of regions) {
+    region.chartCell = null;
+    for (const row of region.tbody.rows) {
+      const geneButton = row.querySelector("button");
+      const selected = geneButton.firstChild.textContent === selectedGene;
+      row.classList.toggle("selected", selected);
+      geneButton.setAttribute("aria-pressed", String(selected));
+    }
+    renderDetail(region);
+  }
+  updateBulkNavigation();
 }
 
 function refresh() {
@@ -105,35 +181,26 @@ function refresh() {
     state.visible = state.ranking.slice(0, n);
   }
   const shared = commonGenes(regions[0].visible, regions[1].visible);
+  selectedGene ??= regions.find(state => state.visible.length)?.visible[0].gene ?? null;
+  controls.gene.value = selectedGene ?? "";
+  controls.gene.removeAttribute("aria-invalid");
+  controls.geneError.hidden = true;
   controls.overlap.textContent = `${shared.size} shared ${shared.size === 1 ? "gene" : "genes"} · ${regions[0].visible.length} cortex / ${regions[1].visible.length} cerebellum shown`;
   for (const state of regions) {
     state.scope.textContent = state.cellType === "all"
       ? "Ranking by maximum divergence across eligible cell classes. Least divergent = lowest maximum."
       : `Ranking within ${state.cellType}. Summary values below refer only to this cell class.`;
-    if (!state.visible.some(row => row.gene === state.selected)) {
-      state.selected = state.visible[0]?.gene ?? null;
-      state.chartCell = null;
-    }
     state.tbody.replaceChildren();
     for (const [index, item] of state.visible.entries()) {
       const tr = el("tr");
       tr.classList.toggle("common", shared.has(item.gene));
-      tr.classList.toggle("selected", item.gene === state.selected);
+      tr.classList.toggle("selected", item.gene === selectedGene);
       const gene = el("td");
       const button = el("button", item.gene, "gene-button");
       button.type = "button";
-      button.setAttribute("aria-pressed", String(item.gene === state.selected));
+      button.setAttribute("aria-pressed", String(item.gene === selectedGene));
       if (shared.has(item.gene)) button.append(el("span", "Shared", "badge"));
-      button.addEventListener("click", () => {
-        state.selected = item.gene;
-        state.chartCell = null;
-        for (const row of state.tbody.rows) {
-          const selected = row === tr;
-          row.classList.toggle("selected", selected);
-          row.querySelector("button").setAttribute("aria-pressed", String(selected));
-        }
-        renderDetail(state);
-      });
+      button.addEventListener("click", () => selectGene(item.gene));
       gene.append(button);
       const score = el("td", item.score.toFixed(6));
       score.title = String(item.score);
@@ -142,18 +209,25 @@ function refresh() {
     }
     renderDetail(state);
   }
+  updateBulkNavigation();
 }
 
 function renderDetail(state) {
-  const item = state.visible.find(row => row.gene === state.selected);
+  const rows = state.metrics.filter(row => row.gene === selectedGene &&
+    (state.cellType === "all" || row.cell_label === state.cellType));
+  const item = rows.length ? summarizeGene(rows) : null;
   state.detail.replaceChildren();
-  if (!item) {
+  if (!selectedGene) {
     state.detail.append(el("p", "No eligible genes for this selection."));
     return;
   }
   const title = el("div", undefined, "detail-title");
   const geneHeading = el("h3", undefined, "gene-name icon-heading");
-  geneHeading.append(icon("dna"), el("span", item.gene));
+  geneHeading.append(icon("dna"), el("span", selectedGene));
+  if (!item) {
+    state.detail.append(geneHeading, el("p", `No eligible data for ${selectedGene} in ${state.title}${state.cellType === "all" ? "" : ` / ${state.cellType}`}.`));
+    return;
+  }
   title.append(geneHeading, el("span", `${item.n_scored_cell_labels}/${item.n_tested_cell_labels} cell classes scored`, "muted"));
   const context = state.cellType === "all"
     ? "Summary across all eligible cell classes; the chart shows one cell class at a time."
@@ -171,7 +245,7 @@ function renderDetail(state) {
   for (const row of [...item.rows].sort((a, b) => a.cell_label.localeCompare(b.cell_label))) {
     cellSelect.append(option(row.cell_label, row.cell_label));
   }
-  if (!item.rows.some(row => row.cell_label === state.chartCell)) state.chartCell = item.maxCell;
+  if (!item.rows.some(row => row.cell_label === state.chartCell)) state.chartCell = item.maxCell ?? item.rows[0].cell_label;
   cellSelect.value = state.chartCell;
   cellLabel.append(cellSelect);
   const scaleLabel = el("label", "Expression scale");
@@ -313,12 +387,33 @@ try {
     return { config, metrics };
   }));
   for (const { config, metrics } of loaded) regions.push(createRegion(config, metrics));
+  const genes = new Set(loaded.flatMap(({ metrics }) => metrics.map(row => row.gene)));
+  const suggestions = document.querySelector("#detail-gene-options");
+  for (const gene of [...genes].sort()) {
+    const suggestion = el("option");
+    suggestion.value = gene;
+    suggestions.append(suggestion);
+  }
+  controls.gene.disabled = false;
+  document.querySelector("#show-gene-details").disabled = false;
+  document.querySelector("#gene-detail-form").addEventListener("submit", event => {
+    event.preventDefault();
+    const gene = resolveGene(genes, controls.gene.value);
+    if (!gene) {
+      controls.geneError.textContent = `No gene matches "${controls.gene.value.trim()}" in either dataset. Choose a symbol from the suggestions. Current details still show ${selectedGene}.`;
+      controls.geneError.hidden = false;
+      controls.gene.setAttribute("aria-invalid", "true");
+      return;
+    }
+    selectGene(gene);
+  });
   controls.n.max = String(Math.max(...regions.map(state => new Set(state.metrics.map(row => row.gene)).size)));
   controls.n.disabled = false;
   controls.direction.disabled = false;
   controls.n.addEventListener("change", refresh);
   controls.direction.addEventListener("change", refresh);
   refresh();
+  loadBulkNavigation();
 } catch (error) {
   controls.overlap.textContent = "Data could not be loaded.";
   showError(error);
