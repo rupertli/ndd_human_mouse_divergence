@@ -44,10 +44,6 @@
       <p class="intro">Explore enriched cerebral-cortex trajectories across five exploratory developmental bins and cerebellar trajectories across four prenatal-to-neonatal phases.</p>
       </div>
     </header>
-    <nav aria-label="Analysis pages"><p><a href="bulk-analysis.html">Explore ASD bulk expression clusters and HPO, KEGG, GO enrichment</a> · <a id="brainspan-navigation" href="brainspan.html?dataVersion=2">Explore BrainSpan NDD profiles and networks</a></p></nav>
-    <script>
-      document.getElementById("brainspan-navigation").href = "brainspan.html?dataVersion=2&scoutTheme=" + encodeURIComponent(document.documentElement.dataset.theme);
-    </script>
     <section class="toolbar" aria-label="Ranking controls">
       <label>Genes per region <input id="top-n" type="number" min="1" value="20" step="1" required disabled></label>
       <label>Show <select id="direction" disabled><option value="divergent">Most divergent</option><option value="similar">Least divergent (most similar)</option></select></label>

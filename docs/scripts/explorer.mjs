@@ -70,7 +70,7 @@ function updateBulkNavigation() {
     if (bulkClusters) {
       const url = bulkGeneUrl(bulkClusters, selectedGene, current.href);
       if (url) {
-        const link = el("a", `Show ASD bulk analysis for ${selectedGene}`);
+        const link = el("a", `Show NDD bulk analysis for ${selectedGene}`);
         link.href = url;
         const item = el("li");
         item.append(link);
@@ -88,7 +88,7 @@ function updateBulkNavigation() {
     bulkNavigation.hidden = false;
   }
   if (bulkNavigationError) {
-    const retry = el("button", "Retry ASD bulk gene lookup");
+    const retry = el("button", "Retry NDD bulk gene lookup");
     retry.type = "button";
     retry.addEventListener("click", loadBulkNavigation);
     bulkNavigation.append(el("p", bulkNavigationError.message, "error"), retry);
@@ -100,10 +100,10 @@ async function loadBulkNavigation() {
   bulkNavigationError = null;
   updateBulkNavigation();
   try {
-    const text = await load("ASD_Bulk_analysis/cluster_result/expression_kmeans_all_clusters_genesv2.csv");
-    bulkClusters = prepareClusters(parseCSV(text));
+    const data = await load("ASD_Bulk_analysis/bulk-data.json", true);
+    bulkClusters = prepareClusters(data.assignments);
   } catch (error) {
-    bulkNavigationError = new Error(`ASD bulk gene lookup could not be loaded: ${error.message}`);
+    bulkNavigationError = new Error(`NDD bulk gene lookup could not be loaded: ${error.message}`);
   }
   updateBulkNavigation();
 }

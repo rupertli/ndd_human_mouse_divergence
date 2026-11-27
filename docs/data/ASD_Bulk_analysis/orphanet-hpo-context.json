@@ -1,0 +1,2730 @@
+{
+  "sources": {
+    "phenotypes": {
+      "url": "https://www.orphadata.com/data/xml/en_product4.xml",
+      "date": "2026-06-23 07:57:18",
+      "md5": "0ea79c76843d2668fe15f2b0bfbad496"
+    },
+    "ages": {
+      "url": "https://www.orphadata.com/data/xml/en_product9_ages.xml",
+      "date": "2026-06-23 07:57:51",
+      "md5": "c99d7989e4779bd07ef463e3b215563a"
+    },
+    "definitions": {
+      "url": "https://sciences.orphadata.com/docs/OrphadataFreeAccessProductsDescription.pdf",
+      "location": "Version 2, June 2025, Table 8, page 32"
+    }
+  },
+  "attribution": "Orphanet / INSERM, Orphadata Science, CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "birth_pc_days": 266,
+  "boundaries_pc_days": [
+    49.94887588317583,
+    87.26940995423321,
+    152.4749011684023,
+    266.4002827394653,
+    465.4478219027315,
+    979.4586293554893
+  ],
+  "method": "Exact HPO-to-ORPHA associations excluding frequency 0%; one count per unique clinical entity per listed disease-onset category. Categories are not mutually exclusive. No phenotype-onset or patient-incidence inference.",
+  "terms": {
+    "HP:0001650": {
+      "label": "Aortic valve stenosis (HP:0001650)",
+      "associated_entities": 51,
+      "entities_with_onset": 50,
+      "entities_without_onset": 1,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 13,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 32,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 22,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 6,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 8,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Elderly",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 4,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "56",
+          "name": "Alkaptonuria",
+          "source_url": "https://www.orpha.net/en/disease/detail/56"
+        },
+        {
+          "orpha_code": "2308",
+          "name": "Jacobsen syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/2308"
+        },
+        {
+          "orpha_code": "7",
+          "name": "3C syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/7"
+        }
+      ]
+    },
+    "HP:0000588": {
+      "label": "Optic nerve coloboma (HP:0000588)",
+      "associated_entities": 17,
+      "entities_with_onset": 17,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 6,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 14,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 8,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 3,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 1,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "50",
+          "name": "Aicardi syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/50"
+        },
+        {
+          "orpha_code": "568",
+          "name": "Microphthalmia, Lenz type",
+          "source_url": "https://www.orpha.net/en/disease/detail/568"
+        },
+        {
+          "orpha_code": "959",
+          "name": "Acro-renal-ocular syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/959"
+        }
+      ]
+    },
+    "HP:0002637": {
+      "label": "Cerebral ischemia (HP:0002637)",
+      "associated_entities": 21,
+      "entities_with_onset": 21,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Adult",
+        "All ages"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 3,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 4,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 3,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 5,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 5,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 8,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Elderly",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 8,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "904",
+          "name": "Williams syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/904"
+        },
+        {
+          "orpha_code": "394",
+          "name": "Homocystinuria due to cystathionine beta-synthase deficiency",
+          "source_url": "https://www.orpha.net/en/disease/detail/394"
+        },
+        {
+          "orpha_code": "1880",
+          "name": "Ebstein malformation of the tricuspid valve",
+          "source_url": "https://www.orpha.net/en/disease/detail/1880"
+        }
+      ]
+    },
+    "HP:0001100": {
+      "label": "Heterochromia iridis (HP:0001100)",
+      "associated_entities": 23,
+      "entities_with_onset": 22,
+      "entities_without_onset": 1,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 5,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 16,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 12,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 4,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 4,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "790",
+          "name": "Retinoblastoma",
+          "source_url": "https://www.orpha.net/en/disease/detail/790"
+        },
+        {
+          "orpha_code": "636",
+          "name": "Neurofibromatosis type 1",
+          "source_url": "https://www.orpha.net/en/disease/detail/636"
+        },
+        {
+          "orpha_code": "895",
+          "name": "Waardenburg syndrome type 2",
+          "source_url": "https://www.orpha.net/en/disease/detail/895"
+        }
+      ]
+    },
+    "HP:0000882": {
+      "label": "Hypoplastic scapulae (HP:0000882)",
+      "associated_entities": 13,
+      "entities_with_onset": 13,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 7,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 11,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 6,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "1452",
+          "name": "Cleidocranial dysplasia",
+          "source_url": "https://www.orpha.net/en/disease/detail/1452"
+        },
+        {
+          "orpha_code": "958",
+          "name": "Acro-renal-mandibular syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/958"
+        },
+        {
+          "orpha_code": "1512",
+          "name": "Crane-Heise syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/1512"
+        }
+      ]
+    },
+    "HP:0000243": {
+      "label": "Trigonocephaly (HP:0000243)",
+      "associated_entities": 32,
+      "entities_with_onset": 31,
+      "entities_without_onset": 1,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 13,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 29,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 19,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 3,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "1642",
+          "name": "Distal deletion 9p syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/1642"
+        },
+        {
+          "orpha_code": "765",
+          "name": "Pyruvate dehydrogenase deficiency",
+          "source_url": "https://www.orpha.net/en/disease/detail/765"
+        },
+        {
+          "orpha_code": "2308",
+          "name": "Jacobsen syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/2308"
+        }
+      ]
+    },
+    "HP:0002579": {
+      "label": "Gastrointestinal dysmotility (HP:0002579)",
+      "associated_entities": 27,
+      "entities_with_onset": 26,
+      "entities_without_onset": 1,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 2,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 11,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 10,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 8,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 5,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Elderly",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 3,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "285",
+          "name": "Hypermobile Ehlers-Danlos syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/285"
+        },
+        {
+          "orpha_code": "99971",
+          "name": "Well-differentiated liposarcoma",
+          "source_url": "https://www.orpha.net/en/disease/detail/99971"
+        },
+        {
+          "orpha_code": "99967",
+          "name": "Myxoid/round cell liposarcoma",
+          "source_url": "https://www.orpha.net/en/disease/detail/99967"
+        }
+      ]
+    },
+    "HP:0100540": {
+      "label": "Palpebral edema (HP:0100540)",
+      "associated_entities": 32,
+      "entities_with_onset": 32,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal",
+        "Infancy"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 3,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 16,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 16,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 8,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 5,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 8,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Elderly",
+          "count": 3,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 2,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "963",
+          "name": "Acromegaly",
+          "source_url": "https://www.orpha.net/en/disease/detail/963"
+        },
+        {
+          "orpha_code": "1259",
+          "name": "Blepharoptosis-myopia-ectopia lentis syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/1259"
+        },
+        {
+          "orpha_code": "2067",
+          "name": "GAPO syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/2067"
+        }
+      ]
+    },
+    "HP:0001302": {
+      "label": "Pachygyria (HP:0001302)",
+      "associated_entities": 45,
+      "entities_with_onset": 45,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 13,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 34,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 25,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 5,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 1,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "50",
+          "name": "Aicardi syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/50"
+        },
+        {
+          "orpha_code": "2308",
+          "name": "Jacobsen syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/2308"
+        },
+        {
+          "orpha_code": "2065",
+          "name": "Galloway-Mowat syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/2065"
+        }
+      ]
+    },
+    "HP:0000912": {
+      "label": "Sprengel anomaly (HP:0000912)",
+      "associated_entities": 25,
+      "entities_with_onset": 25,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 10,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 20,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 9,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 5,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "261",
+          "name": "Emery-Dreifuss muscular dystrophy",
+          "source_url": "https://www.orpha.net/en/disease/detail/261"
+        },
+        {
+          "orpha_code": "800",
+          "name": "Schwartz-Jampel syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/800"
+        },
+        {
+          "orpha_code": "894",
+          "name": "Waardenburg syndrome type 1",
+          "source_url": "https://www.orpha.net/en/disease/detail/894"
+        }
+      ]
+    },
+    "HP:0001518": {
+      "label": "Small for gestational age (HP:0001518)",
+      "associated_entities": 104,
+      "entities_with_onset": 103,
+      "entities_without_onset": 1,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 36,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 78,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 52,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 9,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 4,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 11,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "666",
+          "name": "Osteogenesis imperfecta",
+          "source_url": "https://www.orpha.net/en/disease/detail/666"
+        },
+        {
+          "orpha_code": "50811",
+          "name": "Lipodystrophy-intellectual disability-deafness syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/50811"
+        },
+        {
+          "orpha_code": "63862",
+          "name": "Schisis association",
+          "source_url": "https://www.orpha.net/en/disease/detail/63862"
+        }
+      ]
+    },
+    "HP:0000637": {
+      "label": "Long palpebral fissure (HP:0000637)",
+      "associated_entities": 29,
+      "entities_with_onset": 29,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 8,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 23,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 19,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 5,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 1,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "1340",
+          "name": "Cardiofaciocutaneous syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/1340"
+        },
+        {
+          "orpha_code": "1527",
+          "name": "Craniosynostosis, Philadelphia type",
+          "source_url": "https://www.orpha.net/en/disease/detail/1527"
+        },
+        {
+          "orpha_code": "1507",
+          "name": "Autosomal recessive Robinow syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/1507"
+        }
+      ]
+    },
+    "HP:0005487": {
+      "label": "Prominent metopic ridge (HP:0005487)",
+      "associated_entities": 36,
+      "entities_with_onset": 36,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 14,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 34,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 23,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 4,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "116",
+          "name": "Beckwith-Wiedemann syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/116"
+        },
+        {
+          "orpha_code": "1597",
+          "name": "Distal deletion 17q syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/1597"
+        },
+        {
+          "orpha_code": "1466",
+          "name": "COFS syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/1466"
+        }
+      ]
+    },
+    "HP:0002751": {
+      "label": "Kyphoscoliosis (HP:0002751)",
+      "associated_entities": 88,
+      "entities_with_onset": 88,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 19,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 61,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 49,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 21,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 10,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 8,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Elderly",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 1,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "597",
+          "name": "Central core disease",
+          "source_url": "https://www.orpha.net/en/disease/detail/597"
+        },
+        {
+          "orpha_code": "14",
+          "name": "Abetalipoproteinemia",
+          "source_url": "https://www.orpha.net/en/disease/detail/14"
+        },
+        {
+          "orpha_code": "1598",
+          "name": "Monosomy 18p syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/1598"
+        }
+      ]
+    },
+    "HP:0001647": {
+      "label": "Bicuspid aortic valve (HP:0001647)",
+      "associated_entities": 48,
+      "entities_with_onset": 48,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 18,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 36,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 26,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 11,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 3,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 3,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "881",
+          "name": "Turner syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/881"
+        },
+        {
+          "orpha_code": "904",
+          "name": "Williams syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/904"
+        },
+        {
+          "orpha_code": "1120",
+          "name": "Lung agenesis-heart defect-thumb anomalies syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/1120"
+        }
+      ]
+    },
+    "HP:0000396": {
+      "label": "Overfolded helix (HP:0000396)",
+      "associated_entities": 29,
+      "entities_with_onset": 29,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 9,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 23,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 13,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 2,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "138",
+          "name": "CHARGE syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/138"
+        },
+        {
+          "orpha_code": "567",
+          "name": "22q11.2 deletion syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/567"
+        },
+        {
+          "orpha_code": "800",
+          "name": "Schwartz-Jampel syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/800"
+        }
+      ]
+    },
+    "HP:0002983": {
+      "label": "Micromelia (HP:0002983)",
+      "associated_entities": 89,
+      "entities_with_onset": 87,
+      "entities_without_onset": 2,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 53,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 73,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 31,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 5,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 4,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 3,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 3,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "429",
+          "name": "Hypochondroplasia",
+          "source_url": "https://www.orpha.net/en/disease/detail/429"
+        },
+        {
+          "orpha_code": "800",
+          "name": "Schwartz-Jampel syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/800"
+        },
+        {
+          "orpha_code": "628",
+          "name": "Diastrophic dysplasia",
+          "source_url": "https://www.orpha.net/en/disease/detail/628"
+        }
+      ]
+    },
+    "HP:0000465": {
+      "label": "Webbed neck (HP:0000465)",
+      "associated_entities": 60,
+      "entities_with_onset": 60,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 29,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 52,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 32,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 13,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 2,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "881",
+          "name": "Turner syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/881"
+        },
+        {
+          "orpha_code": "138",
+          "name": "CHARGE syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/138"
+        },
+        {
+          "orpha_code": "648",
+          "name": "Noonan syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/648"
+        }
+      ]
+    },
+    "HP:0001177": {
+      "label": "Preaxial hand polydactyly (HP:0001177)",
+      "associated_entities": 35,
+      "entities_with_onset": 35,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 20,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 30,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 11,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 1,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "280",
+          "name": "Wolf-Hirschhorn syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/280"
+        },
+        {
+          "orpha_code": "857",
+          "name": "Townes-Brocks syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/857"
+        },
+        {
+          "orpha_code": "564",
+          "name": "Meckel syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/564"
+        }
+      ]
+    },
+    "HP:0000307": {
+      "label": "Pointed chin (HP:0000307)",
+      "associated_entities": 44,
+      "entities_with_onset": 44,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 20,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 36,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 21,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 5,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 1,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "904",
+          "name": "Williams syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/904"
+        },
+        {
+          "orpha_code": "52",
+          "name": "Alagille syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/52"
+        },
+        {
+          "orpha_code": "111",
+          "name": "Barth syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/111"
+        }
+      ]
+    },
+    "HP:0000293": {
+      "label": "Full cheeks (HP:0000293)",
+      "associated_entities": 91,
+      "entities_with_onset": 89,
+      "entities_without_onset": 2,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 28,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 67,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 53,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 17,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 6,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 4,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Elderly",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 1,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "366",
+          "name": "Glycogen storage disease due to glycogen debranching enzyme deficiency",
+          "source_url": "https://www.orpha.net/en/disease/detail/366"
+        },
+        {
+          "orpha_code": "796",
+          "name": "Sandhoff disease",
+          "source_url": "https://www.orpha.net/en/disease/detail/796"
+        },
+        {
+          "orpha_code": "534",
+          "name": "Oculocerebrorenal syndrome of Lowe",
+          "source_url": "https://www.orpha.net/en/disease/detail/534"
+        }
+      ]
+    },
+    "HP:0002376": {
+      "label": "Developmental regression (HP:0002376)",
+      "associated_entities": 148,
+      "entities_with_onset": 146,
+      "entities_without_onset": 2,
+      "most_reported_categories": [
+        "Infancy"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 14,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 68,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 83,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 52,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 14,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 17,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Elderly",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 14,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "58",
+          "name": "Alexander disease",
+          "source_url": "https://www.orpha.net/en/disease/detail/58"
+        },
+        {
+          "orpha_code": "585",
+          "name": "Multiple sulfatase deficiency",
+          "source_url": "https://www.orpha.net/en/disease/detail/585"
+        },
+        {
+          "orpha_code": "141",
+          "name": "Canavan disease",
+          "source_url": "https://www.orpha.net/en/disease/detail/141"
+        }
+      ]
+    },
+    "HP:0000482": {
+      "label": "Microcornea (HP:0000482)",
+      "associated_entities": 59,
+      "entities_with_onset": 59,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 23,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 51,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 31,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 6,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 1,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "800",
+          "name": "Schwartz-Jampel syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/800"
+        },
+        {
+          "orpha_code": "199",
+          "name": "Cornelia de Lange syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/199"
+        },
+        {
+          "orpha_code": "568",
+          "name": "Microphthalmia, Lenz type",
+          "source_url": "https://www.orpha.net/en/disease/detail/568"
+        }
+      ]
+    },
+    "HP:0001643": {
+      "label": "Patent ductus arteriosus (HP:0001643)",
+      "associated_entities": 183,
+      "entities_with_onset": 183,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 69,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 152,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 95,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 18,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 4,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 4,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 13,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "138",
+          "name": "CHARGE syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/138"
+        },
+        {
+          "orpha_code": "567",
+          "name": "22q11.2 deletion syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/567"
+        },
+        {
+          "orpha_code": "904",
+          "name": "Williams syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/904"
+        }
+      ]
+    },
+    "HP:0001256": {
+      "label": "Intellectual disability, mild (HP:0001256)",
+      "associated_entities": 213,
+      "entities_with_onset": 210,
+      "entities_without_onset": 3,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 44,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 129,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 127,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 46,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 20,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 20,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Elderly",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 7,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "213",
+          "name": "Cystinosis",
+          "source_url": "https://www.orpha.net/en/disease/detail/213"
+        },
+        {
+          "orpha_code": "366",
+          "name": "Glycogen storage disease due to glycogen debranching enzyme deficiency",
+          "source_url": "https://www.orpha.net/en/disease/detail/366"
+        },
+        {
+          "orpha_code": "567",
+          "name": "22q11.2 deletion syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/567"
+        }
+      ]
+    },
+    "HP:0000567": {
+      "label": "Chorioretinal coloboma (HP:0000567)",
+      "associated_entities": 36,
+      "entities_with_onset": 36,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 15,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 29,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 16,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 1,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "138",
+          "name": "CHARGE syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/138"
+        },
+        {
+          "orpha_code": "636",
+          "name": "Neurofibromatosis type 1",
+          "source_url": "https://www.orpha.net/en/disease/detail/636"
+        },
+        {
+          "orpha_code": "857",
+          "name": "Townes-Brocks syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/857"
+        }
+      ]
+    },
+    "HP:0000506": {
+      "label": "Telecanthus (HP:0000506)",
+      "associated_entities": 121,
+      "entities_with_onset": 121,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 42,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 103,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 56,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 13,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 3,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 2,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "567",
+          "name": "22q11.2 deletion syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/567"
+        },
+        {
+          "orpha_code": "783",
+          "name": "Rubinstein-Taybi syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/783"
+        },
+        {
+          "orpha_code": "377",
+          "name": "Gorlin syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/377"
+        }
+      ]
+    },
+    "HP:0002162": {
+      "label": "Low posterior hairline (HP:0002162)",
+      "associated_entities": 68,
+      "entities_with_onset": 68,
+      "entities_without_onset": 0,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 26,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 59,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 39,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 10,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 1,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "881",
+          "name": "Turner syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/881"
+        },
+        {
+          "orpha_code": "280",
+          "name": "Wolf-Hirschhorn syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/280"
+        },
+        {
+          "orpha_code": "648",
+          "name": "Noonan syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/648"
+        }
+      ]
+    },
+    "HP:0000612": {
+      "label": "Iris coloboma (HP:0000612)",
+      "associated_entities": 95,
+      "entities_with_onset": 94,
+      "entities_without_onset": 1,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 46,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 78,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 42,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 10,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 2,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "138",
+          "name": "CHARGE syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/138"
+        },
+        {
+          "orpha_code": "280",
+          "name": "Wolf-Hirschhorn syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/280"
+        },
+        {
+          "orpha_code": "377",
+          "name": "Gorlin syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/377"
+        }
+      ]
+    },
+    "HP:0008897": {
+      "label": "Postnatal growth retardation (HP:0008897)",
+      "associated_entities": 119,
+      "entities_with_onset": 118,
+      "entities_without_onset": 1,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 54,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 102,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 62,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 20,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Elderly",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 4,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "881",
+          "name": "Turner syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/881"
+        },
+        {
+          "orpha_code": "138",
+          "name": "CHARGE syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/138"
+        },
+        {
+          "orpha_code": "648",
+          "name": "Noonan syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/648"
+        }
+      ]
+    },
+    "HP:0000348": {
+      "label": "High forehead (HP:0000348)",
+      "associated_entities": 126,
+      "entities_with_onset": 125,
+      "entities_without_onset": 1,
+      "most_reported_categories": [
+        "Neonatal"
+      ],
+      "distribution": [
+        {
+          "category": "Antenatal",
+          "count": 40,
+          "bins": [
+            "event_bin_1",
+            "event_bin_2",
+            "event_bin_3"
+          ],
+          "before_window": true,
+          "after_window": false
+        },
+        {
+          "category": "Neonatal",
+          "count": 104,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4"
+          ],
+          "before_window": false,
+          "after_window": false
+        },
+        {
+          "category": "Infancy",
+          "count": 70,
+          "bins": [
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Childhood",
+          "count": 12,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adolescent",
+          "count": 2,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "Adult",
+          "count": 1,
+          "bins": [],
+          "before_window": false,
+          "after_window": true
+        },
+        {
+          "category": "All ages",
+          "count": 7,
+          "bins": [
+            "event_bin_3",
+            "event_bin_4",
+            "event_bin_5"
+          ],
+          "before_window": false,
+          "after_window": true
+        }
+      ],
+      "examples": [
+        {
+          "orpha_code": "904",
+          "name": "Williams syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/904"
+        },
+        {
+          "orpha_code": "280",
+          "name": "Wolf-Hirschhorn syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/280"
+        },
+        {
+          "orpha_code": "648",
+          "name": "Noonan syndrome",
+          "source_url": "https://www.orpha.net/en/disease/detail/648"
+        }
+      ]
+    }
+  }
+}

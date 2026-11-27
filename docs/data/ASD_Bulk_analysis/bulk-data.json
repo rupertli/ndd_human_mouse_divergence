@@ -1,0 +1,11516 @@
+{
+  "assignments": [
+    {
+      "Gene": "EEF1A2",
+      "Cluster": 1
+    },
+    {
+      "Gene": "TUBB4A",
+      "Cluster": 1
+    },
+    {
+      "Gene": "CPE",
+      "Cluster": 1
+    },
+    {
+      "Gene": "COX4I1",
+      "Cluster": 1
+    },
+    {
+      "Gene": "SNAP25",
+      "Cluster": 1
+    },
+    {
+      "Gene": "ALDOA",
+      "Cluster": 1
+    },
+    {
+      "Gene": "FTH1",
+      "Cluster": 1
+    },
+    {
+      "Gene": "ATP6V0C",
+      "Cluster": 1
+    },
+    {
+      "Gene": "PSAP",
+      "Cluster": 1
+    },
+    {
+      "Gene": "MDH1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "AP2S1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "CYFIP2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "CAMK2B",
+      "Cluster": 10
+    },
+    {
+      "Gene": "NCKAP1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ROGDI",
+      "Cluster": 10
+    },
+    {
+      "Gene": "NSF",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SMAP2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ATXN7L3",
+      "Cluster": 10
+    },
+    {
+      "Gene": "PSMC5",
+      "Cluster": 10
+    },
+    {
+      "Gene": "NRCAM",
+      "Cluster": 10
+    },
+    {
+      "Gene": "STX1B",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ACO2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "DNAJC5",
+      "Cluster": 10
+    },
+    {
+      "Gene": "PGK1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "CLPTM1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "GPI",
+      "Cluster": 10
+    },
+    {
+      "Gene": "MAG",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SCN1B",
+      "Cluster": 10
+    },
+    {
+      "Gene": "STX1A",
+      "Cluster": 10
+    },
+    {
+      "Gene": "DNM1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "GIT1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "FBXW7",
+      "Cluster": 10
+    },
+    {
+      "Gene": "PRPF19",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SPARC",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ATP6V1A",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SPTBN1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "DHCR24",
+      "Cluster": 10
+    },
+    {
+      "Gene": "DNAJC6",
+      "Cluster": 10
+    },
+    {
+      "Gene": "RIMS3",
+      "Cluster": 10
+    },
+    {
+      "Gene": "CTSD",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SPP1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "NDUFA8",
+      "Cluster": 10
+    },
+    {
+      "Gene": "MAPK8IP1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "GLO1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SLC25A23",
+      "Cluster": 10
+    },
+    {
+      "Gene": "HNRNPH2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "TUBA4A",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ECHS1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "GDF1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "CHMP2A",
+      "Cluster": 10
+    },
+    {
+      "Gene": "PPT1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "AGAP2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "GABBR2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "PREPL",
+      "Cluster": 10
+    },
+    {
+      "Gene": "PPP3CA",
+      "Cluster": 10
+    },
+    {
+      "Gene": "MAPK8IP3",
+      "Cluster": 10
+    },
+    {
+      "Gene": "CLTC",
+      "Cluster": 10
+    },
+    {
+      "Gene": "PRKACB",
+      "Cluster": 10
+    },
+    {
+      "Gene": "MDH2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ATP6V1B2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "NDUFB9",
+      "Cluster": 10
+    },
+    {
+      "Gene": "PAK1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "QDPR",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SPOCK1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "JPH3",
+      "Cluster": 10
+    },
+    {
+      "Gene": "HK1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ATP2B2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SLC6A1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SYN2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SV2A",
+      "Cluster": 10
+    },
+    {
+      "Gene": "BRSK1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "UQCRQ",
+      "Cluster": 10
+    },
+    {
+      "Gene": "NDUFB8",
+      "Cluster": 10
+    },
+    {
+      "Gene": "APBB1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "PRKCB",
+      "Cluster": 10
+    },
+    {
+      "Gene": "MAPRE2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "PRRT2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SEMA6B",
+      "Cluster": 10
+    },
+    {
+      "Gene": "CTNNB1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "CPLX1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "UQCRFS1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "MAP2K1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "AQP4",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SCG2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ARNT2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ATP2A2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "SEZ6L2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "GRIN1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "COX5A",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ATP6AP2",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ABAT",
+      "Cluster": 10
+    },
+    {
+      "Gene": "BCAP31",
+      "Cluster": 10
+    },
+    {
+      "Gene": "NDUFA13",
+      "Cluster": 10
+    },
+    {
+      "Gene": "GABRD",
+      "Cluster": 10
+    },
+    {
+      "Gene": "DNER",
+      "Cluster": 10
+    },
+    {
+      "Gene": "NDUFA4",
+      "Cluster": 10
+    },
+    {
+      "Gene": "DYNC1H1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "GABBR1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "DCTN1",
+      "Cluster": 10
+    },
+    {
+      "Gene": "ACTB",
+      "Cluster": 11
+    },
+    {
+      "Gene": "TUBA1A",
+      "Cluster": 11
+    },
+    {
+      "Gene": "EEF2",
+      "Cluster": 11
+    },
+    {
+      "Gene": "ACTG1",
+      "Cluster": 11
+    },
+    {
+      "Gene": "TUBB",
+      "Cluster": 11
+    },
+    {
+      "Gene": "TUBB3",
+      "Cluster": 11
+    },
+    {
+      "Gene": "LAMP2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "RHOBTB2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SLC25A39",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SLC30A9",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GABRA1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "APBA2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TUBG2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "R3HDM1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MED29",
+      "Cluster": 12
+    },
+    {
+      "Gene": "BCAS1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "OAT",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CTNNA2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ELOVL1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CACNB1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "FGFR3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "OTUD5",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SIRT2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PPP2R5B",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GBA2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ATP2B1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PRKACA",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NUAK1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ADD1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "EPB41L1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "DOCK3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "COQ9",
+      "Cluster": 12
+    },
+    {
+      "Gene": "RPH3A",
+      "Cluster": 12
+    },
+    {
+      "Gene": "DDX24",
+      "Cluster": 12
+    },
+    {
+      "Gene": "RAPGEF4",
+      "Cluster": 12
+    },
+    {
+      "Gene": "FH",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ARCN1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MAST3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TECR",
+      "Cluster": 12
+    },
+    {
+      "Gene": "HCN2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MAPK1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MLC1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CELF4",
+      "Cluster": 12
+    },
+    {
+      "Gene": "WDR13",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CD99L2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CDK16",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CORO1A",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MAPK3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CA2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ETFB",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TMEM147",
+      "Cluster": 12
+    },
+    {
+      "Gene": "OGDH",
+      "Cluster": 12
+    },
+    {
+      "Gene": "EPHB6",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ABCA2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ACTA2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TRIM37",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CAMTA2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CCDC47",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CNTNAP1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MAPK10",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MADD",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CMAS",
+      "Cluster": 12
+    },
+    {
+      "Gene": "HSPA9",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TTC1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GABRG2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "UNC5A",
+      "Cluster": 12
+    },
+    {
+      "Gene": "EIF4G1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GLS",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CHD5",
+      "Cluster": 12
+    },
+    {
+      "Gene": "DLGAP3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MEF2D",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MFN2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SDHB",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SLC2A1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NDUFB3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GDA",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GRIA2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "EGR1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GJB6",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SLC12A5",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PIGT",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PEPD",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GOT2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MRPS7",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MBOAT7",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MKKS",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NR1D1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SCAF1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SBDS",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PRKCG",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ACTN4",
+      "Cluster": 12
+    },
+    {
+      "Gene": "UNC13A",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ARHGEF9",
+      "Cluster": 12
+    },
+    {
+      "Gene": "COX7B",
+      "Cluster": 12
+    },
+    {
+      "Gene": "RAB11FIP4",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NDUFA2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PEX11B",
+      "Cluster": 12
+    },
+    {
+      "Gene": "EFR3A",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MYH10",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PSAT1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "BLOC1S1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "KCNH3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SPRY2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NMT1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SCN2A",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ERMN",
+      "Cluster": 12
+    },
+    {
+      "Gene": "RAP1GDS1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CDH13",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SGSM2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MINK1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MRPL24",
+      "Cluster": 12
+    },
+    {
+      "Gene": "HAX1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "IQSEC1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PIK3R1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GABRB2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NTRK2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CAMK2G",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ADD3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NDUFC2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ASTN1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ATP6V1C1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "LARP1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PSD3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MRAS",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NDUFS2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "AMFR",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SQSTM1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SHANK1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PEX19",
+      "Cluster": 12
+    },
+    {
+      "Gene": "BAP1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "BSN",
+      "Cluster": 12
+    },
+    {
+      "Gene": "OXR1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PDP1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "UBAP1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CRYL1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "HEPACAM",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PRDX3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "HPRT1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SCN3B",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TPP1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "IDH3A",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NDUFV1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MGAT5B",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CASKIN1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "LMBRD1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "LGI3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CHRM1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "UGP2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "DLGAP1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GPR37",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TRIM8",
+      "Cluster": 12
+    },
+    {
+      "Gene": "EGLN2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CXXC5",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GATM",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NEGR1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TCEAL1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "FIBP",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SPTBN2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SNAPC5",
+      "Cluster": 12
+    },
+    {
+      "Gene": "HRAS",
+      "Cluster": 12
+    },
+    {
+      "Gene": "BAIAP2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "DEAF1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PPFIA3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SLC25A22",
+      "Cluster": 12
+    },
+    {
+      "Gene": "KCNJ10",
+      "Cluster": 12
+    },
+    {
+      "Gene": "DPM3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PTPN11",
+      "Cluster": 12
+    },
+    {
+      "Gene": "AATK",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CAMK1D",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TSPYL2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PCDH9",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NDUFA12",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SV2B",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PIP5K1C",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GABRA5",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PDE2A",
+      "Cluster": 12
+    },
+    {
+      "Gene": "LONP1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SLC35F1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "AMZ2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SLC6A17",
+      "Cluster": 12
+    },
+    {
+      "Gene": "MYO5A",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TAF13",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GPAA1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "ATL1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SLC9A6",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CDC42BPB",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TMEM184B",
+      "Cluster": 12
+    },
+    {
+      "Gene": "GPRASP1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "HLA-A",
+      "Cluster": 12
+    },
+    {
+      "Gene": "TMX2",
+      "Cluster": 12
+    },
+    {
+      "Gene": "NDUFS3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CERS1",
+      "Cluster": 12
+    },
+    {
+      "Gene": "HLA-B",
+      "Cluster": 12
+    },
+    {
+      "Gene": "PI4KA",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CHCHD10",
+      "Cluster": 12
+    },
+    {
+      "Gene": "SHANK3",
+      "Cluster": 12
+    },
+    {
+      "Gene": "CRMP1",
+      "Cluster": 13
+    },
+    {
+      "Gene": "DCX",
+      "Cluster": 13
+    },
+    {
+      "Gene": "GNB1",
+      "Cluster": 13
+    },
+    {
+      "Gene": "DPYSL2",
+      "Cluster": 13
+    },
+    {
+      "Gene": "DPYSL3",
+      "Cluster": 13
+    },
+    {
+      "Gene": "SOX4",
+      "Cluster": 13
+    },
+    {
+      "Gene": "MAP1B",
+      "Cluster": 13
+    },
+    {
+      "Gene": "INA",
+      "Cluster": 13
+    },
+    {
+      "Gene": "ISLR2",
+      "Cluster": 13
+    },
+    {
+      "Gene": "NEUROD2",
+      "Cluster": 13
+    },
+    {
+      "Gene": "FOXG1",
+      "Cluster": 13
+    },
+    {
+      "Gene": "CDK5R1",
+      "Cluster": 13
+    },
+    {
+      "Gene": "MAPT",
+      "Cluster": 13
+    },
+    {
+      "Gene": "SPTAN1",
+      "Cluster": 13
+    },
+    {
+      "Gene": "NFIX",
+      "Cluster": 2
+    },
+    {
+      "Gene": "CSDE1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "ATP9A",
+      "Cluster": 2
+    },
+    {
+      "Gene": "PABPC1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "CDC42",
+      "Cluster": 2
+    },
+    {
+      "Gene": "FSCN1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "TOP2B",
+      "Cluster": 2
+    },
+    {
+      "Gene": "MEF2C",
+      "Cluster": 2
+    },
+    {
+      "Gene": "WDR47",
+      "Cluster": 2
+    },
+    {
+      "Gene": "DNAJA1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "DHPS",
+      "Cluster": 2
+    },
+    {
+      "Gene": "PSMA7",
+      "Cluster": 2
+    },
+    {
+      "Gene": "MAGED2",
+      "Cluster": 2
+    },
+    {
+      "Gene": "TBCB",
+      "Cluster": 2
+    },
+    {
+      "Gene": "PTPRS",
+      "Cluster": 2
+    },
+    {
+      "Gene": "C1QBP",
+      "Cluster": 2
+    },
+    {
+      "Gene": "ATN1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "WASF1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "EEF1B2",
+      "Cluster": 2
+    },
+    {
+      "Gene": "CCT4",
+      "Cluster": 2
+    },
+    {
+      "Gene": "ODC1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "THRA",
+      "Cluster": 2
+    },
+    {
+      "Gene": "LSM7",
+      "Cluster": 2
+    },
+    {
+      "Gene": "EIF3G",
+      "Cluster": 2
+    },
+    {
+      "Gene": "UBA1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "PPP1R1B",
+      "Cluster": 2
+    },
+    {
+      "Gene": "KIDINS220",
+      "Cluster": 2
+    },
+    {
+      "Gene": "CCT7",
+      "Cluster": 2
+    },
+    {
+      "Gene": "RPLP1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "RAB1A",
+      "Cluster": 2
+    },
+    {
+      "Gene": "ARL3",
+      "Cluster": 2
+    },
+    {
+      "Gene": "UQCRC2",
+      "Cluster": 2
+    },
+    {
+      "Gene": "XPR1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "ILF2",
+      "Cluster": 2
+    },
+    {
+      "Gene": "BTF3",
+      "Cluster": 2
+    },
+    {
+      "Gene": "NDUFB11",
+      "Cluster": 2
+    },
+    {
+      "Gene": "NFIB",
+      "Cluster": 2
+    },
+    {
+      "Gene": "FEZF2",
+      "Cluster": 2
+    },
+    {
+      "Gene": "DPYSL5",
+      "Cluster": 2
+    },
+    {
+      "Gene": "CCT3",
+      "Cluster": 2
+    },
+    {
+      "Gene": "ATCAY",
+      "Cluster": 2
+    },
+    {
+      "Gene": "PCBP1",
+      "Cluster": 2
+    },
+    {
+      "Gene": "FASN",
+      "Cluster": 2
+    },
+    {
+      "Gene": "RAC3",
+      "Cluster": 2
+    },
+    {
+      "Gene": "CTNND2",
+      "Cluster": 2
+    },
+    {
+      "Gene": "CHD3",
+      "Cluster": 2
+    },
+    {
+      "Gene": "GNB2",
+      "Cluster": 2
+    },
+    {
+      "Gene": "DCTN2",
+      "Cluster": 2
+    },
+    {
+      "Gene": "SOX11",
+      "Cluster": 2
+    },
+    {
+      "Gene": "TUFM",
+      "Cluster": 2
+    },
+    {
+      "Gene": "RAB11B",
+      "Cluster": 2
+    },
+    {
+      "Gene": "RPS23",
+      "Cluster": 2
+    },
+    {
+      "Gene": "ELAVL3",
+      "Cluster": 2
+    },
+    {
+      "Gene": "HNRNPAB",
+      "Cluster": 2
+    },
+    {
+      "Gene": "SREBF2",
+      "Cluster": 2
+    },
+    {
+      "Gene": "DPM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CYP26B1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "UPF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CREBBP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MYCBP2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FBXL3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PDK2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "VPS41",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MARK4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BAZ1B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CLCN6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TTC19",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PTBP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RABGAP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GABRA3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ERCC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EXTL3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "UBR7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CLDN11",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SPAST",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GRAMD1B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RNH1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDUFS1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RB1CC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NCAPH2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KCNG1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HMGB3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GRN",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PNPLA6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CUL3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TRIO",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CDH10",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SDCCAG8",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CUL1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TAB2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ATP2B4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ALDH18A1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MRPS35",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ELMO2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TNPO3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CTSA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "WDR18",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SPEN",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PPP2R5A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DIP2B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMARCD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LRRC40",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EML1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NAV3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "COASY",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TFE3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GRIPAP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FTSJ1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KIF2A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NUP133",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MAOB",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GNB5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLC44A1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDST1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EIF2B3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RPS6KA2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SEL1L",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RDH11",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ALDH3A2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AFF4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMC1A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FBXW11",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SDHA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CLASP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ZNF532",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KCNQ2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ACAT1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MCM6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PTPN23",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PLXNA2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NT5C2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "XAB2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CTTNBP2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GTF3C1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EXOSC5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DYNC1I2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PCM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CIC",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PGM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SRCAP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CADPS2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ME2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GSK3B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "XPO1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RNF13",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ULK2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "YTHDC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NCOA1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ATRX",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PREP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ZNF213",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DDHD2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "POMGNT1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EIF2AK1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SEPHS1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HUWE1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SF3B2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GNA11",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ATRN",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GNPTG",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EFNB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EXOC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DLD",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HECTD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SUPT16H",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PHGDH",
+      "Cluster": 3
+    },
+    {
+      "Gene": "WAC",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ABL1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SPECC1L",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLC25A1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HIRA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SOX10",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TTC28",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TCF20",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CBY1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GTPBP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CYB5R3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AP1B1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MYH9",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SGSM3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EP300",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PHF5A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DAAM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SNW1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "YY1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ARHGAP5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SRP54",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CPNE6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CHD8",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ZMYND8",
+      "Cluster": 3
+    },
+    {
+      "Gene": "IFT52",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CSNK2A1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TM9SF4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "USP14",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MIB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GLRA2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "STAG2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PLS3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMARCA1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FMR1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMS",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FGD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CTCF",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MMP15",
+      "Cluster": 3
+    },
+    {
+      "Gene": "VAC14",
+      "Cluster": 3
+    },
+    {
+      "Gene": "COG4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TSC2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CLCN7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FBXO31",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DNAJA3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RBL2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BCKDK",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CCP110",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HERC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AP3B2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EEF1D",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MTMR9",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TUSC3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MCM4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LIN7B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RNASEH2A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TRMT1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FZR1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MEGF8",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ETHE1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PMPCB",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EIF3B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TAF6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AIMP2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MEGF9",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TGFBR1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ELAVL2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RAPGEF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MAPK8",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ACBD5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PITRM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMC3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SHOC2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CUL2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ZMIZ1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LGI1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GOSR2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MED13",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PSMD11",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KAT2A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EZH1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EFTUD2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DPH1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "WFS1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FRG1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CLCN3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RAPGEF2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "UFSP2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PANX1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DDX6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PDHX",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PTPMT1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ELMOD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDUFS8",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EIF2B1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GNPTAB",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RAB35",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ALDH5A1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EXOC2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CCNG1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DROSHA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LMNB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TRIM23",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CPEB4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TIMMDC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "UBE3A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FGF12",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TFG",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FXR1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PLXNA1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MRPL3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ZBTB47",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ADAM23",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GPD2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDUFS7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HTRA2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CCDC88A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HDLBP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RAB3GAP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLC25A12",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EPHA4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FARSB",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MARK1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AMPD2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ARHGEF2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SRSF11",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GNPAT",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KDM5B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PTBP2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ARID1A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KLF7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CNR1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLIRP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ALDH6A1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EIF2B2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SUPT7L",
+      "Cluster": 3
+    },
+    {
+      "Gene": "IQSEC3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "UFM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KDM3B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SPOP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TSHZ3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RNF2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ZMYM2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "POLR3GL",
+      "Cluster": 3
+    },
+    {
+      "Gene": "OCRL",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MRPS2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NAA60",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KLHL7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "VPS26A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MED13L",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PRDX4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDUFAF4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "IQSEC2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "USP9X",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CNOT1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BBS2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RNF113A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SOX9",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GRIA3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "STRADA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PSMF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ITPA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HNRNPR",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MAX",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KDM5C",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RBM42",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PRR12",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AHDC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ELK1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MAP2K2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SIN3B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GFER",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MACF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KDM4B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "POR",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SGCE",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PAICS",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DOCK4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LRRC4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDUFA5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GAD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "COPB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KIF1C",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MPDU1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CDO1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ASH2L",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KLF16",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DOHH",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DPP6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FAM98C",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDUFA10",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SCO2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CAMSAP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TUBGCP2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ATG4D",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EIF2S3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLC6A8",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RLIM",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MRPS25",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PDHA1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ACACA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DHX30",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RAF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EEFSEC",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ANKRD17",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KDM6B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TERF2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DAP3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NASP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ATP8A2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EPHB2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MORC2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KRAS",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HSD17B4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "IER3IP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MEIS2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PUM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DAGLA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "COL4A2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ARHGAP32",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AGTPBP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ISCA1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PNPLA8",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SYNCRIP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EPHA7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "B4GALNT1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMYD5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ACBD6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EPC2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SUCLA2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KDELR2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CIB2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "VEZF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TACO1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TRA2B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KCTD3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CCDC115",
+      "Cluster": 3
+    },
+    {
+      "Gene": "YME1L1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CDK9",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TOR1A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DPM2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RNF38",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CNPY3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PPIL1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TMEM63B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FAM8A1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NUMA1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDUFAF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RTF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FBXO11",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LRPPRC",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ATAD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ATIC",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PCDH10",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SEC31A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMARCC2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DENR",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NIPA2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ANP32A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HMG20A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MAN2C1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "IGF1R",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ST8SIA2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FTO",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KATNB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NCOR1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BCAS3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AFG3L2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TBCD",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CBX4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DYM",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MBD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMAD4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CACNA1A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BRD4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SCYL1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LMTK3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RERE",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TMCO1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RGL1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SNX27",
+      "Cluster": 3
+    },
+    {
+      "Gene": "POGZ",
+      "Cluster": 3
+    },
+    {
+      "Gene": "UBAP2L",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GATAD2B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GALNT2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DEGS1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PARP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PYCR2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CIAO1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AFF3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLC4A10",
+      "Cluster": 3
+    },
+    {
+      "Gene": "UBR3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HSPD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EIF2A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EPHA5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CAMK2D",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BOD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RARS2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MEPCE",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CASK",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLC16A2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ZMYM3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EBP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "OGT",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ZNF711",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NSDHL",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MRPS28",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MTDH",
+      "Cluster": 3
+    },
+    {
+      "Gene": "VLDLR",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ASTN2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SURF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CPSF7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "B3GAT3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EI24",
+      "Cluster": 3
+    },
+    {
+      "Gene": "YTHDF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MRPL49",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TAOK2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CNKSR2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DLG2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CCT5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DIXDC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ITPR1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KCNA6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DLG5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DIP2C",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AKAP6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EXT2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ASAP2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SCHIP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RIT2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TADA1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HOMER1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TRIM36",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PTPRK",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMARCA5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NR4A2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SCN3A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PTPRD",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TRIP12",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CACNA2D1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PPP2R5E",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ANKH",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TBRG1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TNIK",
+      "Cluster": 3
+    },
+    {
+      "Gene": "JAM2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EPHB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CDK19",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MMS19",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PDIA4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RAB39B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TIAM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PTDSS1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DYRK1A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TSPAN18",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLC35B2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AP3S2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PEX10",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SKI",
+      "Cluster": 3
+    },
+    {
+      "Gene": "WIPI2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AGAP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CUL4B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EIF5B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PPP1R15B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SYNJ1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MRPL10",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SON",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ADIPOR1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ALDH4A1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RSPRY1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NAE1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CTBP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CBS",
+      "Cluster": 3
+    },
+    {
+      "Gene": "G6PD",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AGPAT3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RALGDS",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LSS",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TAOK1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CHRNB2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FDPS",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NACC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DVL3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ACOX1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "STX5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SYVN1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "JAK1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NFIA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CNST",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PPP1R21",
+      "Cluster": 3
+    },
+    {
+      "Gene": "WDR26",
+      "Cluster": 3
+    },
+    {
+      "Gene": "YY1AP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RNF25",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RYBP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CADPS",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ABHD6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CRELD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TKT",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PBRM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "METAP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PLXNB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MOCS2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GPR85",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLC29A4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "COL1A2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KCNV1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "INTS1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CDK5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NUDT2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KDM1B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PCDH19",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLITRK5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "STK32C",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KCNC2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SPRED1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GPT2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RAB8B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BTRC",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GABRB3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SGPL1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ARIH1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMPD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DCHS1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LEO1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MCM7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "COG1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AP1G1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DCTN5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SLC27A4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "IGF2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "STIM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TRAPPC2L",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LENG8",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ECI1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DDB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SCARA3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RBPJ",
+      "Cluster": 3
+    },
+    {
+      "Gene": "UBTD2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "THAP11",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ATXN2L",
+      "Cluster": 3
+    },
+    {
+      "Gene": "COL3A1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MFF",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GRM5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CPT1C",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MMGT1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GPS1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ROBO1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BRD3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NIPA1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "IRF2BP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KBTBD2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TSEN34",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TANC2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "INSR",
+      "Cluster": 3
+    },
+    {
+      "Gene": "JAGN1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GPHN",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CAMTA1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PTEN",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TLN2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HCFC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DHCR7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RNASEH2C",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KAT5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ADCY5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TNKS",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DAG1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ARV1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NAA20",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SMARCC1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PC",
+      "Cluster": 3
+    },
+    {
+      "Gene": "JUP",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CTU2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DDX23",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CNTNAP2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CHST2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PACS1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CADM2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MED16",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LSM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EIF3F",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TMEM70",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MSRA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "B3GALT6",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LMNB2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TIMM22",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TBL1XR1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CSTF2T",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDUFAF3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NDUFV2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DALRD3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "P4HTM",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MPI",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EXOSC4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EDC3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PACS2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EXOC3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PRKRA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PAK2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SSR4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SNRPE",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TNRC18",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RGMA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MRPS16",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TRAPPC6B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EXOC7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SATB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PLCB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GALNT9",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RBM10",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RGS7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CADM1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AP2A2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KLHL25",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DENND5A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KCNQ3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "COPB2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "APOO",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PTRHD1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ROBO2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GTF2H5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PRPF39",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PBX1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DRG1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "YTHDF3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "DMWD",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PCYT2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BICD2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BACE1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TMEM222",
+      "Cluster": 3
+    },
+    {
+      "Gene": "UBE2H",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RNF220",
+      "Cluster": 3
+    },
+    {
+      "Gene": "COL4A1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "USP7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AGRN",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ZDHHC9",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SF3B3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "GSPT2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HMGB1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "MPHOSPH8",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NTNG2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "WDR5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SIAH1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PLXNB2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HDAC2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TRAPPC4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TLE1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LAGE3",
+      "Cluster": 3
+    },
+    {
+      "Gene": "WDR45",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SND1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PSMD12",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PHF2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CACNA1E",
+      "Cluster": 3
+    },
+    {
+      "Gene": "QRICH1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SPRED2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "WWP2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "YTHDF2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CTNND1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "STK39",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CTR9",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CHAMP1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "OSTC",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CAPZA2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RXRB",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SDHD",
+      "Cluster": 3
+    },
+    {
+      "Gene": "EHMT2",
+      "Cluster": 3
+    },
+    {
+      "Gene": "ABHD16A",
+      "Cluster": 3
+    },
+    {
+      "Gene": "CSNK2B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "SDHAF1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HMGN1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NUP62",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NRAS",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HEXA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "NEURL4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PEX26",
+      "Cluster": 3
+    },
+    {
+      "Gene": "VPS16",
+      "Cluster": 3
+    },
+    {
+      "Gene": "AP4M1",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PLXNA4",
+      "Cluster": 3
+    },
+    {
+      "Gene": "VPS52",
+      "Cluster": 3
+    },
+    {
+      "Gene": "FAM200B",
+      "Cluster": 3
+    },
+    {
+      "Gene": "TXNDC5",
+      "Cluster": 3
+    },
+    {
+      "Gene": "KCTD7",
+      "Cluster": 3
+    },
+    {
+      "Gene": "RBM12",
+      "Cluster": 3
+    },
+    {
+      "Gene": "BCKDHA",
+      "Cluster": 3
+    },
+    {
+      "Gene": "PRKDC",
+      "Cluster": 3
+    },
+    {
+      "Gene": "LRRC24",
+      "Cluster": 3
+    },
+    {
+      "Gene": "HECW1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ICA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLXND1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CD38",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARX",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ST7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HCCS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DVL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "THSD7A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LIG3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MSL3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZFX",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GGNBP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CRLF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ABCC8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SYNRG",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNA1G",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AGK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COX10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GTF2IRD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ELAC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PAX6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNA2D2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGQ",
+      "Cluster": 4
+    },
+    {
+      "Gene": "JARID2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADAM22",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CELSR3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PKD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HEATR5B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UBE3C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "REV3L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PAX7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POMT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DYRK4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NCAPD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHF7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FUZ",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MKS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LARS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLAUR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BRCA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MBTPS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAN2B2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PGM3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POLR3B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DDX11",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POLA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZC3H3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COX15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CCDC88C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "XYLT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IGF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AGPS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NRXN3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RNASET2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MIPEP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARHGAP31",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALG1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZCCHC8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LRRC7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBC1D23",
+      "Cluster": 4
+    },
+    {
+      "Gene": "USP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NSUN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AGA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MYO16",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TDP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MED17",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRIT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CUL7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OFD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PREX2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WDR37",
+      "Cluster": 4
+    },
+    {
+      "Gene": "YTHDC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TPR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DTNBP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CC2D2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RRM2B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VPS13D",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERCC8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADAMTS6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LTBP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARID1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PPP1R3F",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NFE2L3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALX4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SYNE2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GALC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATG5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PPP1R12A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZC3H11A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CTDP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "STYK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGV",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BCAT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ST3GAL6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NGFR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDON",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TAF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC12A2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ABCA7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SNCAIP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PKN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NTN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MYLK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDK13",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC9A7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ASPM",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZBTB11",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FGFR2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "THUMPD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF26A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATG2B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARFGEF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZFAT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MYO9A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHKA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATP2B3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ROCK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HYAL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATP11A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POLR1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CYFIP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAST4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SDK2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ABCC9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RORA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHRF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMG6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EXOC5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CLTCL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MNT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TCOF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RAD18",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ING3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZFYVE26",
+      "Cluster": 4
+    },
+    {
+      "Gene": "P4HA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NDE1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALPK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMARCE1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KDM5A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PTGS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FRY",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GLI2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EED",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BCS1L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUP37",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RASAL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FOSL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WDR62",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DLG1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SART3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KLHL20",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC46A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SPAG5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACACB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GPC4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RARB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PAK3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POLD3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GTF2I",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACER3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIK3C3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TULP3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SYNJ2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PPP2R5C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TNRC6C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ITCH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TP73",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RUNX1T1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SENP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OPHN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCGN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RIMS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RFX3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RIF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC4A4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MID2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNOT4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AP4E1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UBA5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LRP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AACS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PCDHB4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CCNT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GEMIN5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BCKDHB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KAT6A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "P2RX5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIBF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CAD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BCORL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HACE1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC25A24",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MTIF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ORC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALG9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACHE",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UIMC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALG6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNOT3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PTPN4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DNMT3B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CRLS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SNX5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAPKAPK5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "P2RX7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KDM2B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TASP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF16B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NOS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNH4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC9A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CCNK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF4A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLEKHG2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RBM27",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PUS7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZFHX4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC7A8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OSGEP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SEMA6A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CAPN3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MFSD11",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDC45",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HDAC6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDC6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AAAS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAP3K1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUP188",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CWF19L1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BTAF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HIVEP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IFT74",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MYO9B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SETD1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POLRMT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SNAP29",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LZTR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CECR2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRODH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TOP3B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HMGXB4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHKB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARSA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CABP7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNA1I",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IFT27",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRMU",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AP4S1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SOS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDKL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NIN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIAA0586",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DICER1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZC3H14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TELO2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VRK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CINP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RABGGTA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NINL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHRNA4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PROKR2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CRNKL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POFUT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SAMHD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TTI1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC32A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGU",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADNP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "METTL4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP192",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LAMA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ANKRD12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RBBP8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CSTF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBL1X",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POLA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MID1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RHOXF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AMMECR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ABCD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CCDC22",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNA1F",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCND1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAGT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PCDH11X",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PORCN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZDHHC15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DRP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NALCN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FGF14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HTR2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FNDC3A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC25A15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FLT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KATNAL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "INTS6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CLN5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF423",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FA2H",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AXIN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TAF1C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WFDC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EARS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SALL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "XYLT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RPGRIP1L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SYT17",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRIP4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MTFMT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CD276",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DMXL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SPG11",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CSPP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZDHHC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BRF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FZD3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UBR5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERI1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC39A14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARHGEF10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAN2B1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERCC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DOT1L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MED25",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MED26",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIAS4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRKD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLEKHA4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DNASE2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATP13A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDK6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ITGB8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WDR91",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MET",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BRAT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VIPR2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GRB10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COBL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLEKHA8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CASP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RBM28",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLOD3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHF14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EZH2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP41",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GLI3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RHEB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FKTN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNTNAP3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRUNE2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ECM2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KANK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SETX",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EXOSC3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERLIN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DDX50",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SEC23IP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UNC5B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MINPP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LZTS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SUFU",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LARP4B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EBF3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TFAM",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DNAJC12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ASPA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PNPO",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ENO3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RAI1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMARCD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "B9D1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UTP6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PEX12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DHX58",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMURF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHF12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GABRA4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SEPSECS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UGDH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PPARGC1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZBTB16",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATG2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PUS3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FOXRED1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CPT1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CBL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AMBRA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PPFIBP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COQ5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MVK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SH2B3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MGP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUP107",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNOT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KRR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COL12A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NEDD9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SASH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FANCE",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHACTR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RAB23",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KHDRBS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ASCC3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MED23",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GMNN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NR2E1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PEX7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZBTB24",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EPM2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PDE10A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PTK7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CUL9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SENP6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FBRSL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDH9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "THG1L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PDE4D",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RAD50",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PCDH12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUP155",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERGIC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PDGFRB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNTN3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CRBN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARL6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KAT2B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BCHE",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACAP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "USP9Y",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NPRL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IFT57",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GBE1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UMPS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GORASP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ABCC5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KLHL24",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLCH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DNAH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CLCN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FOXP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LMAN2L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACVR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MPV17",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EIF2B4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IFIH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MOGS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FANCL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PAPOLG",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OTX1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ST3GAL5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KDM3A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLCD4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF142",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PASK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BIRC6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NOL10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DCAF17",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DLX2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SOS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SPR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PARD3B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALMS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRRX1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TNR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MECR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EDEM3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RAP1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HDAC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GON4L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DOCK7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TFAP2E",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EXOC8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RRAGC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBCE",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NID1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UAP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RBBP5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF17",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HMGCL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GALE",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VAMP4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DPH5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DARS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HSD11B1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC35A3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DHDDS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CENPF",
+      "Cluster": 4
+    },
+    {
+      "Gene": "STAG1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KPTN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DDX59",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FASTKD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NRP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FILIP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SGIP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHF3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WDR35",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GTF3C3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CPSF3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FKBP15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRIM32",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALG2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NPC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DNMT3A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATAD2B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CRIPT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WDR11",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TEK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RCL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PROSER1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WBP4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EXOSC8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SIL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHRNA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBX2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC35B1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NCAPH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP89",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF18A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PEX16",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM39B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIK3CA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LIAS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CSMD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADORA3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GTDC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SV2C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FMOD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LDB3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF644",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BBS9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NXPH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TAF1L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIAA1549",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ECD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CIT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACADS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CCDC91",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WWP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATP7B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TSFM",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARHGAP9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PDE1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "STIL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "USP45",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BAZ2B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EXOSC9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "B9D2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARFGEF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF831",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TP53TG5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MTRR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "STAMBP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MCEE",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MPHOSPH10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BTN2A2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MOCS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AHNAK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UPF3B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUP85",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC25A19",
+      "Cluster": 4
+    },
+    {
+      "Gene": "THOC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OPA3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PANK2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NKX2-2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBC1D20",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ASL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NSRP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRMT5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUP214",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TIMM8A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZC4H2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HIVEP3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MASP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RAP1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PTPRB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IDUA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UBR4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHTF18",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VIL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AKAP9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PEX1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SRD5A3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TUBGCP6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DGCR8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADORA2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FOXP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMO",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MYO5C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CGNL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "INO80",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IVD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CLN6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MBD4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BBOX1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EPB41L4A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FOXJ1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARHGEF6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TTI2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDH15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DOCK6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LDLR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GTPBP3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RTN4IP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "QRSL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZSWIM6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PXDN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PNPLA7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP85",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TAF4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LAMA5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ASS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EXOSC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POMT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FIBCD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZC3H4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DKC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLXNA3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC7A10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SYNE1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HACL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBC1D5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNC3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GFPT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ANKHD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DIAPH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ANO1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PPFIA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "THOC6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WDR44",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KRT34",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RARA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHD1L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MCCC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHSY1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "THAP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GCH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CC2D1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PER2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "INPP5K",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRIM47",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRMT7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RIN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IGHMBP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACY3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MMACHC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TOE1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AP3B1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZMYM5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "XPO4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDK8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHRM3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCO1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CCNA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COG6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SRRM1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DYDC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IPO8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IMPA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SBF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RRAS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DPF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UNC79",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PEBP4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNTN6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AP4B1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ROCK2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CMPK2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ANO3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SOX3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ELP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DHX34",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM165",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERCC5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TPP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CARS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "STT3A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NAA35",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ANXA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TAOK3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "USP30",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RNFT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HTR1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SNX14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAP3K7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHF21A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NAT10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ITGA7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PAN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AHI1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RAB11FIP5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "USP15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MDM2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHST5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LAMC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DOCK10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC19A3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CYP27A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GCC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALDH1L2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCYL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "APPL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VPS36",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RNASEH2B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RCBTB1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SETDB2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TNS3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TTC5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MTHFS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACTL6A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TANK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RPS6KC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RASSF5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMPD4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UGGT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDK5RAP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC31A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GARNL3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "XPA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLAA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UBAP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FOXP4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF13A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LRRC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VARS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TAF8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NARS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BUD13",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRPC6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "YAP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PPP2R1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALKBH8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "THBS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUSAP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF23",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TUBGCP4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMAD6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "STRA6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADCY3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SIX3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF11",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TACC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP55",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ENTPD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EXOC6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FAM149B1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ASCC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TET1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DNA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ITGAV",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SENP7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "USP8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HCN4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARHGAP24",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BBS7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDKL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CENPE",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LEF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC39A8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FBN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALG10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLCO1C1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRICKLE1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NDUFA9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COL2A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LGR5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ASCL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MMAB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SUOX",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BRCA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SETD1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RHOF",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RBM26",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SSTR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MDGA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NAA30",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNH5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC12A6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TCF12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TLE3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCAPER",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CELF6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FANCI",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NTRK3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UNC45A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PMM2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PARN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZFHX3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GCSH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDH11",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VPS53",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ABCA8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PTRH2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ASXL3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NPC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC13A5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WRAP53",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TP53",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRDM15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SIK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CAPN10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FBN3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PEX14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLK4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HSPG2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MTF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NR1I3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGM",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ABL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TOR1AIP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TARS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SETDB1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIP5K1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SYT14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SUSD4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADAM15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RIT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FLG",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VPS54",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TPRKB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EXOC6B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCN1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF385B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UNC80",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PTH2R",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SUMF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DIS3L2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FANCD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GMPPA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNTN4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CAND2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC25A26",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLA1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BOC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MED12L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALDH1L1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LPP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AMT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "STXBP5L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TM4SF19",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ECE2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBCK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CCNA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "METTL14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GLRA3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MYO10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IQGAP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC30A5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FEM1C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MEGF10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GABRA6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GLRA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBC1D7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FARS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HMGCLL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCUBE3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHIP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VIP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SDK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GIGYF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TLK2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NCAPG2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NLGN4X",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KDM6A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF157",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TAF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DIAPH2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HTR2C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GPC3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MCPH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CSGALNACT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERLIN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SNTG1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ST18",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FBXO10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AUH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF462",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GSN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CRB2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "INPP5E",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SEC16A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NOTCH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PDSS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RGR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POLR3A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FRA10AC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MKI67",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NKX6-2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PPRC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNNM2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LRRC4C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TUT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DGKZ",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CCDC82",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DRD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATM",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GRIK4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADAM33",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EML3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLCH2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ESAM",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIRREL3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SIDT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDH22",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC22A9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNTN5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MKX",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GRIN2B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDH8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM218",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HNMT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MTMR12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DOCK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DLAT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PTS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SEC24D",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RILPL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DHX37",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNA1C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "THRB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UBE3B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EIF4E",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FAM177A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UPF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FRMD4A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NCAPD3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ANO4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MMAA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF827",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NR3C2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGF",
+      "Cluster": 4
+    },
+    {
+      "Gene": "INPP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NBAS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GUF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GABRA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SACS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CENPJ",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DST",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM132D",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM163",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SETBP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EPG5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TCF7L1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GUCY1A2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "XRCC4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SUV39H2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GRIA4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SAR1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GRM1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNTNAP4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CWC27",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM87B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC25A27",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RPIA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TUBGCP5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNJ16",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF599",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LGI4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HS2ST1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ROBO3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRKCA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LRRK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ABCA5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MIA3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DISP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OBSCN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SH3RF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TSEN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SKA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIEZO2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF18",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OTUD6B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PI4K2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "USP25",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HEATR3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUP205",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VSIG4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM237",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FMN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC24A2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RMND1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CLIC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AFF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GRIP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VPS37A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNMA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCAF4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SORCS3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SUPV3L1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHF6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LRFN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KAT6B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UNC5D",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AIFM1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SASS6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BUB1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BRPF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CPT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNA1D",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNA2D3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERG",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC38A10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DGKI",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UBN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BRAF",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GALNT14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FANCC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CLSTN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SHROOM4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNB1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZFAND2B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACHD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DONSON",
+      "Cluster": 4
+    },
+    {
+      "Gene": "STC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SNF8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACTC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHAF1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UBR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACE",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GNE",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UBE2J2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KALRN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WDR4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRAPPC10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FTCD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MCM3AP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DIP2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SPTBN4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MED27",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ANO10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LMNA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AZGP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BDH1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PGAP3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FDXR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MED11",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POLR3K",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CCDC78",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBC1D24",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SHANK2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NXF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TPCN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "USP24",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC45A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DHRS3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MXRA8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DNAJB4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NTNG1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HENMT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC30A7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FLVCR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TFB2M",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PEX13",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRIM17",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MEMO1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BBS5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERCC3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BOLA3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DHX57",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GABRG1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GABRB1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC22A15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TGFBR2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NFASC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRKCI",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PSMD6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADAMTS9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DCLK3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LZTFL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FBXO40",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF148",
+      "Cluster": 4
+    },
+    {
+      "Gene": "YEATS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SNIP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RFC4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RNF168",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AIMP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF589",
+      "Cluster": 4
+    },
+    {
+      "Gene": "INTU",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RNF123",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POC1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRSS12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NAA15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ABCE1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NDUFAF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LMBRD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NIPBL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RICTOR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC35A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GRIK2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PDSS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "STXBP5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HCN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COG5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BMPER",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FABP5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FNDC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DLC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PEX2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CSMD3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALDH7A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "INTS8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FXN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAMDC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HGSNAT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PTCHD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GAPVD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATP7A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NLGN4Y",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGO",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BRWD3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MELK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FAT3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC7A3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FBXO33",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LRFN5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SPTSSA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "REEP3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NEMF",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TTC8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM63C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRPF18",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC18A2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PDZD8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NSD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SNAPC4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PMPCA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARHGEF40",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ISCA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OTOGL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CLMN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNB2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP57",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AVPR1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "USP54",
+      "Cluster": 4
+    },
+    {
+      "Gene": "XRRA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "A2ML1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM135",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF592",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LDHD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLIN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NAV2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNG2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MBD6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GOLGA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COQ7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FBXO22",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KATNAL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF668",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMG8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GATAD2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF528",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AXL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF526",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRAPPC9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WDR81",
+      "Cluster": 4
+    },
+    {
+      "Gene": "C2CD3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRANK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIAA1586",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SETD5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MGAT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACOX2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MFSD2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DTYMK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COG7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDC40",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SFTPC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDKN2AIP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LRP1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TET2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TCTN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZBTB49",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GFM1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LETM1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP120",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MECP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZBBX",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CSNK1G1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADRB2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IL1RAPL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC33A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SIN3A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARL13B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCN9A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SDC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CKAP2L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AGPAT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NLGN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BTD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MUC3A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SYAP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OTUD7A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GUSB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FRMPD4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM42",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CNTROB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "USP38",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PDCD6IP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EMX2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SEMA3E",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF804A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NFXL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DENND5B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RALGAPB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NPAS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUDCD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNS3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PPM1D",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GIMAP8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNK3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHD7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ESCO2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCND3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MCC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "POLR1C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ASXL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DSCAM",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIK3CD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BPTF",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATF7IP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ANO5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HDAC3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PAH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SYCE1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KNDC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EXOSC10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATPAF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "JMJD1C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LAMB2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EIF2AK3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MACROD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DPAGT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TP53RK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALG14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SUCLG2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CLP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GTPBP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SNTG2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM134",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHF8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SH3RF3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COQ2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KDM2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNK7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PTPRM",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PEAK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NMNAT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RNF213",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NET1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP19",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KLHL15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LEMD3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MGA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GLIS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PODN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LIG4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZWILCH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BBS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DENND4A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NPAS4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MSL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KY",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LARP7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP135",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RSRC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MRPS22",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PCCA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DOLK",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMAD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DPP10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERCC4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRIMA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RTTN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC35G1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RIMS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BDNF",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NCKAP5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ANKLE2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MTHFR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WDR73",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RPS6KA3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHD9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNA3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TOP3A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TGIF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACAD9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FAM20C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADAMTSL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLEC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMPRSS9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GLDC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC25A20",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERBB4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF713",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SUZ12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NSUN3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZBTB7A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PER1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FUCA1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GGN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDH4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EGR3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GPC5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GEMIN4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BBS10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TSHZ1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FZD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAP3K15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PSMG4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CAPS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "D2HGDH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BBS12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FKRP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC25A42",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EHMT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DHTKD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RNF135",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SGSH",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SETD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC9A9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RFX7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC35C1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NEUROG1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "UBA7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EXT1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SHMT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNA4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CLN8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNB4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNK4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CAPN12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP97",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CSF1R",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNB2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GRID1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALG12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP63",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SPATA13",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PYCR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FREM3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GPC6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CSMD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FANCF",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CTNNA3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CCBE1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BCOR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GRIN2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "EP400",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRR14L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNRF3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FBXL7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SFXN4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRAIP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TUBA8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IQGAP3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VPS33B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FAM120C",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCFD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALDH1A3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TM2D3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PRKD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SRPK3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLA2G6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCND2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TXNRD2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNH7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MED12",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZBTB40",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DRD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "JAG2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MUC6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BRF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ANKS1B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PURA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CDK10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TCN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATP6V0A2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NR2F2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AHNAK2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BRWD1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NRG3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNQ5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GNB1L",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RNPC3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMLHE",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLITRK2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLK5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LRCH3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AGBL4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WWOX",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NUDT17",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BTN3A2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PCLO",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LYRM7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TPCN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM216",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DYNC2H1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DCC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAGI2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LUZP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KCNJ11",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IFT140",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TET3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FANCA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SECISBP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DNAH17",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARHGAP11B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF626",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF559",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CHM",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CLN3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF548",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MTF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SHISA6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLX4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LRRK2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FAM120AOS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF292",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARID2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IL1RAPL2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MAOA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FHIT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PTPRT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MYBPC1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF699",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HLA-DRB1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FAT4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACADSB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM63A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RYR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF107",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRRAP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "YRDC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RFX8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TPK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC6A9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CACNA1H",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LAMA2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AJAP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "WNK3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TECPR2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COL27A1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GM2A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NHLRC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SCN8A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF420",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IGF2R",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PGAP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GTF2E2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FITM2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SVIL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TRIM33",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF517",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADARB1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HTT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "IPP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OGDHL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATG7",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PIGN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TOPORS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FAR1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DPP4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DNAH10",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF81",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATAD3A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SLC9A8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIF13B",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLCG2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "VPS13A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DLGAP2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF335",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SZT2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HELZ",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HYLS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PLN",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TLK1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF536",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BAZ1A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RYR2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FAN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "CEP290",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DLL1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMURF1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GJC2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FICD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LTN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SMC5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KIAA0753",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DMD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NAGA",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RORB",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SGMS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GPR52",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GIGYF2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PHACTR4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SYT15",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NEU1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MBD5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DHX16",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HLA-G",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TBC1D8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATXN2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM231",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ITSN1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "OLIG2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DNAJC19",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ATP10A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MIR137",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RNU4ATAC",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LINGO4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "COG8",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TREX1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DDX47",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GALT",
+      "Cluster": 4
+    },
+    {
+      "Gene": "AP1G2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TTLL3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TSPAN4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "LYRM4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "BBIP1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GRID2IP",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FASTKD5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ZNF407",
+      "Cluster": 4
+    },
+    {
+      "Gene": "SP9",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FANCG",
+      "Cluster": 4
+    },
+    {
+      "Gene": "FAM200A",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HLA-DPB1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ERCC6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DHFR",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ARHGEF38",
+      "Cluster": 4
+    },
+    {
+      "Gene": "GET4",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ADSL",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RDH14",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NSUN6",
+      "Cluster": 4
+    },
+    {
+      "Gene": "PISD",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ACY1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "NFS1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMEM199",
+      "Cluster": 4
+    },
+    {
+      "Gene": "RAD21L1",
+      "Cluster": 4
+    },
+    {
+      "Gene": "MARS2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HS3ST5",
+      "Cluster": 4
+    },
+    {
+      "Gene": "TMED7-TICAM2",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ALG11",
+      "Cluster": 4
+    },
+    {
+      "Gene": "DPP3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "HMBS",
+      "Cluster": 4
+    },
+    {
+      "Gene": "ITGB3",
+      "Cluster": 4
+    },
+    {
+      "Gene": "KDM1A",
+      "Cluster": 5
+    },
+    {
+      "Gene": "ARHGAP33",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PRKAR2B",
+      "Cluster": 5
+    },
+    {
+      "Gene": "RALA",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PSMB1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HIVEP2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "ZMYND11",
+      "Cluster": 5
+    },
+    {
+      "Gene": "MATR3",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CELF2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "NEDD4L",
+      "Cluster": 5
+    },
+    {
+      "Gene": "MSMO1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PUM2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PCGF2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SEC61A1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "U2AF2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "NEO1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "MAP4K4",
+      "Cluster": 5
+    },
+    {
+      "Gene": "VASH1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HSD17B10",
+      "Cluster": 5
+    },
+    {
+      "Gene": "MRPS34",
+      "Cluster": 5
+    },
+    {
+      "Gene": "ACTL6B",
+      "Cluster": 5
+    },
+    {
+      "Gene": "FDFT1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "DDX1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "IGBP1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HNRNPC",
+      "Cluster": 5
+    },
+    {
+      "Gene": "EZR",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HNRNPH3",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SMARCB1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "DDX17",
+      "Cluster": 5
+    },
+    {
+      "Gene": "ADNP",
+      "Cluster": 5
+    },
+    {
+      "Gene": "AHCY",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PQBP1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "RAB11A",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HNRNPL",
+      "Cluster": 5
+    },
+    {
+      "Gene": "NOVA2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HNRNPUL1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "TNPO2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CACNG7",
+      "Cluster": 5
+    },
+    {
+      "Gene": "MAST1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PIK3R2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "GRIK5",
+      "Cluster": 5
+    },
+    {
+      "Gene": "YKT6",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CLIP2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "LHX2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "AK1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "EIF3A",
+      "Cluster": 5
+    },
+    {
+      "Gene": "ZNHIT3",
+      "Cluster": 5
+    },
+    {
+      "Gene": "UBTF",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CBX1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "RAB5C",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CHD4",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SOBP",
+      "Cluster": 5
+    },
+    {
+      "Gene": "GNAI2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "APC2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SF3B1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "KIF21B",
+      "Cluster": 5
+    },
+    {
+      "Gene": "AKT3",
+      "Cluster": 5
+    },
+    {
+      "Gene": "APH1A",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CCND2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SATB2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SET",
+      "Cluster": 5
+    },
+    {
+      "Gene": "RAB14",
+      "Cluster": 5
+    },
+    {
+      "Gene": "IRF2BPL",
+      "Cluster": 5
+    },
+    {
+      "Gene": "BCL11A",
+      "Cluster": 5
+    },
+    {
+      "Gene": "TCP1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "EFNB2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CLPP",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SNRPB",
+      "Cluster": 5
+    },
+    {
+      "Gene": "UBA2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "TRAP1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "BCL11B",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SMARCA4",
+      "Cluster": 5
+    },
+    {
+      "Gene": "GNAI1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "ILF3",
+      "Cluster": 5
+    },
+    {
+      "Gene": "FGF13",
+      "Cluster": 5
+    },
+    {
+      "Gene": "MLLT1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CHMP1A",
+      "Cluster": 5
+    },
+    {
+      "Gene": "TRAF7",
+      "Cluster": 5
+    },
+    {
+      "Gene": "EIF5A",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CHL1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "MYCN",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SOX5",
+      "Cluster": 5
+    },
+    {
+      "Gene": "UBQLN1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CAPRIN1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "DHX9",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SRSF1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "TBR1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PARP6",
+      "Cluster": 5
+    },
+    {
+      "Gene": "ABI2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HNRNPD",
+      "Cluster": 5
+    },
+    {
+      "Gene": "G3BP2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SCARB2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "EIF4A3",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SAE1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "UFC1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PLK2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "NHP2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CCT6A",
+      "Cluster": 5
+    },
+    {
+      "Gene": "NONO",
+      "Cluster": 5
+    },
+    {
+      "Gene": "RBMX",
+      "Cluster": 5
+    },
+    {
+      "Gene": "RPL10",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SSRP1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HNRNPU",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CMIP",
+      "Cluster": 5
+    },
+    {
+      "Gene": "GRIA1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "GNAQ",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CCT8",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PPP2R2B",
+      "Cluster": 5
+    },
+    {
+      "Gene": "AUTS2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "RCAN1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "ARHGAP35",
+      "Cluster": 5
+    },
+    {
+      "Gene": "STT3B",
+      "Cluster": 5
+    },
+    {
+      "Gene": "GRIK3",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CAMLG",
+      "Cluster": 5
+    },
+    {
+      "Gene": "ADCY1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "RAD21",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HNRNPK",
+      "Cluster": 5
+    },
+    {
+      "Gene": "VCP",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SRRM2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SF1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PAFAH1B2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "MMADHC",
+      "Cluster": 5
+    },
+    {
+      "Gene": "FEM1B",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HNRNPH1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "MN1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "ZEB2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HNRNPF",
+      "Cluster": 5
+    },
+    {
+      "Gene": "NLGN2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CDH2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "KIF5B",
+      "Cluster": 5
+    },
+    {
+      "Gene": "NBEA",
+      "Cluster": 5
+    },
+    {
+      "Gene": "DAB1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PRPF8",
+      "Cluster": 5
+    },
+    {
+      "Gene": "KCTD13",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CKAP5",
+      "Cluster": 5
+    },
+    {
+      "Gene": "NR2F1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SOX12",
+      "Cluster": 5
+    },
+    {
+      "Gene": "IMPDH2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PUF60",
+      "Cluster": 5
+    },
+    {
+      "Gene": "BHLHE22",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PJA1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "SOX2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "IDH2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "POU3F2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "NDUFA6",
+      "Cluster": 5
+    },
+    {
+      "Gene": "MYT1L",
+      "Cluster": 5
+    },
+    {
+      "Gene": "XRCC6",
+      "Cluster": 5
+    },
+    {
+      "Gene": "TCF4",
+      "Cluster": 5
+    },
+    {
+      "Gene": "DDX39B",
+      "Cluster": 5
+    },
+    {
+      "Gene": "LDB1",
+      "Cluster": 5
+    },
+    {
+      "Gene": "RUSC2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "L1CAM",
+      "Cluster": 5
+    },
+    {
+      "Gene": "POU3F3",
+      "Cluster": 5
+    },
+    {
+      "Gene": "RNF5",
+      "Cluster": 5
+    },
+    {
+      "Gene": "PPP1CB",
+      "Cluster": 5
+    },
+    {
+      "Gene": "CSNK1E",
+      "Cluster": 5
+    },
+    {
+      "Gene": "HNRNPUL2",
+      "Cluster": 5
+    },
+    {
+      "Gene": "DDX3X",
+      "Cluster": 5
+    },
+    {
+      "Gene": "EIF6",
+      "Cluster": 5
+    },
+    {
+      "Gene": "DDOST",
+      "Cluster": 5
+    },
+    {
+      "Gene": "YWHAE",
+      "Cluster": 6
+    },
+    {
+      "Gene": "TUBB2A",
+      "Cluster": 6
+    },
+    {
+      "Gene": "TUBB2B",
+      "Cluster": 6
+    },
+    {
+      "Gene": "GPM6A",
+      "Cluster": 6
+    },
+    {
+      "Gene": "RPL26",
+      "Cluster": 6
+    },
+    {
+      "Gene": "SYN1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "IDS",
+      "Cluster": 7
+    },
+    {
+      "Gene": "ATP1A2",
+      "Cluster": 7
+    },
+    {
+      "Gene": "NCDN",
+      "Cluster": 7
+    },
+    {
+      "Gene": "ATP6V0A1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "RHOA",
+      "Cluster": 7
+    },
+    {
+      "Gene": "MAP2",
+      "Cluster": 7
+    },
+    {
+      "Gene": "GNAS",
+      "Cluster": 7
+    },
+    {
+      "Gene": "STUB1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "PPP2R1A",
+      "Cluster": 7
+    },
+    {
+      "Gene": "TPI1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "SNX3",
+      "Cluster": 7
+    },
+    {
+      "Gene": "HPCA",
+      "Cluster": 7
+    },
+    {
+      "Gene": "NDUFA1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "NAPB",
+      "Cluster": 7
+    },
+    {
+      "Gene": "KLC1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "SNRPN",
+      "Cluster": 7
+    },
+    {
+      "Gene": "KIF1A",
+      "Cluster": 7
+    },
+    {
+      "Gene": "SULT4A1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "DLG4",
+      "Cluster": 7
+    },
+    {
+      "Gene": "ARF3",
+      "Cluster": 7
+    },
+    {
+      "Gene": "GLUL",
+      "Cluster": 7
+    },
+    {
+      "Gene": "RAC1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "NDUFB10",
+      "Cluster": 7
+    },
+    {
+      "Gene": "SOD1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "ARF1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "RHOB",
+      "Cluster": 7
+    },
+    {
+      "Gene": "SLC25A4",
+      "Cluster": 7
+    },
+    {
+      "Gene": "NPTN",
+      "Cluster": 7
+    },
+    {
+      "Gene": "EIF4A2",
+      "Cluster": 7
+    },
+    {
+      "Gene": "AP2M1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "ATP1A1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "YWHAZ",
+      "Cluster": 7
+    },
+    {
+      "Gene": "MAP1A",
+      "Cluster": 7
+    },
+    {
+      "Gene": "BSCL2",
+      "Cluster": 7
+    },
+    {
+      "Gene": "KIF5C",
+      "Cluster": 7
+    },
+    {
+      "Gene": "CNP",
+      "Cluster": 7
+    },
+    {
+      "Gene": "WSB2",
+      "Cluster": 7
+    },
+    {
+      "Gene": "PRKAR1B",
+      "Cluster": 7
+    },
+    {
+      "Gene": "TSPYL1",
+      "Cluster": 7
+    },
+    {
+      "Gene": "SCAMP5",
+      "Cluster": 7
+    },
+    {
+      "Gene": "NPTXR",
+      "Cluster": 7
+    },
+    {
+      "Gene": "SLC1A2",
+      "Cluster": 8
+    },
+    {
+      "Gene": "PLP1",
+      "Cluster": 8
+    },
+    {
+      "Gene": "GFAP",
+      "Cluster": 8
+    },
+    {
+      "Gene": "SPARCL1",
+      "Cluster": 8
+    },
+    {
+      "Gene": "MBP",
+      "Cluster": 8
+    },
+    {
+      "Gene": "SYT1",
+      "Cluster": 9
+    },
+    {
+      "Gene": "CAMK2A",
+      "Cluster": 9
+    },
+    {
+      "Gene": "SYP",
+      "Cluster": 9
+    },
+    {
+      "Gene": "ATP1A3",
+      "Cluster": 9
+    },
+    {
+      "Gene": "RAB3A",
+      "Cluster": 9
+    },
+    {
+      "Gene": "ENO2",
+      "Cluster": 9
+    },
+    {
+      "Gene": "COX6B1",
+      "Cluster": 9
+    },
+    {
+      "Gene": "STXBP1",
+      "Cluster": 9
+    },
+    {
+      "Gene": "APP",
+      "Cluster": 9
+    },
+    {
+      "Gene": "ATP1B1",
+      "Cluster": 9
+    },
+    {
+      "Gene": "KIF5A",
+      "Cluster": 9
+    },
+    {
+      "Gene": "TSPAN7",
+      "Cluster": 9
+    },
+    {
+      "Gene": "GPX4",
+      "Cluster": 9
+    },
+    {
+      "Gene": "ARL6IP1",
+      "Cluster": 9
+    },
+    {
+      "Gene": "COX8A",
+      "Cluster": 9
+    },
+    {
+      "Gene": "VAMP2",
+      "Cluster": 9
+    }
+  ],
+  "trends": "cluster_result/cluster_expression_ndd_kmeans_trends_by_timepointv2.csv",
+  "enrichment": {
+    "1": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster1.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster1.csv"
+    },
+    "2": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster2.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster2.csv"
+    },
+    "3": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster3.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster3.csv"
+    },
+    "4": {
+      "HPO": "enrichment/HPO/expression_kmeans_ndd_HPO_enrichment_resultv2_Cluster4_communities.csv",
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster4.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster4.csv"
+    },
+    "5": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster5.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster5.csv"
+    },
+    "6": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster6.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster6.csv"
+    },
+    "7": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster7.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster7.csv"
+    },
+    "8": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster8.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster8.csv"
+    },
+    "9": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster9.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster9.csv"
+    },
+    "10": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster10.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster10.csv"
+    },
+    "11": {
+      "HPO": "enrichment/HPO/expression_kmeans_ndd_HPO_enrichment_resultv2_Cluster11_communities.csv",
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster11.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster11.csv"
+    },
+    "12": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster12.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster12.csv"
+    },
+    "13": {
+      "HPO": null,
+      "GO": "enrichment/GO/expression_kmeans_ndd_GO_enrichment_resultv2_Cluster13.csv",
+      "KEGG": "enrichment/KEGG/expression_kmeans_ndd_KEGG_enrichv2_Cluster13.csv"
+    }
+  }
+}

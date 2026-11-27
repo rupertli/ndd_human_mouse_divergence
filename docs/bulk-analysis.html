@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ASD bulk expression cluster explorer</title>
+  <title>NDD bulk expression cluster explorer</title>
   <script>
     (() => {
       const param = new URLSearchParams(window.location.search).get("scoutTheme");
@@ -54,9 +54,9 @@
         <svg class="icon" focusable="false"><use href="#icon-dna"/></svg>
       </div>
       <div>
-        <p class="eyebrow">ASD BULK RNA-SEQ · EXPRESSION / K-MEANS · V2</p>
-        <h1>ASD bulk expression cluster explorer</h1>
-        <p class="intro">Select a gene to explore its cluster peers and the exported HPO, KEGG, and GO enrichment results involving it.</p>
+        <p class="eyebrow">NDD BULK RNA-SEQ · EXPRESSION / K-MEANS · V2</p>
+        <h1>NDD bulk expression cluster explorer</h1>
+        <p class="intro">Select a gene to find its cluster, explore all cluster members and their average expression trend, then view cluster-wide HPO, GO, and KEGG enrichment.</p>
       </div>
     </header>
     <nav aria-label="Analysis pages"><p><a href="index.html">Human-mouse developmental explorer</a></p></nav>
@@ -71,40 +71,51 @@
       </button>
       <span id="bulk-status" role="status" aria-live="polite">Loading cluster assignments...</span>
     </form>
-    <p class="hint">Results are scoped to the selected gene's cluster and use exact gene membership, not text similarity. Exported p-values and thresholds are unchanged. A gene's presence in an enriched term does not establish an ASD-specific or causal effect.</p>
+    <p class="hint">The selected gene identifies the cluster. Enrichment tables show all exported results for that cluster, including terms that do not contain the selected gene. Exported p-values and thresholds are unchanged; enrichment does not establish a diagnosis or causal effect.</p>
     <nav class="analysis-guide" aria-label="Bulk analysis sections">
       <ol>
-        <li><a href="#peers-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-cluster"/></svg><span><strong>1. Cluster peers</strong><small>Co-clustered genes</small></span></a></li>
-        <li><a href="#hpo-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-brain"/></svg><span><strong>2. HPO</strong><small>Phenotype associations</small></span></a></li>
-        <li><a href="#kegg-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pathway"/></svg><span><strong>3. KEGG</strong><small>Pathway membership</small></span></a></li>
+        <li><a href="#peers-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-cluster"/></svg><span><strong>1. Cluster genes</strong><small>All members</small></span></a></li>
+        <li><a href="#trend-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pathway"/></svg><span><strong>2. Expression</strong><small>Developmental trend</small></span></a></li>
+        <li><a href="#hpo-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-brain"/></svg><span><strong>3. HPO</strong><small>Phenotype associations</small></span></a></li>
         <li><a href="#go-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-ontology"/></svg><span><strong>4. GO</strong><small>Biological functions</small></span></a></li>
+        <li><a href="#kegg-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pathway"/></svg><span><strong>5. KEGG</strong><small>Pathway enrichment</small></span></a></li>
       </ol>
     </nav>
     <p id="bulk-error" class="error" role="alert" hidden></p>
     <div id="bulk-results" aria-live="polite">
       <section class="card bulk-section" aria-labelledby="peers-heading">
-        <h2 id="peers-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-cluster"/></svg><span>1. Other genes in the same cluster</span></h2>
+        <h2 id="peers-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-cluster"/></svg><span>1. All genes in the selected cluster</span></h2>
         <div id="cluster-peers"><p>Select a gene to see its cluster peers.</p></div>
       </section>
+      <section class="card bulk-section" aria-labelledby="trend-heading">
+        <h2 id="trend-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pathway"/></svg><span>2. Cluster expression over development</span></h2>
+        <div id="cluster-trend"><p>Select a gene to see its cluster's expression trend.</p></div>
+      </section>
       <section class="card bulk-section" aria-labelledby="hpo-heading">
-        <h2 id="hpo-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-brain"/></svg><span>2. HPO terms containing the gene</span></h2>
+        <h2 id="hpo-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-brain"/></svg><span>3. HPO enrichment for the cluster</span></h2>
+        <p class="hint">Orphanet onset context describes diseases associated with each HPO term, not when that phenotype itself appears. Possible event-bin overlaps are exploratory and are not a most-likely developmental phase.</p>
         <div id="hpo-results"><p>Select a gene to see HPO terms.</p></div>
       </section>
-      <section class="card bulk-section" aria-labelledby="kegg-heading">
-        <h2 id="kegg-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pathway"/></svg><span>3. KEGG pathways containing the gene</span></h2>
-        <div id="kegg-results"><p>Select a gene to see KEGG pathways.</p></div>
-      </section>
       <section class="card bulk-section" aria-labelledby="go-heading">
-        <h2 id="go-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-ontology"/></svg><span>4. GO terms containing the gene</span></h2>
+        <h2 id="go-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-ontology"/></svg><span>4. GO enrichment for the cluster</span></h2>
         <div id="go-results"><p>Select a gene to see GO terms.</p></div>
+      </section>
+      <section class="card bulk-section" aria-labelledby="kegg-heading">
+        <h2 id="kegg-heading" class="icon-heading"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pathway"/></svg><span>5. KEGG enrichment for the cluster</span></h2>
+        <div id="kegg-results"><p>Select a gene to see KEGG pathways.</p></div>
       </section>
     </div>
     <details class="methods">
       <summary>Data and interpretation</summary>
-      <p>This page uses the copied expression/K-means v2 cluster assignments and enrichment CSVs. It shows exported cluster enrichment rows whose overlap gene list includes the selected gene; it does not calculate new gene-level enrichment tests.</p>
-      <p>GO and KEGG overlap lists use Entrez IDs, matched to gene symbols through a bundled mapping generated locally from org.Hs.eg.db. HPO uses gene symbols and includes the exported semantic community labels. GO ontology labels are BP (biological process), CC (cellular component), and MF (molecular function).</p>
-      <p>Header-only HPO files are empty results, not load errors. Cluster 10 has no exported HPO file. Neither condition is treated as evidence that a gene has no HPO annotations. GO and KEGG may use different backgrounds from HPO; their adjusted p-values should not be compared as if they were the same analysis. Disease pathways are annotation categories, not diagnoses.</p>
-      <p><a href="data/ASD_Bulk_analysis/cluster_result/expression_kmeans_all_clusters_genesv2.csv">Download cluster assignments</a></p>
+      <p>This page uses the NDD expression/K-means v2 results. Cluster membership comes from the supplied per-cluster gene lists. All exported HPO, GO, and KEGG rows for the selected cluster are shown, without selected-gene filtering or new enrichment tests. The selected gene is highlighted in the member list.</p>
+      <p>The expression chart uses the exported cluster means and standard errors across samples in each developmental phase. Shading is mean plus/minus one SE, not a confidence interval. Phases are equally spaced ordered categories, not proportional elapsed time; these bulk developmental categories are distinct from the five cortical event bins used for Orphanet context below.</p>
+      <p>GO and KEGG overlap lists use Entrez IDs, matched to gene symbols through a bundled mapping generated locally from org.Hs.eg.db; unmapped IDs remain explicitly labeled as Entrez IDs. HPO uses gene symbols; community labels are shown only when supplied. GO ontology labels are BP (biological process), CC (cellular component), and MF (molecular function).</p>
+      <p>Header-only files are empty results, not load errors. The supplied NDD HPO exports cover clusters 4 and 11 only; other clusters are labeled unavailable. Neither condition establishes absence of annotations. GO and KEGG may use different backgrounds from HPO; adjusted p-values should not be compared as if they were the same analysis. Disease pathways are annotation categories, not diagnoses.</p>
+      <p><strong>Orphanet disease-onset context:</strong> exact HPO associations from <a href="https://sciences.orphadata.com/phenotypes/">Orphadata phenotypes</a> are joined by ORPHAcode to <a href="https://sciences.orphadata.com/natural-history/">natural history</a>, using the matching 23 June 2026 XML exports. Associations with frequency "Excluded (0%)" are omitted. Disease groups and subtypes are retained, with one count per unique clinical entity per onset category. This is a database distribution, not patient incidence; related subtypes are not independent diseases. The join is not restricted to ACTB-associated diseases and cannot identify an HPO term's biological onset, diagnostic age, or most likely phase.</p>
+      <p><strong>Age conversion assumptions:</strong> <a href="https://sciences.orphadata.com/docs/OrphadataFreeAccessProductsDescription.pdf">Orphadata definitions, Table 8, page 32</a> specify antenatal (before birth), neonatal (birth to week 4), infancy (end of week 4 through month 23), childhood (2-11 years), adolescent (12-18), adult (19-65), elderly (after 65), and all ages (no peak). For interval overlap only, birth is assumed at 266 postconception days (38 weeks after conception), a year is 365.25 days, and completed-year ranges end at the next birthday. "All ages" is conservatively open-ended; unknown onset is never imputed. Gestational variability can change boundary overlap.</p>
+      <p><strong>Five-bin alignment:</strong> human boundaries are 49.95, 87.27, 152.47, 266.40, 465.45, and 979.46 postconception days from <a href="data/NDD_human_mouse_cortical_enriched/alignment_boundaries.csv">the cortical alignment file</a>. Intervals are half-open: antenatal overlaps bins 1-3 and earlier ages; neonatal overlaps bins 3-4 (bin 3 covers only the first 0.40 postnatal day under this birth assumption); infancy overlaps bins 4-5 and later ages; childhood and older categories fall after bin 5. These are exploratory cortical alignment bins, not clinical onset phases or evidence that cortical expression caused a phenotype.</p>
+      <p>Orphanet / INSERM, Orphadata Science, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Existing onset evidence covers 31 terms from the earlier ASD export, not all NDD terms. Terms without bundled context are labeled unknown; no onset is inferred. <a href="data/ASD_Bulk_analysis/orphanet-hpo-evidence.json">Download disease-level evidence and source metadata</a> · <a href="data/ASD_Bulk_analysis/orphanet-hpo-context.json">Download per-term onset distributions and bin overlaps</a>.</p>
+      <p><a href="data/ASD_Bulk_analysis/bulk-data.json">Download NDD cluster assignments and source-file index (JSON)</a></p>
     </details>
     <noscript>This explorer requires JavaScript. Serve the docs folder over HTTP to load its local data.</noscript>
   </main>

@@ -87,21 +87,26 @@ trajectories use dashed neutral lines, preserving a non-color distinction.
   Unequal cell-class coverage and different age frameworks limit cross-region
   comparisons. These rankings are descriptive, not significance or disease-effect tests.
 
-### ASD bulk-analysis data
+### NDD bulk-analysis data
 
-`docs/data/ASD_Bulk_analysis` contains the expression/K-means v2 results
+`docs/data/ASD_Bulk_analysis` (legacy folder name) contains the NDD expression/K-means v2 results
 copied from `BulkRNASeq`, preserving `cluster_result` and
 `enrichment/GO`, `enrichment/HPO`, and `enrichment/KEGG`.
-The 101 files include cluster assignments, expression profiles, sample metadata,
-coefficients, timepoint trends, per-cluster gene lists, the R clustering object,
-enrichment tables, HPO community tables, and available v2 PDF plots.
-GO and KEGG tables cover all 12 clusters. HPO has no source files for cluster 10;
-header-only HPO tables for other clusters are preserved as supplied.
+The updated source files include per-cluster gene lists, timepoint trends,
+and enrichment tables for 2,861 genes in 13 clusters.
+GO and KEGG CSVs cover all 13 clusters. Only clusters 4 and 11 have supplied
+NDD HPO CSVs; other HPO sources are explicitly marked unavailable.
+Header-only exports are displayed as empty results, not loading errors.
 The separate [bulk-analysis page](docs/bulk-analysis.html), linked from the
-developmental explorer, shows cluster peers first, then HPO, KEGG, and GO rows
-whose overlap list contains the selected gene in that cluster. Peer buttons
-select another gene; `?gene=ACTB` supports direct links. Empty exports and the
-missing cluster-10 HPO export are distinguished from loading errors.
+developmental explorer, identifies the selected gene's cluster, lists all members
+(including the highlighted selected gene), draws the cluster-average expression
+trend, then shows HPO, GO, and KEGG results for the whole cluster.
+Enrichment is no longer filtered to rows containing the selected gene.
+Member buttons select another gene; `?gene=ACTB` supports direct links.
+The chart uses the exported `Mean_Expression`, `SE`, and `N`, with mean +/- SE
+shading and a values table. The six developmental phases are ordered categories,
+not proportional elapsed time or the five cortical event bins. Source values,
+units, and p-values are not transformed or recalculated.
 The page shares the developmental explorer's typography, blue accents, cards,
 and theme variables, with local SVG DNA/analysis icons and section navigation.
 No p-values, enrichment thresholds, or cluster assignments are recalculated.
@@ -118,15 +123,65 @@ batched-page version preserved. This link remains available for genes without
 bulk cluster data and when bulk lookup fails. BrainSpan reports unavailable
 genes or profiles explicitly.
 
-GO/KEGG membership uses the bundled `gene-entrez-map.json`, generated locally
-from `org.Hs.eg.db` without uploading gene lists. Serving the page needs no R
-runtime or external annotation service. To regenerate the mapping, install
-`AnnotationDbi`, `org.Hs.eg.db`, and `jsonlite`, then run:
+`bulk-data.json` indexes the supplied NDD gene lists, trend CSV, and enrichment
+paths, recording missing HPO sources as null. HPO `_communities.csv` exports
+are preferred when supplied; otherwise the original enrichment CSV is used.
+Regenerate the index after replacing or adding source files.
+GO/KEGG overlap display uses the bundled `gene-entrez-map.json`,
+generated locally from `org.Hs.eg.db` without uploading gene lists.
+Unmapped symbols remain selectable; unmapped Entrez IDs are explicitly labeled
+as IDs. Serving the page needs no R runtime or external annotation service.
+To regenerate the index and mapping, install `AnnotationDbi`, `org.Hs.eg.db`,
+and `jsonlite`, then run:
 
 ```powershell
+node docs\scripts\build-bulk-data.mjs
 Rscript docs\scripts\build-bulk-gene-map.R
 node --test tests\bulk.test.mjs
 ```
+
+#### Orphanet HPO onset context
+
+The HPO table retains associated-disease onset counts and possible five-bin
+cerebral interval overlaps for 31 terms bundled from the earlier ASD export.
+NDD terms outside that evidence set are explicitly labeled as lacking bundled
+context; no onset is inferred. The evidence generator now targets the supplied
+NDD HPO CSVs, so both evidence and summary can be regenerated for the new terms.
+This is **indirect disease-onset context, not phenotype onset or a most-likely
+phase**. Exact HPO associations are joined to natural history by ORPHAcode;
+zero-frequency exclusions are omitted. Every unique clinical entity contributes
+once per reported category, so category totals can exceed the number of
+entities. Related subtypes/groups are retained and are not independent patient
+observations. No restriction to ACTB-related diseases is applied.
+
+The matching Orphadata XML exports are dated 23 June 2026. Source URLs,
+retrieval date, MD5 checksums, per-disease onset categories and evidence links
+are bundled in `orphanet-hpo-evidence.json`; `orphanet-hpo-context.json`
+contains the summary and bin alignment. Attribution: Orphanet / INSERM,
+Orphadata Science, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Definitions follow [Orphadata product description, Table 8, page 32](https://sciences.orphadata.com/docs/OrphadataFreeAccessProductsDescription.pdf).
+
+For overlap calculations, birth is assumed at 266 postconception days and a
+year is 365.25 days. Completed-year ranges end at the next birthday; infancy
+ends at 24 months. "All ages" is conservatively open-ended, with no peak.
+Half-open intervals overlap the exact cortical boundaries in
+`alignment_boundaries.csv`: antenatal spans bins 1-3 and earlier ages; neonatal
+spans bins 3-4 (only 0.40 day in bin 3 under this assumption); infancy spans
+bins 4-5 and later ages; childhood and older categories are beyond bin 5.
+Unknown onset stays unknown. This is not a validated clinical/cortical
+alignment; gestational age variation can change boundary overlap.
+
+Regenerate with R (`xml2`, `jsonlite`) and Node.js; only public Orphadata
+files are downloaded, and no local gene lists are uploaded:
+
+```powershell
+Rscript docs\scripts\build-orphanet-evidence.R
+node docs\scripts\build-orphanet-context.mjs
+node --test tests\bulk.test.mjs
+```
+
+An optional argument to the R script selects an existing XML cache directory.
+Without one, raw downloads are temporary and removed after generation.
 
 ### BrainSpan NDD page
 
